@@ -425,7 +425,7 @@ export default function SMBPage() {
                       </div>
                     </div>
                     <div className="mt-3">
-                      <Button variant="gradient" size="default" asChild>
+                      <Button variant="gradient" size="default" className="w-full" asChild>
                         <Link href="/solutions/smb/purchase">Get Jo</Link>
                       </Button>
                     </div>
