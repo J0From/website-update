@@ -506,7 +506,7 @@ export default function SMBPage() {
                     <div className="text-center mb-4">
                       <div className="text-xs text-gray-500">3-5 agents typically needed</div>
                     </div>
-                    <Button variant="gradient" size="default" asChild>
+                    <Button variant="gradient" size="default" className="w-full" asChild>
                       <Link href="/solutions/smb/purchase">Start Solo Journey</Link>
                     </Button>
                   </div>
@@ -579,7 +579,7 @@ export default function SMBPage() {
                     <div className="text-center mb-4">
                       <div className="text-xs text-gray-500">6-9 agents typically needed</div>
                     </div>
-                    <Button variant="gradient" size="default" asChild>
+                    <Button variant="gradient" size="default" className="w-full" asChild>
                       <Link href="/solutions/smb/purchase">Scale Your Business</Link>
                     </Button>
                   </div>
@@ -647,7 +647,7 @@ export default function SMBPage() {
                     <div className="text-center mb-4">
                       <div className="text-xs text-gray-500">All 9 agents + custom features</div>
                     </div>
-                    <Button variant="gradient" size="default" asChild>
+                    <Button variant="gradient" size="default" className="w-full" asChild>
                       <Link href="/solutions/smb/purchase">Enterprise Ready</Link>
                     </Button>
                   </div>
@@ -718,7 +718,7 @@ export default function SMBPage() {
                     <div className="text-center mb-4">
                       <div className="text-xs text-gray-500">Portfolio-wide efficiency pricing</div>
                     </div>
-                    <Button variant="gradient" size="default" asChild>
+                    <Button variant="gradient" size="default" className="w-full" asChild>
                       <Link href="/solutions/smb/purchase">Scale Portfolio Companies</Link>
                     </Button>
                   </div>
@@ -786,7 +786,7 @@ export default function SMBPage() {
                     <div className="text-center mb-4">
                       <div className="text-xs text-gray-500">Value creation & efficiency pricing</div>
                     </div>
-                    <Button variant="gradient" size="default" asChild>
+                    <Button variant="gradient" size="default" className="w-full" asChild>
                       <Link href="/solutions/smb/purchase">Transform Portfolio Companies</Link>
                     </Button>
                   </div>
