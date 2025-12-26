@@ -198,11 +198,9 @@ export default function PurchasePage() {
 
                     <Button
                       onClick={() => setSelectedTier(tier.id)}
-                      className={`w-full ${
-                        isSelected
-                          ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:opacity-90"
-                          : "bg-slate-900 text-white hover:bg-slate-800"
-                      }`}
+                      variant={isSelected ? "gradient" : "secondary"}
+                      size="default"
+                      className="w-full"
                     >
                       {isSelected ? "Selected" : "Lets Go"}
                     </Button>
@@ -267,11 +265,9 @@ export default function PurchasePage() {
                   )}
                 </div>
 
-                <Link href={`/checkout?tier=${selectedTier}&billing=${billingCycle}`}>
-                  <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:opacity-90 text-base font-semibold py-6 shadow-lg">
-                    Lets Go
-                  </Button>
-                </Link>
+                <Button variant="gradient" size="form" asChild>
+                  <Link href={`/checkout?tier=${selectedTier}&billing=${billingCycle}`}>Lets Go</Link>
+                </Button>
 
                 <div className="space-y-2 pt-4 border-t border-slate-200">
                   <div className="flex items-start gap-2 text-sm">

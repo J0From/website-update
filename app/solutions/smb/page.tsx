@@ -301,10 +301,7 @@ export default function SMBPage() {
             We are a digital staffing firms that handles marketing, sales, ops, and bookkeeping—so you can focus on
             growth.
           </p>
-          <Button
-            asChild
-            className="bg-red-500 hover:bg-red-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full shadow-2xl hover:shadow-red-500/25 transition-all duration-300 hover:scale-105"
-          >
+          <Button variant="destructive" size="hero" asChild>
             <Link href="/solutions/smb/purchase">
               Get Jo
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
@@ -428,10 +425,7 @@ export default function SMBPage() {
                       </div>
                     </div>
                     <div className="mt-3">
-                      <Button
-                        asChild
-                        className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white text-sm sm:text-base"
-                      >
+                      <Button variant="gradient" size="default" asChild>
                         <Link href="/solutions/smb/purchase">Get Jo</Link>
                       </Button>
                     </div>
@@ -512,10 +506,7 @@ export default function SMBPage() {
                     <div className="text-center mb-4">
                       <div className="text-xs text-gray-500">3-5 agents typically needed</div>
                     </div>
-                    <Button
-                      asChild
-                      className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white"
-                    >
+                    <Button variant="gradient" size="default" asChild>
                       <Link href="/solutions/smb/purchase">Start Solo Journey</Link>
                     </Button>
                   </div>
@@ -588,10 +579,7 @@ export default function SMBPage() {
                     <div className="text-center mb-4">
                       <div className="text-xs text-gray-500">6-9 agents typically needed</div>
                     </div>
-                    <Button
-                      asChild
-                      className="w-full bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white"
-                    >
+                    <Button variant="gradient" size="default" asChild>
                       <Link href="/solutions/smb/purchase">Scale Your Business</Link>
                     </Button>
                   </div>
@@ -659,10 +647,7 @@ export default function SMBPage() {
                     <div className="text-center mb-4">
                       <div className="text-xs text-gray-500">All 9 agents + custom features</div>
                     </div>
-                    <Button
-                      asChild
-                      className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white"
-                    >
+                    <Button variant="gradient" size="default" asChild>
                       <Link href="/solutions/smb/purchase">Enterprise Ready</Link>
                     </Button>
                   </div>
@@ -733,10 +718,7 @@ export default function SMBPage() {
                     <div className="text-center mb-4">
                       <div className="text-xs text-gray-500">Portfolio-wide efficiency pricing</div>
                     </div>
-                    <Button
-                      asChild
-                      className="w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white"
-                    >
+                    <Button variant="gradient" size="default" asChild>
                       <Link href="/solutions/smb/purchase">Scale Portfolio Companies</Link>
                     </Button>
                   </div>
@@ -804,10 +786,7 @@ export default function SMBPage() {
                     <div className="text-center mb-4">
                       <div className="text-xs text-gray-500">Value creation & efficiency pricing</div>
                     </div>
-                    <Button
-                      asChild
-                      className="w-full bg-gradient-to-r from-slate-600 to-gray-600 hover:from-slate-700 hover:to-gray-700 text-white"
-                    >
+                    <Button variant="gradient" size="default" asChild>
                       <Link href="/solutions/smb/purchase">Transform Portfolio Companies</Link>
                     </Button>
                   </div>

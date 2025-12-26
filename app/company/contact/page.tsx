@@ -156,16 +156,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Submit Button */}
-                <Button
-                  type="submit"
-                  onClick={handleSubmit}
-                  disabled={!isFormValid() || isSubmitting}
-                  className={`w-full h-11 sm:h-12 transition-all duration-200 ${
-                    isFormValid() && !isSubmitting
-                      ? "bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white"
-                      : "bg-slate-300 text-slate-500 cursor-not-allowed"
-                  }`}
-                >
+                <Button type="submit" variant="gradient" size="form" disabled={!isFormValid() || isSubmitting}>
                   {isSubmitting ? (
                     "Sending..."
                   ) : submitSuccess ? (

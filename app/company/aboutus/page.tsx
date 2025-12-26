@@ -246,12 +246,12 @@ export default function AboutUsPage() {
                     <span className="text-gray-700">Custom integrations and advanced security features</span>
                   </li>
                 </ul>
-                <Link href="/enterprise">
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                <Button variant="secondary" size="default" asChild>
+                  <Link href="/enterprise">
                     Learn More
                     <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </Link>
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
 
@@ -280,12 +280,12 @@ export default function AboutUsPage() {
                     <span className="text-gray-700">No long-term contracts or hidden fees</span>
                   </li>
                 </ul>
-                <Link href="/about">
-                  <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white">
+                <Button variant="secondary" size="default" asChild>
+                  <Link href="/about">
                     See Pricing
                     <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </Link>
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
           </div>
@@ -299,10 +299,7 @@ export default function AboutUsPage() {
           <p className="text-lg sm:text-xl mb-8 opacity-95 max-w-3xl mx-auto leading-relaxed">
             We help businesses of all sizes unlock a new era of productivity and innovation.
           </p>
-          <Button
-            asChild
-            className="h-10 sm:h-12 px-6 sm:px-8 text-sm sm:text-base bg-slate-900 hover:bg-slate-800 text-white"
-          >
+          <Button variant="secondary" size="hero" asChild>
             <Link href="/solutions/smb/purchase">
               Get Jo
               <ArrowRight className="w-5 h-5 ml-2" />

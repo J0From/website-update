@@ -96,24 +96,18 @@ export default function ConsultingGetMeetingsPage() {
           <div className="flex justify-center">
             <div className="inline-flex rounded-lg border-2 border-gray-200 p-1 bg-gray-50">
               <Button
-                variant="ghost"
+                variant={activeTab === "growth" ? "gradient" : "ghost"}
+                size="default"
                 onClick={() => setActiveTab("growth")}
-                className={`px-8 py-3 rounded-md text-sm font-semibold transition-all ${
-                  activeTab === "growth"
-                    ? "bg-gradient-to-r from-blue-600 to-blue-500 text-white shadow-sm"
-                    : "text-gray-600 hover:text-gray-900"
-                }`}
+                className="px-8 py-3"
               >
                 Growth
               </Button>
               <Button
-                variant="ghost"
+                variant={activeTab === "operations" ? "gradient" : "ghost"}
+                size="default"
                 onClick={() => setActiveTab("operations")}
-                className={`px-8 py-3 rounded-md text-sm font-semibold transition-all ${
-                  activeTab === "operations"
-                    ? "bg-gradient-to-r from-purple-600 to-purple-500 text-white shadow-sm"
-                    : "text-gray-600 hover:text-gray-900"
-                }`}
+                className="px-8 py-3"
               >
                 Operations
               </Button>
@@ -176,15 +170,12 @@ export default function ConsultingGetMeetingsPage() {
                 </div>
 
                 <div className="mt-12 text-center">
-                  <Link href="/solutions/consulting/growth">
-                    <Button
-                      className="bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 font-bold"
-                      onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                    >
+                  <Button variant="gradient" size="hero" asChild>
+                    <Link href="/solutions/consulting/growth">
                       Learn More
                       <ArrowRight className="w-5 h-5 ml-2" />
-                    </Button>
-                  </Link>
+                    </Link>
+                  </Button>
                 </div>
               </div>
             </div>
@@ -245,15 +236,12 @@ export default function ConsultingGetMeetingsPage() {
                 </div>
 
                 <div className="mt-12 text-center">
-                  <Link href="/solutions/consulting/fractional">
-                    <Button
-                      className="bg-gradient-to-r from-purple-600 to-blue-600 text-white hover:from-purple-700 hover:to-blue-700 font-bold"
-                      onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                    >
+                  <Button variant="gradient" size="hero" asChild>
+                    <Link href="/solutions/consulting/fractional">
                       Learn More
                       <ArrowRight className="w-5 h-5 ml-2" />
-                    </Button>
-                  </Link>
+                    </Link>
+                  </Button>
                 </div>
               </div>
             </div>
@@ -273,8 +261,8 @@ export default function ConsultingGetMeetingsPage() {
               : "Are you ready to get back to doing the fun stuff?"}
           </p>
           <Button
-            size="lg"
-            className="bg-white text-blue-700 hover:bg-blue-50 font-bold"
+            variant="secondary"
+            size="hero"
             onClick={() => window.open("https://calendly.com/myj0/30min", "_blank")}
           >
             {activeTab === "growth" ? "Book Your Strategy Session" : "Get Your Operations Audit"}

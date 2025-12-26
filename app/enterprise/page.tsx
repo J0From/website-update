@@ -39,10 +39,7 @@ export default function EnterprisePage() {
               Home
             </Button>
           </Link>
-          <Button
-            asChild
-            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0 hover:from-blue-700 hover:to-purple-700 hover:text-white"
-          >
+          <Button variant="gradient" size="default" asChild>
             <Link href="/solutions/smb/purchase">
               Get Jo
               <ArrowRight className="w-4 h-4 ml-2" />
@@ -141,16 +138,16 @@ export default function EnterprisePage() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
+              variant="gradient"
+              size="hero"
               onClick={() => window.open("https://calendly.com/myj0/30min", "_blank")}
-              size="lg"
-              className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white border-0 text-lg px-10 py-7 h-auto font-semibold shadow-2xl shadow-blue-900/50"
             >
               Schedule a Demo
             </Button>
             <Button
-              size="lg"
+              size="hero"
               variant="outline"
-              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-slate-900 text-lg px-10 py-7 h-auto font-semibold"
+              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-slate-900"
             >
               Contact Business Sales
             </Button>

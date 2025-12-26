@@ -280,20 +280,15 @@ export default function MethodologyPage() {
             Discover how Human + Machine collaboration can transform your organization.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/company/contact">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <Button variant="gradient" size="hero" asChild>
+              <Link href="/company/contact">
                 <TrendingUp className="w-5 h-5 mr-2" />
                 Schedule a Consultation
-              </Button>
-            </Link>
-            <Link href="/solutions/smb">
-              <Button
-                variant="outline"
-                className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 bg-transparent"
-              >
-                Meet Jo
-              </Button>
-            </Link>
+              </Link>
+            </Button>
+            <Button variant="outline" size="hero" asChild>
+              <Link href="/solutions/smb">Meet Jo</Link>
+            </Button>
           </div>
         </div>
       </section>
