@@ -82,7 +82,7 @@ export default function HomePage() {
             </Button>
           </Link>
           <Link href="/solutions/smb/purchase?billing=annual">
-            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:opacity-90 text-sm sm:text-base px-3 sm:px-6">
+            <Button variant="gradient" className="text-sm sm:text-base px-3 sm:px-6">
               Sign Up
             </Button>
           </Link>
@@ -175,8 +175,8 @@ export default function HomePage() {
             </Link>
             <Link href="/solutions/smb" className="w-full sm:w-auto">
               <Button
-                variant="outline"
-                className="w-full sm:w-auto h-12 sm:h-14 md:h-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0 hover:opacity-90 px-8 sm:px-10 md:px-14 text-base sm:text-lg md:text-xl font-semibold"
+                variant="gradient"
+                className="w-full sm:w-auto h-12 sm:h-14 md:h-16 px-8 sm:px-10 md:px-14 text-base sm:text-lg md:text-xl font-semibold"
               >
                 Meet Jo
               </Button>
@@ -268,7 +268,11 @@ export default function HomePage() {
       <section className={`py-16 sm:py-20 md:py-24 bg-white ${marginClass}`}>
         <div className="max-w-6xl mx-auto text-center">
           <Link href="/solutions/smb/purchase">
-            <Button className="h-14 sm:h-16 md:h-18 px-12 sm:px-16 md:px-20 text-lg sm:text-xl md:text-2xl bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:opacity-90 font-semibold">
+            <Button
+              variant="gradient"
+              size="hero"
+              className="px-12 sm:px-16 md:px-20 text-lg sm:text-xl md:text-2xl font-semibold"
+            >
               Get Jo
             </Button>
           </Link>

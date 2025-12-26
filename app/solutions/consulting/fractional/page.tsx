@@ -549,7 +549,7 @@ export default function FractionalOperationsPage() {
               { label: "Time to Improvement", value: "2-4 Wks" },
             ].map((stat, i) => (
               <div key={i} className="pt-8 md:pt-0 px-4">
-                <div className="text-4xl lg:text-5xl font-extrabold mb-2 text-white">{stat.value}</div>
+                <div className="text-4xl lg:text-5xl font-bold mb-2 text-white">{stat.value}</div>
                 <div className="text-blue-100 font-medium">{stat.label}</div>
               </div>
             ))}
