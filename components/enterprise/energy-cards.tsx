@@ -75,6 +75,7 @@ export function EnergyCards() {
                 <div className="border-t pt-6 bg-gradient-to-r from-blue-50 to-purple-50 -mx-6 px-6 -mb-6 pb-6 rounded-b-lg mt-auto">
                   <Button
                     asChild
+                    variant="gradient"
                     className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white"
                   >
                     <Link href="/solutions/smb/purchase">Learn More</Link>

@@ -639,10 +639,7 @@ export default function FractionalOperationsPage() {
                     </li>
                   ))}
                 </ul>
-                <Button
-                  onClick={() => scrollToSection("contact")}
-                  className="w-full bg-slate-900 hover:bg-slate-800 text-white py-3 rounded-lg font-bold transition-colors"
-                >
+                <Button onClick={() => scrollToSection("contact")} variant="secondary" className="w-full">
                   Let's Grow
                 </Button>
               </div>
@@ -675,10 +672,7 @@ export default function FractionalOperationsPage() {
                     </li>
                   ))}
                 </ul>
-                <Button
-                  onClick={() => scrollToSection("contact")}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-bold transition-colors shadow-md"
-                >
+                <Button onClick={() => scrollToSection("contact")} variant="gradient" className="w-full">
                   Let's Grow
                 </Button>
               </div>
