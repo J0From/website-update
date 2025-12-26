@@ -951,7 +951,8 @@ export default function SMBPage() {
             </Button>
             <Button
               asChild
-              className="bg-black text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full border-0 transition-all duration-300"
+              variant="outline"
+              className="border-white text-white hover:bg-white hover:text-blue-700 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full bg-transparent"
             >
               <Link href="/solutions/smb/purchase" className="flex items-center justify-center">
                 Lets Go

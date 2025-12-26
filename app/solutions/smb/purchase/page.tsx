@@ -200,7 +200,7 @@ export default function PurchasePage() {
                       onClick={() => setSelectedTier(tier.id)}
                       variant={isSelected ? "gradient" : "secondary"}
                       size="default"
-                      className="w-full"
+                      className={`w-full ${!isSelected ? "bg-black text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 transition-all" : ""}`}
                     >
                       {isSelected ? "Selected" : "Lets Go"}
                     </Button>
