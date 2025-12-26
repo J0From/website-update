@@ -951,7 +951,7 @@ export default function SMBPage() {
       {/* Testimonial */}
       <section className="py-16 sm:py-20 bg-gradient-to-br from-blue-600 to-purple-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <blockquote className="text-lg sm:text-xl md:text-2xl font-medium italic mb-6 sm:mb-8 leading-relaxed">
+          <blockquote className="text-lg sm:text-xl md:text-2xl font-medium italic mb-6 sm:mb-8 leading-relaxed whitespace-nowrap">
             "Jo cut the time to respond to RFPs to 20 mins, and 10x my sales pipeline."
           </blockquote>
           <cite className="text-base sm:text-lg opacity-90">— Craig B., NextGen Upffiters</cite>
