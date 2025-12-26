@@ -1,7 +1,20 @@
 import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowLeft, ArrowRight, Check, Users, Zap, Target, TrendingUp } from "lucide-react"
+import {
+  ArrowLeft,
+  ArrowRight,
+  Check,
+  Users,
+  Zap,
+  Target,
+  TrendingUp,
+  Sparkles,
+  Layers,
+  Workflow,
+  Eye,
+  Globe,
+} from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { Footer } from "@/components/footer"
@@ -34,6 +47,44 @@ export default function AboutUsPage() {
       description:
         "Finally, we deploy Jo as an intelligent collaborator, continuously monitoring performance and feeding insights back into the system to ensure ongoing improvement.",
       icon: TrendingUp,
+    },
+  ]
+
+  const coreValues = [
+    {
+      number: 1,
+      title: "Augmentation Over Automation",
+      description:
+        "We build tools that amplify human potential, not diminish it. Our digital specialists work alongside employees as trusted teammates, handling repetitive tasks so people can focus on what humans do best.",
+      icon: Sparkles,
+    },
+    {
+      number: 2,
+      title: "Specialization Through Depth",
+      description:
+        "We reject one-size-fits-all solutions. Every digital coworker we create possesses deep domain expertise for specific roles and industries, delivering an experience that feels custom-built without the custom price tag.",
+      icon: Layers,
+    },
+    {
+      number: 3,
+      title: "Process Before Technology",
+      description:
+        "We automate good processes, not broken ones. Through our Discover → Design → Deploy framework, we ensure every implementation improves workflows first, then scales them with precision.",
+      icon: Workflow,
+    },
+    {
+      number: 4,
+      title: "Trust Through Transparency",
+      description:
+        "We earn confidence by showing our work. From measurable ROI tracking to clear role definitions, we make our impact visible and our operations understandable.",
+      icon: Eye,
+    },
+    {
+      number: 5,
+      title: "Democratized Excellence",
+      description:
+        "Powerful operational capabilities shouldn't be reserved for enterprises alone. We make sophisticated business intelligence accessible to organizations of every size, from solopreneurs to global corporations.",
+      icon: Globe,
     },
   ]
 
@@ -150,58 +201,52 @@ export default function AboutUsPage() {
       </div>
 
       <section className="py-16 sm:py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">Our Core Values</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-            <Card className="border-2 hover:border-blue-200 transition-all hover:shadow-lg">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3 text-center">Augmentation Over Automation</h3>
-                <p className="text-lg text-gray-700 leading-relaxed text-center">
-                  We build tools that amplify human potential, not diminish it. Our digital specialists work alongside
-                  employees as trusted teammates, handling repetitive tasks so people can focus on what humans do best.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-2 hover:border-blue-200 transition-all hover:shadow-lg">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3 text-center">Specialization Through Depth</h3>
-                <p className="text-lg text-gray-700 leading-relaxed text-center">
-                  We reject one-size-fits-all solutions. Every digital coworker we create possesses deep domain
-                  expertise for specific roles and industries, delivering an experience that feels custom-built without
-                  the custom price tag.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-2 hover:border-blue-200 transition-all hover:shadow-lg">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3 text-center">Process Before Technology</h3>
-                <p className="text-lg text-gray-700 leading-relaxed text-center">
-                  We automate good processes, not broken ones. Through our Discover → Design → Deploy framework, we
-                  ensure every implementation improves workflows first, then scales them with precision.
-                </p>
-              </CardContent>
-            </Card>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-slate-900">Our Core Values</h2>
+          <p className="text-lg text-slate-600 text-center mb-12 max-w-3xl mx-auto">
+            The principles that guide every decision we make and every solution we build
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            {coreValues.slice(0, 3).map((value) => (
+              <Card
+                key={value.number}
+                className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl"
+              >
+                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
+                <CardContent className="p-8 relative z-10">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-2xl mb-6">
+                    {value.number}
+                  </div>
+                  <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
+                    <value.icon className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4">{value.title}</h3>
+                  <p className="text-slate-600 leading-relaxed">{value.description}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            <Card className="border-2 hover:border-blue-200 transition-all hover:shadow-lg">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3 text-center">Trust Through Transparency</h3>
-                <p className="text-lg text-gray-700 leading-relaxed text-center">
-                  We earn confidence by showing our work. From measurable ROI tracking to clear role definitions, we
-                  make our impact visible and our operations understandable.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-2 hover:border-blue-200 transition-all hover:shadow-lg">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3 text-center">Democratized Excellence</h3>
-                <p className="text-lg text-gray-700 leading-relaxed text-center">
-                  Powerful operational capabilities shouldn't be reserved for enterprises alone. We make sophisticated
-                  business intelligence accessible to organizations of every size, from solopreneurs to global
-                  corporations.
-                </p>
-              </CardContent>
-            </Card>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {coreValues.slice(3).map((value) => (
+              <Card
+                key={value.number}
+                className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl"
+              >
+                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
+                <CardContent className="p-8 relative z-10">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-2xl mb-6">
+                    {value.number}
+                  </div>
+                  <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
+                    <value.icon className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4">{value.title}</h3>
+                  <p className="text-slate-600 leading-relaxed">{value.description}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
