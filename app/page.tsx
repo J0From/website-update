@@ -147,7 +147,7 @@ export default function HomePage() {
 
       {/* Man + Machine Section */}
       <section className="bg-gradient-to-r from-blue-600 to-purple-600 py-8 sm:py-10 md:py-14">
-        <div className={`w-full max-w-[1600px] mx-auto ${marginClass}`}>
+        <div className="w-full max-w-[1600px] mx-auto px-2 sm:px-4 md:px-8">
           <div className="text-left">
             <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight text-justify">
               We help businesses strike the right balance between{" "}
