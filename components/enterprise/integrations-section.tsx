@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 export function IntegrationsSection() {
@@ -27,7 +26,7 @@ export function IntegrationsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
           {integrations.map((integration) => (
             <Card key={integration.name} className="border hover:shadow-md transition-shadow">
               <CardContent className="p-4 text-center">
@@ -36,12 +35,6 @@ export function IntegrationsSection() {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        <div className="text-center">
-          <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent">
-            View All Integrations
-          </Button>
         </div>
       </div>
     </section>
