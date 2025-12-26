@@ -146,15 +146,13 @@ export default function HomePage() {
       </div>
 
       {/* Man + Machine Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 py-8 sm:py-10 md:py-14">
-        <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-6 md:px-10">
+      <section className="bg-gradient-to-r from-blue-600 to-purple-600 py-12 sm:py-16 md:py-24">
+        <div className={`w-full max-w-[1600px] mx-auto ${marginClass}`}>
           <div className="text-left">
-            <p
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight text-justify -tracking-tight"
-              style={{ wordSpacing: "-0.21em" }}
-            >
-              We help businesses strike the right balance between <br />
-              <span className="bg-gradient-to-r from-cyan-300 to-pink-300 bg-clip-text text-transparent">
+            <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
+              We help businesses strike the right <br className="hidden md:inline" />
+              balance between{" "}
+              <span className="bg-gradient-to-r from-cyan-300 to-pink-300 bg-clip-text text-transparent whitespace-nowrap">
                 Human + Machine
               </span>
               .
@@ -201,7 +199,7 @@ export default function HomePage() {
           <p className="text-sm sm:text-base md:text-xl text-slate-600 text-center max-w-3xl mx-auto mb-8 sm:mb-10 md:mb-12 text-balance px-4">
             Fast Insight, Practical Plans, Real Operational Change.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-9">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {/* Discovery Phase */}
             <Card className="border-2 hover:border-blue-200 transition-all bg-white">
               <CardContent className="p-6 sm:p-7 md:p-8 text-center">
@@ -241,10 +239,7 @@ export default function HomePage() {
       {/* NEW SECTION: Bottlenecks (BG Black, Left Aligned) */}
       <section className={`py-16 sm:py-20 md:py-24 bg-black ${marginClass}`}>
         <div className="max-w-6xl mx-auto text-left">
-          <p
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white leading-tight -tracking-tight"
-            style={{ wordSpacing: "-0.25em" }}
-          >
+          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white leading-tight">
             Jo fixes{" "}
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
               labor bottlenecks
@@ -261,7 +256,7 @@ export default function HomePage() {
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
               cut costs
             </span>
-            , and finally have have hands to{" "}
+            , and finally have enough hands to{" "}
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
               get the work done
             </span>
