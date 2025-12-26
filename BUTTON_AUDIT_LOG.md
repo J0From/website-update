@@ -183,17 +183,17 @@ Created `scripts/button-audit.ts` with the following checks:
    - Warns if not using `buttonVariants()` or `asChild`
 
 3. **Usage**
-   ```bash
+   \`\`\`bash
    npm run check:buttons
-   ```
+   \`\`\`
 
 ### Package.json Integration
 Added script to package.json:
-```json
+\`\`\`json
 "scripts": {
   "check:buttons": "tsx scripts/button-audit.ts"
 }
-```
+\`\`\`
 
 ---
 
@@ -230,7 +230,7 @@ Added script to package.json:
 ## Key Patterns Established
 
 ### 1. Link-as-Button Pattern
-```tsx
+\`\`\`tsx
 // ✅ CORRECT: Using Button asChild
 <Button variant="gradient" size="hero" asChild>
   <Link href="/path">Click me</Link>
@@ -246,10 +246,10 @@ import { buttonVariants } from "@/components/ui/button"
 <Link href="/path" className="bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-4">
   Click me
 </Link>
-```
+\`\`\`
 
 ### 2. Conditional Variants
-```tsx
+\`\`\`tsx
 // ✅ CORRECT: Using variant conditionally
 <Button variant={isActive ? "gradient" : "ghost"}>
   Toggle
@@ -259,10 +259,10 @@ import { buttonVariants } from "@/components/ui/button"
 <Button className={isActive ? "bg-gradient-to-r..." : "text-gray-600"}>
   Toggle
 </Button>
-```
+\`\`\`
 
 ### 3. Form Buttons
-```tsx
+\`\`\`tsx
 // ✅ CORRECT: Using form size
 <Button type="submit" variant="gradient" size="form">
   Submit
@@ -272,7 +272,7 @@ import { buttonVariants } from "@/components/ui/button"
 <Button className="w-full h-12 bg-gradient-to-r...">
   Submit
 </Button>
-```
+\`\`\`
 
 ---
 

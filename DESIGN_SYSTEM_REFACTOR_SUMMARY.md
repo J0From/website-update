@@ -71,11 +71,11 @@ Referenced in:
 - `app/solutions/consulting/page.tsx` - 12 occurrences
 
 **Recommendation:** Use automated find/replace with the following safe pattern:
-```bash
+\`\`\`bash
 # Safe replacement (preserves intentional gray usage in non-text contexts)
 find app components -type f -name "*.tsx" -o -name "*.ts" | \
 xargs sed -i 's/text-gray-/text-slate-/g'
-```
+\`\`\`
 
 ---
 
@@ -118,7 +118,7 @@ xargs sed -i 's/text-gray-/text-slate-/g'
 ### A) Lint Rule: Prohibit Forbidden Classes
 
 **Option 1 (Recommended):** ESLint + Tailwind Plugin
-```js
+\`\`\`js
 // .eslintrc.js or eslint.config.js
 rules: {
   'no-restricted-syntax': [
@@ -137,10 +137,10 @@ rules: {
     },
   ],
 }
-```
+\`\`\`
 
 **Option 2 (Simple):** CI Script
-```bash
+\`\`\`bash
 #!/bin/bash
 # Add to .github/workflows or CI pipeline
 
@@ -156,7 +156,7 @@ else
   echo "✅ No forbidden classes found"
   exit 0
 fi
-```
+\`\`\`
 
 ---
 
