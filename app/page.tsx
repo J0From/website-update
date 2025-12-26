@@ -240,27 +240,11 @@ export default function HomePage() {
       <section className={`py-16 sm:py-20 md:py-24 bg-black ${marginClass}`}>
         <div className="max-w-6xl mx-auto text-left">
           <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white leading-tight">
-            Jo fixes{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-              labor bottlenecks
-            </span>{" "}
-            in{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-              highly regulated
-            </span>{" "}
-            industries, helping companies{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-              stay compliant
-            </span>
-            ,{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-              cut costs
-            </span>
-            , and finally have enough hands to{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-              get the work done
-            </span>
-            .
+            Jo fixes <span className="text-blue-400 font-bold">labor bottlenecks</span> in{" "}
+            <span className="text-blue-400 font-bold">highly regulated</span> industries, helping companies{" "}
+            <span className="text-blue-400 font-bold">stay compliant</span>,{" "}
+            <span className="text-blue-400 font-bold">cut costs</span>, and finally have enough hands to{" "}
+            <span className="text-blue-400 font-bold">get the work done</span>.
           </p>
         </div>
       </section>
