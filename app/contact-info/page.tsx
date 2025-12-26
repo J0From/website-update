@@ -155,8 +155,8 @@ export default function ContactInfoPage() {
           {!isLoading ? (
             <>
               <div className="text-center mb-8">
-                <h1 className="text-3xl font-bold text-slate-900 mb-2">Almost Done!</h1>
-                <p className="text-slate-600">Tell us a bit about yourself to complete your Jo setup</p>
+                <h1 className="text-3xl font-bold text-gray-900 mb-2">Almost Done!</h1>
+                <p className="text-gray-600">Tell us a bit about yourself to complete your Jo setup</p>
               </div>
 
               <Card className="shadow-lg">
@@ -305,8 +305,8 @@ export default function ContactInfoPage() {
 
                     {/* Loading Text */}
                     <div className="space-y-2">
-                      <h2 className="text-2xl font-bold text-slate-900">We're Setting Up Your Jo</h2>
-                      <p className="text-slate-600">This will just take a moment...</p>
+                      <h2 className="text-2xl font-bold text-gray-900">We're Setting Up Your Jo</h2>
+                      <p className="text-gray-600">This will just take a moment...</p>
                     </div>
 
                     {/* Progress Animation */}
@@ -320,7 +320,7 @@ export default function ContactInfoPage() {
                     </div>
 
                     {/* Setup Steps */}
-                    <div className="text-left space-y-2 text-sm text-slate-600">
+                    <div className="text-left space-y-2 text-sm text-gray-600">
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                         <span>Configuring your agents...</span>

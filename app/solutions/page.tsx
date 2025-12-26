@@ -18,14 +18,14 @@ export default function SolutionsPage() {
       icon: Building2,
       title: "SMB",
       description: "All-in-one back office for growing businesses (2-200 employees)",
-      gradient: "from-blue-600 to-indigo-600",
+      gradient: "from-blue-500 to-purple-500",
     },
     {
       href: "/enterprise",
       icon: Building,
       title: "Enterprise",
       description: "Advanced automation for complex organizations",
-      gradient: "from-blue-600 to-indigo-600",
+      gradient: "from-indigo-500 to-blue-500",
     },
     {
       href: "/solutions/consulting",
@@ -45,7 +45,7 @@ export default function SolutionsPage() {
           <div className="relative mx-1">
             <Image src="/qubit.png" alt="Qubit" width={20} height={20} className="brightness-0" />
             <div
-              className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 mix-blend-normal opacity-100"
+              className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 mix-blend-normal opacity-100"
               style={{
                 maskImage: `url('/qubit.png')`,
                 maskSize: "contain",
@@ -64,7 +64,10 @@ export default function SolutionsPage() {
             Enterprise
           </Link>
           <Link href="/solutions/smb">
-            <Button variant="gradient" className="h-auto">
+            <Button
+              variant="outline"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0 hover:from-blue-700 hover:to-purple-700 hover:text-white px-4 py-2 h-auto"
+            >
               Meet Jo
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
@@ -75,10 +78,10 @@ export default function SolutionsPage() {
       {/* Hero Section */}
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-bold mb-6 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent text-4xl">
+          <h1 className="font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent text-4xl">
             Every Stage of Growth
           </h1>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Jo adapts to your business
           </p>
         </div>
@@ -99,8 +102,8 @@ export default function SolutionsPage() {
                       >
                         <Icon className="w-8 h-8 text-white" />
                       </div>
-                      <h3 className="text-2xl font-bold text-slate-900 mb-3">{solution.title}</h3>
-                      <p className="text-slate-600 mb-4 flex-grow">{solution.description}</p>
+                      <h3 className="text-2xl font-bold text-gray-900 mb-3">{solution.title}</h3>
+                      <p className="text-gray-600 mb-4 flex-grow">{solution.description}</p>
                       <div className="flex items-center text-blue-600 font-semibold group-hover:translate-x-2 transition-transform">
                         Learn more
                         <ArrowRight className="w-4 h-4 ml-2" />

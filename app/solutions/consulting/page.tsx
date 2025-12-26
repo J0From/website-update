@@ -25,7 +25,7 @@ export default function ConsultingGetMeetingsPage() {
           <div className="relative mx-1">
             <Image src="/qubit.png" alt="Qubit" width={20} height={20} className="brightness-0" />
             <div
-              className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 mix-blend-normal opacity-100"
+              className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 mix-blend-normal opacity-100"
               style={{
                 maskImage: `url('/qubit.png')`,
                 maskSize: "contain",
@@ -46,7 +46,10 @@ export default function ConsultingGetMeetingsPage() {
             </Button>
           </Link>
           <Link href="/solutions/smb">
-            <Button variant="gradient">
+            <Button
+              variant="outline"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0 hover:from-blue-700 hover:to-purple-700 hover:text-white"
+            >
               <span className="hidden sm:inline">Meet Jo</span>
               <span className="sm:hidden">Jo</span>
               <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2" />
@@ -71,7 +74,7 @@ export default function ConsultingGetMeetingsPage() {
                   </>
                 )}
               </h1>
-              <p className="text-xl text-slate-600 mb-8">
+              <p className="text-xl text-gray-600 mb-8">
                 {activeTab === "growth"
                   ? "Helping businesses scale with real People & Technology Augementation"
                   : "Streamline your backend operations with Human enabled Augementation"}
@@ -95,20 +98,22 @@ export default function ConsultingGetMeetingsPage() {
               <Button
                 variant="ghost"
                 onClick={() => setActiveTab("growth")}
-                className={`px-8 py-3 rounded-md text-sm font-semibold transition-all ${activeTab === "growth"
-                  ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-sm"
-                  : "text-slate-600 hover:text-slate-900"
-                  }`}
+                className={`px-8 py-3 rounded-md text-sm font-semibold transition-all ${
+                  activeTab === "growth"
+                    ? "bg-gradient-to-r from-blue-600 to-blue-500 text-white shadow-sm"
+                    : "text-gray-600 hover:text-gray-900"
+                }`}
               >
                 Growth
               </Button>
               <Button
                 variant="ghost"
                 onClick={() => setActiveTab("operations")}
-                className={`px-8 py-3 rounded-md text-sm font-semibold transition-all ${activeTab === "operations"
-                  ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-sm"
-                  : "text-slate-600 hover:text-slate-900"
-                  }`}
+                className={`px-8 py-3 rounded-md text-sm font-semibold transition-all ${
+                  activeTab === "operations"
+                    ? "bg-gradient-to-r from-purple-600 to-purple-500 text-white shadow-sm"
+                    : "text-gray-600 hover:text-gray-900"
+                }`}
               >
                 Operations
               </Button>
@@ -124,48 +129,48 @@ export default function ConsultingGetMeetingsPage() {
             <div>
               <div className="mb-16">
                 <h2 className="text-4xl font-bold text-slate-900 mb-4 text-center">Grow Your Business Faster</h2>
-                <p className="text-xl text-slate-600 text-center max-w-3xl mx-auto mb-12">
+                <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto mb-12">
                   Our fractional Growth team manages your business development, augmented by Jo's tech, so you can lead
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                   <Card className="border-2 hover:border-blue-200 transition-all">
                     <CardContent className="p-6 text-center">
-                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center mb-4 mx-auto">
+                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center mb-4 mx-auto">
                         <TrendingUp className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="text-lg font-bold text-slate-900 mb-2">Research</h3>
-                      <p className="text-sm text-slate-600">Automated research and qualification of potential leads</p>
+                      <p className="text-sm text-gray-600">Automated research and qualification of potential leads</p>
                     </CardContent>
                   </Card>
 
                   <Card className="border-2 hover:border-blue-200 transition-all">
                     <CardContent className="p-6 text-center">
-                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center mb-4 mx-auto">
+                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center mb-4 mx-auto">
                         <Mail className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="text-lg font-bold text-slate-900 mb-2">Prospecting</h3>
-                      <p className="text-sm text-slate-600">Email, Cold Calling, LinkedIn campaigns that convert</p>
+                      <p className="text-sm text-gray-600">Email, Cold Calling, LinkedIn campaigns that convert</p>
                     </CardContent>
                   </Card>
 
                   <Card className="border-2 hover:border-blue-200 transition-all">
                     <CardContent className="p-6 text-center">
-                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center mb-4 mx-auto">
+                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center mb-4 mx-auto">
                         <Calendar className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="text-lg font-bold text-slate-900 mb-2">Proposals</h3>
-                      <p className="text-sm text-slate-600">AI-assisted preparation and proposal drafting</p>
+                      <p className="text-sm text-gray-600">AI-assisted preparation and proposal drafting</p>
                     </CardContent>
                   </Card>
 
                   <Card className="border-2 hover:border-blue-200 transition-all">
                     <CardContent className="p-6 text-center">
-                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center mb-4 mx-auto">
+                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center mb-4 mx-auto">
                         <PieChart className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="text-lg font-bold text-slate-900 mb-2">Pipeline Management</h3>
-                      <p className="text-sm text-slate-600">Automated reporting and pipeline tracking</p>
+                      <p className="text-sm text-gray-600">Automated reporting and pipeline tracking</p>
                     </CardContent>
                   </Card>
                 </div>
@@ -173,8 +178,7 @@ export default function ConsultingGetMeetingsPage() {
                 <div className="mt-12 text-center">
                   <Link href="/solutions/consulting/growth">
                     <Button
-                      variant="gradient"
-                      className="font-bold"
+                      className="bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 font-bold"
                       onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
                     >
                       Learn More
@@ -192,48 +196,48 @@ export default function ConsultingGetMeetingsPage() {
                 <h2 className="text-4xl font-bold text-slate-900 mb-4 text-center">
                   <span className="text-5xl text-orange-500">Scale</span> Your Business Faster
                 </h2>
-                <p className="text-xl text-slate-600 text-center max-w-3xl mx-auto mb-12">
+                <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto mb-12">
                   Our fractional Operations team manages your backend, augmented by Jo's tech, so you can lead
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
                   <Card className="border-2 hover:border-purple-200 transition-all">
                     <CardContent className="p-8 text-center">
-                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center mx-auto mb-4">
+                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center mx-auto mb-4">
                         <Server className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="font-bold text-slate-900 mb-3 text-lg">Expert Professionals</h3>
-                      <p className="text-slate-600 text-sm">Get a dedicated fractional Operations team.</p>
+                      <p className="text-gray-600 text-sm">Get a dedicated fractional Operations team.</p>
                     </CardContent>
                   </Card>
 
                   <Card className="border-2 hover:border-purple-200 transition-all">
                     <CardContent className="p-8 text-center">
-                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center mx-auto mb-4">
+                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center mx-auto mb-4">
                         <Scale className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="font-bold text-slate-900 mb-3 text-lg">Scalable Systems</h3>
-                      <p className="text-slate-600 text-sm">We design and implement operations augmentation.</p>
+                      <p className="text-gray-600 text-sm">We design and implement operations augmentation.</p>
                     </CardContent>
                   </Card>
 
                   <Card className="border-2 hover:border-purple-200 transition-all">
                     <CardContent className="p-8 text-center">
-                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center mx-auto mb-4">
+                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center mx-auto mb-4">
                         <UserCheck className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="font-bold text-slate-900 mb-3 text-lg">Delegate Operations</h3>
-                      <p className="text-slate-600 text-sm">Hands off the day-to-day so you can lead.</p>
+                      <p className="text-gray-600 text-sm">Hands off the day-to-day so you can lead.</p>
                     </CardContent>
                   </Card>
 
                   <Card className="border-2 hover:border-purple-200 transition-all">
                     <CardContent className="p-8 text-center">
-                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center mx-auto mb-4">
+                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center mx-auto mb-4">
                         <DollarSign className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="font-bold text-slate-900 mb-3 text-lg">Finance & Accounting</h3>
-                      <p className="text-slate-600 text-sm">
+                      <p className="text-gray-600 text-sm">
                         Automated bookkeeping, reporting, and financial management
                       </p>
                     </CardContent>
@@ -243,8 +247,7 @@ export default function ConsultingGetMeetingsPage() {
                 <div className="mt-12 text-center">
                   <Link href="/solutions/consulting/fractional">
                     <Button
-                      variant="gradient"
-                      className="font-bold"
+                      className="bg-gradient-to-r from-purple-600 to-blue-600 text-white hover:from-purple-700 hover:to-blue-700 font-bold"
                       onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
                     >
                       Learn More
@@ -259,7 +262,7 @@ export default function ConsultingGetMeetingsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-6 bg-gradient-to-br from-blue-600 to-indigo-600 text-white">
+      <section className="py-16 px-6 bg-gradient-to-br from-blue-600 to-purple-700 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             {activeTab === "growth" ? "Start Closing More Deals This Month" : "Eliminate Operations Bottlenecks Today"}
@@ -270,8 +273,8 @@ export default function ConsultingGetMeetingsPage() {
               : "Are you ready to get back to doing the fun stuff?"}
           </p>
           <Button
-            size="hero"
-            className="bg-white text-blue-700 hover:bg-blue-50 font-bold border-2 border-transparent hover:border-blue-100"
+            size="lg"
+            className="bg-white text-blue-700 hover:bg-blue-50 font-bold"
             onClick={() => window.open("https://calendly.com/myj0/30min", "_blank")}
           >
             {activeTab === "growth" ? "Book Your Strategy Session" : "Get Your Operations Audit"}

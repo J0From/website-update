@@ -69,8 +69,8 @@ export default function IntegrationsPage() {
       <div className="py-8 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-slate-900 mb-2">Connect Your Tools</h1>
-            <p className="text-slate-600 mb-6">Select the integrations you'd like Jo to connect with</p>
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">Connect Your Tools</h1>
+            <p className="text-gray-600 mb-6">Select the integrations you'd like Jo to connect with</p>
 
             {/* Quick Actions */}
             <div className="flex justify-center gap-4 mb-8">
@@ -84,7 +84,7 @@ export default function IntegrationsPage() {
               <Button
                 variant="outline"
                 onClick={clearAll}
-                className="bg-gray-50 border-gray-200 text-slate-700 hover:bg-gray-100"
+                className="bg-gray-50 border-gray-200 text-gray-700 hover:bg-gray-100"
               >
                 Clear All
               </Button>
@@ -105,8 +105,8 @@ export default function IntegrationsPage() {
               >
                 <CardContent className="p-4 text-center">
                   <div className="text-3xl mb-2">{integration.icon}</div>
-                  <h3 className="font-semibold text-slate-900 mb-1">{integration.name}</h3>
-                  <p className="text-xs text-slate-600 mb-3">{integration.description}</p>
+                  <h3 className="font-semibold text-gray-900 mb-1">{integration.name}</h3>
+                  <p className="text-xs text-gray-600 mb-3">{integration.description}</p>
 
                   <div
                     className={`w-4 h-4 rounded-full mx-auto transition-all duration-200 ${

@@ -222,9 +222,7 @@ export default function GrowthPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
-                  variant="gradient"
-                  size="hero"
-                  className="shadow-lg"
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:opacity-90 text-lg px-8 rounded-lg font-bold shadow-lg transition-all"
                   onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
                 >
                   Book Your Session
@@ -240,7 +238,7 @@ export default function GrowthPage() {
             </div>
 
             <div className="relative lg:ml-auto w-full max-w-md">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-20"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-20"></div>
               <div className="relative bg-white rounded-xl shadow-2xl p-8 border border-slate-100">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-3 bg-blue-100 rounded-full">
@@ -313,7 +311,7 @@ export default function GrowthPage() {
       </section>
 
       {/* SOLUTION OVERVIEW */}
-      <section className="py-24 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+      <section className="py-24 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">Your Outbound Sales Team</h2>
@@ -524,7 +522,7 @@ export default function GrowthPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               <Card className="border-2 border-slate-200 hover:border-blue-500 transition-all bg-white group">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center mb-4">
                     <Users className="text-white" size={24} />
                   </div>
                   <h4 className="text-xl font-bold text-slate-900 mb-3">Dedicated SDR</h4>
@@ -536,7 +534,7 @@ export default function GrowthPage() {
 
               <Card className="border-2 border-slate-200 hover:border-blue-500 transition-all bg-white group">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center mb-4">
                     <Handshake className="text-white" size={24} />
                   </div>
                   <h4 className="text-xl font-bold text-slate-900 mb-3">Jo Closes</h4>
@@ -548,7 +546,7 @@ export default function GrowthPage() {
 
               <Card className="border-2 border-slate-200 hover:border-blue-500 transition-all bg-white group">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center mb-4">
                     <Zap className="text-white" size={24} />
                   </div>
                   <h4 className="text-xl font-bold text-slate-900 mb-3">Multi-Channel Funnel</h4>
@@ -560,7 +558,7 @@ export default function GrowthPage() {
 
               <Card className="border-2 border-slate-200 hover:border-blue-500 transition-all bg-white group">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center mb-4">
                     <Database className="text-white" size={24} />
                   </div>
                   <h4 className="text-xl font-bold text-slate-900 mb-3">CRM Integration</h4>
@@ -572,7 +570,7 @@ export default function GrowthPage() {
 
               <Card className="border-2 border-slate-200 hover:border-blue-500 transition-all bg-white group">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center mb-4">
                     <TrendingUp className="text-white" size={24} />
                   </div>
                   <h4 className="text-xl font-bold text-slate-900 mb-3">Pipeline Reports</h4>
@@ -584,7 +582,7 @@ export default function GrowthPage() {
 
               <Card className="border-2 border-slate-200 hover:border-blue-500 transition-all bg-white group">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center mb-4">
                     <RefreshCw className="text-white" size={24} />
                   </div>
                   <h4 className="text-xl font-bold text-slate-900 mb-3">Continuous Optimization</h4>
@@ -731,7 +729,7 @@ export default function GrowthPage() {
             ].map((metric, i) => (
               <div
                 key={i}
-                className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-xl border border-blue-200 text-center"
+                className="bg-gradient-to-br from-blue-50 to-emerald-50 p-8 rounded-xl border border-blue-200 text-center"
               >
                 <div className="text-4xl font-bold text-blue-600 mb-2">{metric.stat}</div>
                 <div className="text-lg font-bold text-slate-900 mb-1">{metric.label}</div>
@@ -785,9 +783,8 @@ export default function GrowthPage() {
                   </p>
                 </div>
                 <Button
-                  variant="gradient"
                   onClick={() => scrollToSection("contact")}
-                  className="w-full"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white"
                 >
                   Let's Grow
                 </Button>

@@ -126,8 +126,7 @@ export default function FractionalOperationsPage() {
                 FAQ
               </Button>
               <Button
-                variant="gradient"
-                className="text-lg px-8 py-4 rounded-lg font-bold shadow-lg transition-all"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:opacity-90 text-lg px-8 py-4 rounded-lg font-bold shadow-lg transition-all"
                 onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
               >
                 Book Your Session
@@ -180,8 +179,7 @@ export default function FractionalOperationsPage() {
                 FAQ
               </Button>
               <Button
-                variant="gradient"
-                className="w-full mt-4"
+                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:opacity-90 mt-4"
                 onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
               >
                 Book Your Session
@@ -204,9 +202,7 @@ export default function FractionalOperationsPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
-                  variant="gradient"
-                  size="hero"
-                  className="shadow-lg"
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:opacity-90 text-lg px-8 py-4 rounded-lg font-bold shadow-lg transition-all"
                   onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
                 >
                   Get Started
@@ -224,7 +220,7 @@ export default function FractionalOperationsPage() {
 
             {/* Right Card */}
             <div className="relative lg:ml-auto w-full max-w-md">
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-20"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-20"></div>
               <div className="relative bg-white rounded-xl shadow-2xl p-8 border border-slate-100">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-3 bg-blue-100 rounded-full">
@@ -296,7 +292,7 @@ export default function FractionalOperationsPage() {
         </div>
       </section>
       {/* 4. SOLUTION OVERVIEW */}
-      <section className="py-24 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+      <section className="py-24 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">Your Operations Team</h2>
@@ -553,7 +549,7 @@ export default function FractionalOperationsPage() {
               { label: "Time to Improvement", value: "2-4 Wks" },
             ].map((stat, i) => (
               <div key={i} className="pt-8 md:pt-0 px-4">
-                <div className="text-4xl lg:text-5xl font-bold mb-2 text-white">{stat.value}</div>
+                <div className="text-4xl lg:text-5xl font-extrabold mb-2 text-white">{stat.value}</div>
                 <div className="text-blue-100 font-medium">{stat.label}</div>
               </div>
             ))}
@@ -644,9 +640,8 @@ export default function FractionalOperationsPage() {
                   ))}
                 </ul>
                 <Button
-                  variant="gradient"
-                  onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                  className="w-full py-3 rounded-lg font-bold shadow-md"
+                  onClick={() => scrollToSection("contact")}
+                  className="w-full bg-slate-900 hover:bg-slate-800 text-white py-3 rounded-lg font-bold transition-colors"
                 >
                   Let's Grow
                 </Button>
@@ -681,9 +676,8 @@ export default function FractionalOperationsPage() {
                   ))}
                 </ul>
                 <Button
-                  variant="gradient"
                   onClick={() => scrollToSection("contact")}
-                  className="w-full py-3 rounded-lg font-bold shadow-md"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-bold transition-colors shadow-md"
                 >
                   Let's Grow
                 </Button>
@@ -747,13 +741,13 @@ export default function FractionalOperationsPage() {
             </div>
           </div>
         </div>
-      </section >
+      </section>
       {/* 12. JO FROM */}
-      < section className="py-24 bg-slate-900 text-white relative overflow-hidden" >
+      <section className="py-24 bg-slate-900 text-white relative overflow-hidden">
         {/* Abstract Tech Background */}
-        < div className="absolute inset-0 opacity-10" >
+        <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500 via-slate-900 to-slate-900"></div>
-        </div >
+        </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
@@ -794,9 +788,9 @@ export default function FractionalOperationsPage() {
             </p>
           </div>
         </div>
-      </section >
+      </section>
       {/* 13. FAQ */}
-      < section id="faq" className="py-24 bg-white" >
+      <section id="faq" className="py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Common Questions</h2>
@@ -874,9 +868,9 @@ export default function FractionalOperationsPage() {
             ))}
           </div>
         </div>
-      </section >
+      </section>
       {/* 14. OBJECTIONS & MATURITY */}
-      < section className="py-20 bg-slate-50 border-y border-slate-200" >
+      <section className="py-20 bg-slate-50 border-y border-slate-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Objections */}
           <div className="mb-20">
@@ -928,9 +922,9 @@ export default function FractionalOperationsPage() {
             </div>
           </div>
         </div>
-      </section >
+      </section>
       {/* 15. CONTACT / FINAL CTA */}
-      < section id="contact" className="py-24 bg-white" >
+      <section id="contact" className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Ready to Scale Your Operations?</h2>
@@ -1141,9 +1135,9 @@ export default function FractionalOperationsPage() {
             )}
           </div>
         </div>
-      </section >
+      </section>
       {/* 16. FOOTER */}
-      < footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800" >
+      <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div className="col-span-1 md:col-span-2">
@@ -1249,9 +1243,9 @@ export default function FractionalOperationsPage() {
             </div>
           </div>
         </div>
-      </footer >
+      </footer>
       {/* STICKY FOOTER CTA */}
-      < div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-lg z-40 py-4" >
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-lg z-40 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-center sm:text-left">
             <p className="font-bold text-slate-900">Ready to offload backend operations?</p>
@@ -1264,7 +1258,7 @@ export default function FractionalOperationsPage() {
             Book Your Session
           </Button>
         </div>
-      </div >
-    </div >
+      </div>
+    </div>
   )
 }

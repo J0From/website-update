@@ -121,15 +121,17 @@ export default function PurchasePage() {
           <div className="inline-flex items-center gap-3 bg-slate-100 p-1 rounded-lg">
             <button
               onClick={() => setBillingCycle("monthly")}
-              className={`px-6 py-2 rounded-md text-sm font-medium transition-all ${billingCycle === "monthly" ? "bg-white text-slate-900 shadow-sm" : "text-slate-600 hover:text-slate-900"
-                }`}
+              className={`px-6 py-2 rounded-md text-sm font-medium transition-all ${
+                billingCycle === "monthly" ? "bg-white text-slate-900 shadow-sm" : "text-slate-600 hover:text-slate-900"
+              }`}
             >
               Monthly
             </button>
             <button
               onClick={() => setBillingCycle("annual")}
-              className={`px-6 py-2 rounded-md text-sm font-medium transition-all flex items-center gap-2 ${billingCycle === "annual" ? "bg-white text-slate-900 shadow-sm" : "text-slate-600 hover:text-slate-900"
-                }`}
+              className={`px-6 py-2 rounded-md text-sm font-medium transition-all flex items-center gap-2 ${
+                billingCycle === "annual" ? "bg-white text-slate-900 shadow-sm" : "text-slate-600 hover:text-slate-900"
+              }`}
             >
               Yearly
               <span className="text-xs bg-green-500 text-white px-2 py-0.5 rounded-full font-semibold">Save 25%</span>
@@ -150,12 +152,13 @@ export default function PurchasePage() {
               return (
                 <Card
                   key={tier.id}
-                  className={`relative transition-all duration-200 hover:shadow-lg flex flex-col ${isSelected
+                  className={`relative transition-all duration-200 hover:shadow-lg flex flex-col ${
+                    isSelected
                       ? "border-2 border-blue-600 shadow-xl scale-105"
                       : tier.popular && !selectedTier
                         ? "border-2 border-blue-600 shadow-xl scale-105"
                         : "border-2 hover:border-blue-200"
-                    }`}
+                  }`}
                 >
                   {tier.popular && (
                     <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
@@ -195,8 +198,11 @@ export default function PurchasePage() {
 
                     <Button
                       onClick={() => setSelectedTier(tier.id)}
-                      variant={isSelected ? "gradient" : "default"}
-                      className="w-full"
+                      className={`w-full ${
+                        isSelected
+                          ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:opacity-90"
+                          : "bg-slate-900 text-white hover:bg-slate-800"
+                      }`}
                     >
                       {isSelected ? "Selected" : "Lets Go"}
                     </Button>
@@ -262,7 +268,7 @@ export default function PurchasePage() {
                 </div>
 
                 <Link href={`/checkout?tier=${selectedTier}&billing=${billingCycle}`}>
-                  <Button variant="gradient" size="hero" className="w-full shadow-lg">
+                  <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:opacity-90 text-base font-semibold py-6 shadow-lg">
                     Lets Go
                   </Button>
                 </Link>

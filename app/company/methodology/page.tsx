@@ -145,8 +145,8 @@ export default function MethodologyPage() {
       {/* Framework Overview */}
       <section className="py-16 sm:py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 text-slate-900">Input → Throughput → Output</h2>
-          <p className="text-lg text-slate-700 leading-relaxed text-center max-w-4xl mx-auto mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 text-gray-900">Input → Throughput → Output</h2>
+          <p className="text-lg text-gray-700 leading-relaxed text-center max-w-4xl mx-auto mb-12">
             We systematically analyze each stage of work to identify the optimal division of labor between humans and
             machines—enhancing performance, reducing costs, and expanding capacity.
           </p>
@@ -155,24 +155,24 @@ export default function MethodologyPage() {
             <Card className="border-2 hover:border-blue-200 transition-all hover:shadow-xl">
               <CardContent className="p-8 text-center">
                 <Search className="w-16 h-16 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">Input</h3>
-                <p className="text-slate-700">What's needed to perform the job</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Input</h3>
+                <p className="text-gray-700">What's needed to perform the job</p>
               </CardContent>
             </Card>
 
             <Card className="border-2 hover:border-purple-200 transition-all hover:shadow-xl">
               <CardContent className="p-8 text-center">
                 <Lightbulb className="w-16 h-16 text-purple-600 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">Throughput</h3>
-                <p className="text-slate-700">How the work gets done</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Throughput</h3>
+                <p className="text-gray-700">How the work gets done</p>
               </CardContent>
             </Card>
 
             <Card className="border-2 hover:border-indigo-200 transition-all hover:shadow-xl">
               <CardContent className="p-8 text-center">
                 <Rocket className="w-16 h-16 text-indigo-600 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">Output</h3>
-                <p className="text-slate-700">What the job produces</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Output</h3>
+                <p className="text-gray-700">What the job produces</p>
               </CardContent>
             </Card>
           </div>
@@ -182,8 +182,8 @@ export default function MethodologyPage() {
       {/* Input Section */}
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-slate-900 text-center">Input</h2>
-          <p className="text-lg text-slate-700 mb-12 max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900 text-center">Input</h2>
+          <p className="text-lg text-gray-700 mb-12 max-w-4xl mx-auto text-center">
             {" What's Needed to Perform the Job\n"}
           </p>
 
@@ -192,10 +192,10 @@ export default function MethodologyPage() {
               <Card key={index} className="border-2 hover:border-blue-200 transition-all hover:shadow-xl">
                 <CardContent className="p-6 flex flex-col h-full text-center items-center">
                   <div className="h-16 flex items-center justify-center mb-3">
-                    <h3 className="text-xl font-bold text-slate-900 text-center">{factor.factor}</h3>
+                    <h3 className="text-xl font-bold text-gray-900 text-center">{factor.factor}</h3>
                   </div>
                   <div className="h-28 flex items-center justify-center mb-4">
-                    <p className="text-sm text-slate-700 italic leading-relaxed text-center">{factor.definition}</p>
+                    <p className="text-sm text-gray-700 italic leading-relaxed text-center">{factor.definition}</p>
                   </div>
                   <div className="mt-auto pt-4 border-t border-gray-200 pb-2.5 w-full"></div>
                 </CardContent>
@@ -208,18 +208,18 @@ export default function MethodologyPage() {
       {/* Throughput Section */}
       <section className="py-16 sm:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-slate-900 text-center">Throughput</h2>
-          <p className="text-lg text-slate-700 mb-12 max-w-4xl mx-auto text-center">How the Work Gets Done</p>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900 text-center">Throughput</h2>
+          <p className="text-lg text-gray-700 mb-12 max-w-4xl mx-auto text-center">How the Work Gets Done</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 auto-rows-fr">
             {throughputFactors.map((factor, index) => (
               <Card key={index} className="border-2 hover:border-purple-200 transition-all hover:shadow-xl">
                 <CardContent className="p-6 flex flex-col h-full text-center items-center">
                   <div className="h-16 flex items-center justify-center mb-3">
-                    <h3 className="text-xl font-bold text-slate-900 text-center">{factor.factor}</h3>
+                    <h3 className="text-xl font-bold text-gray-900 text-center">{factor.factor}</h3>
                   </div>
                   <div className="h-28 flex items-center justify-center mb-4">
-                    <p className="text-sm text-slate-700 italic leading-relaxed text-center">{factor.definition}</p>
+                    <p className="text-sm text-gray-700 italic leading-relaxed text-center">{factor.definition}</p>
                   </div>
                   <div className="mt-auto pt-4 border-t border-gray-200 w-full"></div>
                 </CardContent>
@@ -232,18 +232,18 @@ export default function MethodologyPage() {
       {/* Output Section */}
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-slate-900 text-center">Output</h2>
-          <p className="text-lg text-slate-700 mb-12 max-w-4xl mx-auto text-center">What the Job Produces</p>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900 text-center">Output</h2>
+          <p className="text-lg text-gray-700 mb-12 max-w-4xl mx-auto text-center">What the Job Produces</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 auto-rows-fr">
             {outputFactors.map((factor, index) => (
               <Card key={index} className="border-2 hover:border-indigo-200 transition-all hover:shadow-xl">
                 <CardContent className="p-6 flex flex-col h-full text-center items-center">
                   <div className="h-16 flex items-center justify-center mb-3">
-                    <h3 className="text-xl font-bold text-slate-900 text-center">{factor.factor}</h3>
+                    <h3 className="text-xl font-bold text-gray-900 text-center">{factor.factor}</h3>
                   </div>
                   <div className="h-28 flex items-center justify-center mb-4">
-                    <p className="text-sm text-slate-700 italic leading-relaxed text-center">{factor.definition}</p>
+                    <p className="text-sm text-gray-700 italic leading-relaxed text-center">{factor.definition}</p>
                   </div>
                   <div className="mt-auto pt-4 border-t border-gray-200 w-full"></div>
                 </CardContent>
@@ -257,8 +257,8 @@ export default function MethodologyPage() {
       <section className="py-16 sm:py-20 bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <Users className="w-16 h-16 text-blue-600 mx-auto mb-6" />
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-slate-900">The Labor Map™</h2>
-          <p className="text-slate-700 leading-relaxed max-w-3xl mx-auto text-base">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-900">The Labor Map™</h2>
+          <p className="text-gray-700 leading-relaxed max-w-3xl mx-auto text-base">
             Apply this framework to your organization with detailed job decompositions that identify specific Human +
             Machine collaboration opportunities.
           </p>
@@ -275,8 +275,8 @@ export default function MethodologyPage() {
       {/* CTA Section */}
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-slate-900">Ready to Optimize Your Workforce?</h2>
-          <p className="text-slate-700 leading-relaxed mb-8 max-w-2xl mx-auto text-base">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-900">Ready to Optimize Your Workforce?</h2>
+          <p className="text-gray-700 leading-relaxed mb-8 max-w-2xl mx-auto text-base">
             Discover how Human + Machine collaboration can transform your organization.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -82,7 +82,7 @@ export default function HomePage() {
             </Button>
           </Link>
           <Link href="/solutions/smb/purchase?billing=annual">
-            <Button variant="gradient" className="text-sm sm:text-base px-3 sm:px-6">
+            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:opacity-90 text-sm sm:text-base px-3 sm:px-6">
               Sign Up
             </Button>
           </Link>
@@ -100,7 +100,7 @@ export default function HomePage() {
                 <div className="relative mx-1 sm:mx-2 inline-block" style={{ width: "0.6em", height: "0.6em" }}>
                   <Image src="/qubit.png" alt="Qubit" fill className="brightness-0 object-contain" />
                   <div
-                    className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 mix-blend-normal opacity-100"
+                    className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 mix-blend-normal opacity-100"
                     style={{
                       maskImage: `url('/qubit.png')`,
                       maskSize: "contain",
@@ -123,10 +123,11 @@ export default function HomePage() {
                   {getUnderlineLength(roles[currentRole])}
                 </span>
                 <span
-                  className={`transition-all duration-300 ease-in-out transform relative ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
-                    }`}
+                  className={`transition-all duration-300 ease-in-out transform relative ${
+                    isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
+                  }`}
                 >
-                  <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                     {roles[currentRole]}
                   </span>
                 </span>
@@ -137,7 +138,7 @@ export default function HomePage() {
 
           {/* CTA Button */}
           <Link href="https://demo.jofrom.io/" target="_blank" rel="noopener noreferrer">
-            <Button size="hero" className="bg-slate-900 hover:bg-slate-800 text-white">
+            <Button className="h-12 sm:h-14 md:h-16 px-6 sm:px-8 md:px-10 text-sm sm:text-base md:text-lg bg-slate-900 hover:bg-slate-800 text-white">
               Try Jo
             </Button>
           </Link>
@@ -145,7 +146,7 @@ export default function HomePage() {
       </div>
 
       {/* Man + Machine Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-600 py-12 sm:py-16 md:py-24">
+      <section className="bg-gradient-to-r from-blue-600 to-purple-600 py-12 sm:py-16 md:py-24">
         <div className={`w-full max-w-[1600px] mx-auto ${marginClass}`}>
           <div className="text-right ml-auto">
             <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
@@ -175,9 +176,7 @@ export default function HomePage() {
             <Link href="/solutions/smb" className="w-full sm:w-auto">
               <Button
                 variant="outline"
-                variant="gradient"
-                size="hero"
-                className="w-full sm:w-auto text-base sm:text-lg md:text-xl font-semibold"
+                className="w-full sm:w-auto h-12 sm:h-14 md:h-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0 hover:opacity-90 px-8 sm:px-10 md:px-14 text-base sm:text-lg md:text-xl font-semibold"
               >
                 Meet Jo
               </Button>
@@ -193,7 +192,7 @@ export default function HomePage() {
       <section className={`py-12 sm:py-14 md:py-16 bg-gradient-to-br from-slate-50 to-slate-100 ${marginClass}`}>
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-3 sm:mb-4 px-2">
-            <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Our Framework
             </span>
           </h2>
@@ -269,7 +268,7 @@ export default function HomePage() {
       <section className={`py-16 sm:py-20 md:py-24 bg-white ${marginClass}`}>
         <div className="max-w-6xl mx-auto text-center">
           <Link href="/solutions/smb/purchase">
-            <Button variant="gradient" size="hero" className="px-12 sm:px-16 md:px-20 text-lg sm:text-xl md:text-2xl font-semibold">
+            <Button className="h-14 sm:h-16 md:h-18 px-12 sm:px-16 md:px-20 text-lg sm:text-xl md:text-2xl bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:opacity-90 font-semibold">
               Get Jo
             </Button>
           </Link>

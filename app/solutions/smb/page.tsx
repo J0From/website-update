@@ -122,7 +122,7 @@ export default function SMBPage() {
           <div className="relative mx-1">
             <Image src="/qubit.png" alt="Qubit" width={16} height={16} className="sm:w-5 sm:h-5 brightness-0" />
             <div
-              className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 mix-blend-normal opacity-100"
+              className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 mix-blend-normal opacity-100"
               style={{
                 maskImage: `url('/qubit.png')`,
                 maskSize: "contain",
@@ -145,7 +145,7 @@ export default function SMBPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="hero bg-gradient-to-br from-blue-600 to-indigo-600 text-white py-12 sm:py-16 md:py-20 relative overflow-hidden">
+      <section className="hero bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white py-12 sm:py-16 md:py-20 relative overflow-hidden">
         {/* Animated background elements */}
         <div className="absolute inset-0">
           {/* Animated gradient background */}
@@ -303,9 +303,7 @@ export default function SMBPage() {
           </p>
           <Button
             asChild
-            className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full shadow-2xl transition-all duration-300 hover:scale-105"
-            variant="gradient"
-            size="hero"
+            className="bg-red-500 hover:bg-red-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full shadow-2xl hover:shadow-red-500/25 transition-all duration-300 hover:scale-105"
           >
             <Link href="/solutions/smb/purchase">
               Get Jo
@@ -372,15 +370,15 @@ export default function SMBPage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 text-center">
               <div className="p-4 sm:p-6">
                 <div className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2">5×</div>
-                <div className="text-sm sm:text-base text-slate-600">Faster task turnaround than manual workflows</div>
+                <div className="text-sm sm:text-base text-gray-600">Faster task turnaround than manual workflows</div>
               </div>
               <div className="p-4 sm:p-6">
                 <div className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2">60hrs</div>
-                <div className="text-sm sm:text-base text-slate-600">Saved per month per employee</div>
+                <div className="text-sm sm:text-base text-gray-600">Saved per month per employee</div>
               </div>
               <div className="p-4 sm:p-6">
                 <div className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2">Zero</div>
-                <div className="text-sm sm:text-base text-slate-600">Code or IT team required</div>
+                <div className="text-sm sm:text-base text-gray-600">Code or IT team required</div>
               </div>
             </div>
           </div>
@@ -390,10 +388,10 @@ export default function SMBPage() {
       {/* Department Features */}
       <section className="py-16 sm:py-20 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4 text-slate-900">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4 text-gray-900">
             Complete Department Coverage
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-slate-600 text-center mb-12 sm:mb-16 max-w-3xl mx-auto px-4">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 text-center mb-12 sm:mb-16 max-w-3xl mx-auto px-4">
             Specialized agents for every department
           </p>
 
@@ -406,35 +404,33 @@ export default function SMBPage() {
                 <CardContent className="p-0 flex flex-col h-full text-center">
                   <div className="flex items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-6">
                     <div className="text-2xl sm:text-3xl">{department.icon}</div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-slate-900">{department.name}</h3>
+                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900">{department.name}</h3>
                   </div>
 
                   <div className="space-y-2 sm:space-y-3 mb-4 sm:mb-6 flex-grow">
                     {department.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="text-center">
-                        <span className="text-sm sm:text-base text-slate-600 leading-relaxed">{feature}</span>
+                        <span className="text-sm sm:text-base text-gray-700 leading-relaxed">{feature}</span>
                       </div>
                     ))}
                   </div>
 
                   {/* Pricing Section for each department */}
-                  <div className="border-t pt-4 sm:pt-6 bg-gradient-to-r from-blue-50 to-indigo-50 -mx-4 sm:-mx-6 px-4 sm:px-6 -mb-4 sm:-mb-6 pb-4 sm:pb-6 rounded-b-lg mt-auto">
+                  <div className="border-t pt-4 sm:pt-6 bg-gradient-to-r from-blue-50 to-purple-50 -mx-4 sm:-mx-6 px-4 sm:px-6 -mb-4 sm:-mb-6 pb-4 sm:pb-6 rounded-b-lg mt-auto">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <DollarSign className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />
-                        <span className="text-base sm:text-lg font-semibold text-slate-900">Simple Pricing</span>
+                        <span className="text-base sm:text-lg font-semibold text-gray-900">Simple Pricing</span>
                       </div>
                       <div className="text-right">
                         <div className="text-xl sm:text-2xl font-bold text-blue-600">$25</div>
-                        <div className="text-xs sm:text-sm text-slate-600">per month</div>
+                        <div className="text-xs sm:text-sm text-gray-600">per month</div>
                       </div>
                     </div>
                     <div className="mt-3">
                       <Button
                         asChild
-                        className="w-full text-sm sm:text-base"
-                        variant="gradient"
-                        size="form"
+                        className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white text-sm sm:text-base"
                       >
                         <Link href="/solutions/smb/purchase">Get Jo</Link>
                       </Button>
@@ -450,10 +446,10 @@ export default function SMBPage() {
       {/* Business Size Solutions */}
       <section className="py-16 sm:py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4 text-slate-900">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4 text-gray-900">
             Perfect for Every Business Size
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-slate-600 text-center mb-12 sm:mb-16 max-w-3xl mx-auto px-4">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 text-center mb-12 sm:mb-16 max-w-3xl mx-auto px-4">
             Jo scales with your business
           </p>
 
@@ -462,22 +458,22 @@ export default function SMBPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 auto-rows-fr">
               {/* Solopreneur */}
               <Card className="p-6 sm:p-8 hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-200 flex flex-col h-full relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
+                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
                 <CardContent className="p-0 flex flex-col h-full relative z-10 text-center">
                   <div className="flex items-center justify-center gap-3 mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center text-white text-2xl">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center text-white text-2xl">
                       👤
                     </div>
                     <div>
-                      <h3 className="text-xl sm:text-2xl font-bold text-slate-900">Solopreneur</h3>
-                      <p className="text-sm text-slate-600">Just you, big dreams</p>
+                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900">Solopreneur</h3>
+                      <p className="text-sm text-gray-600">Just you, big dreams</p>
                     </div>
                   </div>
 
                   <div className="space-y-4 mb-8 flex-grow">
                     <div className="bg-blue-50 rounded-lg p-4">
-                      <h4 className="font-semibold text-slate-900 mb-2">Perfect For:</h4>
-                      <ul className="text-sm text-slate-600 space-y-1">
+                      <h4 className="font-semibold text-gray-900 mb-2">Perfect For:</h4>
+                      <ul className="text-sm text-gray-700 space-y-1">
                         <li>Freelancers & consultants</li>
                         <li>Content creators</li>
                         <li>Online course creators</li>
@@ -486,25 +482,25 @@ export default function SMBPage() {
                     </div>
 
                     <div>
-                      <h4 className="font-semibold text-slate-900 mb-3">Top Jo Agents:</h4>
+                      <h4 className="font-semibold text-gray-900 mb-3">Top Jo Agents:</h4>
                       <div className="space-y-2">
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>Finance:</strong> Invoice tracking & expense categorization
                           </span>
                         </div>
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>Marketing:</strong> Social media content & email campaigns
                           </span>
                         </div>
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>Support:</strong> Customer inquiry responses
                           </span>
                         </div>
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>Accounting:</strong> Basic bookkeeping & tax prep
                           </span>
                         </div>
@@ -512,15 +508,13 @@ export default function SMBPage() {
                     </div>
                   </div>
 
-                  <div className="border-t pt-6 bg-gradient-to-r from-blue-50 to-indigo-50 -mx-6 sm:-mx-8 px-6 sm:px-8 -mb-6 sm:-mb-8 pb-6 sm:pb-8 rounded-b-lg mt-auto">
+                  <div className="border-t pt-6 bg-gradient-to-r from-blue-50 to-purple-50 -mx-6 sm:-mx-8 px-6 sm:px-8 -mb-6 sm:-mb-8 pb-6 sm:pb-8 rounded-b-lg mt-auto">
                     <div className="text-center mb-4">
-                      <div className="text-xs text-slate-500">3-5 agents typically needed</div>
+                      <div className="text-xs text-gray-500">3-5 agents typically needed</div>
                     </div>
                     <Button
                       asChild
-                      className="w-full"
-                      variant="gradient"
-                      size="form"
+                      className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white"
                     >
                       <Link href="/solutions/smb/purchase">Start Solo Journey</Link>
                     </Button>
@@ -542,15 +536,15 @@ export default function SMBPage() {
                       🏢
                     </div>
                     <div>
-                      <h3 className="text-xl sm:text-2xl font-bold text-slate-900">Small Business</h3>
-                      <p className="text-sm text-slate-600">2-25 employees</p>
+                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900">Small Business</h3>
+                      <p className="text-sm text-gray-600">2-25 employees</p>
                     </div>
                   </div>
 
                   <div className="space-y-4 mb-8 flex-grow">
                     <div className="bg-yellow-50 rounded-lg p-4">
-                      <h4 className="font-semibold text-slate-900 mb-2">Perfect For:</h4>
-                      <ul className="text-sm text-slate-600 space-y-1">
+                      <h4 className="font-semibold text-gray-900 mb-2">Perfect For:</h4>
+                      <ul className="text-sm text-gray-700 space-y-1">
                         <li>Local service businesses</li>
                         <li>Retail stores</li>
                         <li>Professional services</li>
@@ -559,30 +553,30 @@ export default function SMBPage() {
                     </div>
 
                     <div>
-                      <h4 className="font-semibold text-slate-900 mb-3">Top Jo Agents:</h4>
+                      <h4 className="font-semibold text-gray-900 mb-3">Top Jo Agents:</h4>
                       <div className="space-y-2">
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>HR:</strong> Employee onboarding & policy management
                           </span>
                         </div>
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>Sales:</strong> Lead management & follow-up automation
                           </span>
                         </div>
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>Operations:</strong> Workflow optimization & SOPs
                           </span>
                         </div>
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>Finance:</strong> Cash flow forecasting & budgeting
                           </span>
                         </div>
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>IT:</strong> Basic security & asset management
                           </span>
                         </div>
@@ -592,13 +586,11 @@ export default function SMBPage() {
 
                   <div className="border-t pt-6 bg-gradient-to-r from-yellow-50 to-orange-50 -mx-6 sm:-mx-8 px-6 sm:px-8 -mb-6 sm:-mb-8 pb-6 sm:pb-8 rounded-b-lg mt-auto">
                     <div className="text-center mb-4">
-                      <div className="text-xs text-slate-500">6-9 agents typically needed</div>
+                      <div className="text-xs text-gray-500">6-9 agents typically needed</div>
                     </div>
                     <Button
                       asChild
-                      className="w-full"
-                      variant="gradient"
-                      size="form"
+                      className="w-full bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white"
                     >
                       <Link href="/solutions/smb/purchase">Scale Your Business</Link>
                     </Button>
@@ -615,15 +607,15 @@ export default function SMBPage() {
                       🏭
                     </div>
                     <div>
-                      <h3 className="text-xl sm:text-2xl font-bold text-slate-900">Medium Business</h3>
-                      <p className="text-sm text-slate-600">25-200 employees</p>
+                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900">Medium Business</h3>
+                      <p className="text-sm text-gray-600">25-200 employees</p>
                     </div>
                   </div>
 
                   <div className="space-y-4 mb-8 flex-grow">
                     <div className="bg-purple-50 rounded-lg p-4">
-                      <h4 className="font-semibold text-slate-900 mb-2">Perfect For:</h4>
-                      <ul className="text-sm text-slate-600 space-y-1">
+                      <h4 className="font-semibold text-gray-900 mb-2">Perfect For:</h4>
+                      <ul className="text-sm text-gray-700 space-y-1">
                         <li>Established companies</li>
                         <li>Multi-location businesses</li>
                         <li>SaaS companies</li>
@@ -632,30 +624,30 @@ export default function SMBPage() {
                     </div>
 
                     <div>
-                      <h4 className="font-semibold text-slate-900 mb-3">All Jo Agents:</h4>
+                      <h4 className="font-semibold text-gray-900 mb-3">All Jo Agents:</h4>
                       <div className="space-y-2">
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>Complete Suite:</strong> All 9 department agents
                           </span>
                         </div>
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>Advanced Features:</strong> Custom workflows & integrations
                           </span>
                         </div>
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>Compliance:</strong> SOC 2, GDPR, industry-specific
                           </span>
                         </div>
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>Analytics:</strong> Cross-department insights & reporting
                           </span>
                         </div>
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>Priority Support:</strong> Dedicated success manager
                           </span>
                         </div>
@@ -665,13 +657,11 @@ export default function SMBPage() {
 
                   <div className="border-t pt-6 bg-gradient-to-r from-purple-50 to-indigo-50 -mx-6 sm:-mx-8 px-6 sm:px-8 -mb-6 sm:-mb-8 pb-6 sm:pb-8 rounded-b-lg mt-auto">
                     <div className="text-center mb-4">
-                      <div className="text-xs text-slate-500">All 9 agents + custom features</div>
+                      <div className="text-xs text-gray-500">All 9 agents + custom features</div>
                     </div>
                     <Button
                       asChild
-                      className="w-full"
-                      variant="gradient"
-                      size="form"
+                      className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white"
                     >
                       <Link href="/solutions/smb/purchase">Enterprise Ready</Link>
                     </Button>
@@ -691,15 +681,15 @@ export default function SMBPage() {
                       🚀
                     </div>
                     <div>
-                      <h3 className="text-xl sm:text-2xl font-bold text-slate-900">VC Firms</h3>
-                      <p className="text-sm text-slate-600">Portfolio company efficiency</p>
+                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900">VC Firms</h3>
+                      <p className="text-sm text-gray-600">Portfolio company efficiency</p>
                     </div>
                   </div>
 
                   <div className="space-y-4 mb-8 flex-grow">
                     <div className="bg-green-50 rounded-lg p-4">
-                      <h4 className="font-semibold text-slate-900 mb-2">Perfect For:</h4>
-                      <ul className="text-sm text-slate-600 space-y-1">
+                      <h4 className="font-semibold text-gray-900 mb-2">Perfect For:</h4>
+                      <ul className="text-sm text-gray-700 space-y-1">
                         <li>Scaling portfolio companies faster</li>
                         <li>Reducing operational overhead</li>
                         <li>Standardizing processes across portfolio</li>
@@ -708,30 +698,30 @@ export default function SMBPage() {
                     </div>
 
                     <div>
-                      <h4 className="font-semibold text-slate-900 mb-3">Portfolio Efficiency Agents:</h4>
+                      <h4 className="font-semibold text-gray-900 mb-3">Portfolio Efficiency Agents:</h4>
                       <div className="space-y-2">
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>Finance:</strong> Automated financial reporting & burn rate optimization
                           </span>
                         </div>
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>Operations:</strong> Process standardization & efficiency metrics
                           </span>
                         </div>
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>HR:</strong> Rapid scaling & talent acquisition automation
                           </span>
                         </div>
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>Sales:</strong> Revenue acceleration & pipeline optimization
                           </span>
                         </div>
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>Marketing:</strong> Growth marketing & customer acquisition efficiency
                           </span>
                         </div>
@@ -741,13 +731,11 @@ export default function SMBPage() {
 
                   <div className="border-t pt-6 bg-gradient-to-r from-green-50 to-emerald-50 -mx-6 sm:-mx-8 px-6 sm:px-8 -mb-6 sm:-mb-8 pb-6 sm:pb-8 rounded-b-lg mt-auto">
                     <div className="text-center mb-4">
-                      <div className="text-xs text-slate-500">Portfolio-wide efficiency pricing</div>
+                      <div className="text-xs text-gray-500">Portfolio-wide efficiency pricing</div>
                     </div>
                     <Button
                       asChild
-                      className="w-full"
-                      variant="gradient"
-                      size="form"
+                      className="w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white"
                     >
                       <Link href="/solutions/smb/purchase">Scale Portfolio Companies</Link>
                     </Button>
@@ -764,15 +752,15 @@ export default function SMBPage() {
                       🏛️
                     </div>
                     <div>
-                      <h3 className="text-xl sm:text-2xl font-bold text-slate-900">PE Firms</h3>
-                      <p className="text-sm text-slate-600">Portfolio transformation & efficiency</p>
+                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900">PE Firms</h3>
+                      <p className="text-sm text-gray-600">Portfolio transformation & efficiency</p>
                     </div>
                   </div>
 
                   <div className="space-y-4 mb-8 flex-grow">
                     <div className="bg-slate-50 rounded-lg p-4">
-                      <h4 className="font-semibold text-slate-900 mb-2">Perfect For:</h4>
-                      <ul className="text-sm text-slate-600 space-y-1">
+                      <h4 className="font-semibold text-gray-900 mb-2">Perfect For:</h4>
+                      <ul className="text-sm text-gray-700 space-y-1">
                         <li>Operational transformation at scale</li>
                         <li>Cost reduction & margin improvement</li>
                         <li>Process automation across portfolio</li>
@@ -781,30 +769,30 @@ export default function SMBPage() {
                     </div>
 
                     <div>
-                      <h4 className="font-semibold text-slate-900 mb-3">Transformation Agents:</h4>
+                      <h4 className="font-semibold text-gray-900 mb-3">Transformation Agents:</h4>
                       <div className="space-y-2">
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>Operations:</strong> Process optimization & cost reduction automation
                           </span>
                         </div>
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>Finance:</strong> Margin analysis & profitability improvement
                           </span>
                         </div>
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>HR:</strong> Workforce optimization & productivity enhancement
                           </span>
                         </div>
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>Accounting:</strong> Financial consolidation & reporting automation
                           </span>
                         </div>
                         <div className="text-center">
-                          <span className="text-sm text-slate-700">
+                          <span className="text-sm text-gray-700">
                             <strong>IT:</strong> Technology standardization & digital transformation
                           </span>
                         </div>
@@ -814,13 +802,11 @@ export default function SMBPage() {
 
                   <div className="border-t pt-6 bg-gradient-to-r from-slate-50 to-gray-50 -mx-6 sm:-mx-8 px-6 sm:px-8 -mb-6 sm:-mb-8 pb-6 sm:pb-8 rounded-b-lg mt-auto">
                     <div className="text-center mb-4">
-                      <div className="text-xs text-slate-500">Value creation & efficiency pricing</div>
+                      <div className="text-xs text-gray-500">Value creation & efficiency pricing</div>
                     </div>
                     <Button
                       asChild
-                      className="w-full"
-                      variant="gradient"
-                      size="form"
+                      className="w-full bg-gradient-to-r from-slate-600 to-gray-600 hover:from-slate-700 hover:to-gray-700 text-white"
                     >
                       <Link href="/solutions/smb/purchase">Transform Portfolio Companies</Link>
                     </Button>
@@ -832,7 +818,7 @@ export default function SMBPage() {
 
           {/* Bottom CTA */}
           <div className="text-center mt-12 sm:mt-16">
-            <p className="text-slate-600 mb-6 text-base sm:text-lg">
+            <p className="text-gray-600 mb-6 text-base sm:text-lg">
               Not sure which size fits your business? Let Jo help you decide.
             </p>
             <Button
@@ -849,7 +835,7 @@ export default function SMBPage() {
       {/* How It Works */}
       <section className="py-16 sm:py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 sm:mb-16 text-slate-900">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 sm:mb-16 text-gray-900">
             How Jo Works
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
@@ -859,7 +845,7 @@ export default function SMBPage() {
                   1
                 </div>
                 <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Connect Your Tools</h3>
-                <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                   One-click integrations with Gmail, QuickBooks, HubSpot, Slack, and 50+ apps.
                 </p>
               </CardContent>
@@ -871,7 +857,7 @@ export default function SMBPage() {
                   2
                 </div>
                 <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Activate an Agent</h3>
-                <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                   Choose a template or describe what you need. Setup takes seconds.
                 </p>
               </CardContent>
@@ -883,7 +869,7 @@ export default function SMBPage() {
                   3
                 </div>
                 <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Review & Release</h3>
-                <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                   Jo completes the work; you approve or let human reviewers fine-tune critical outputs.
                 </p>
               </CardContent>
@@ -895,7 +881,7 @@ export default function SMBPage() {
                   4
                 </div>
                 <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Focus on Growth</h3>
-                <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                   Spend your time on strategy and growth while Jo handles the mundane tasks.
                 </p>
               </CardContent>
@@ -907,7 +893,7 @@ export default function SMBPage() {
       {/* Features */}
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 sm:mb-16 text-slate-900">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 sm:mb-16 text-gray-900">
             Why Teams Love Jo
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
@@ -917,7 +903,7 @@ export default function SMBPage() {
                   🎯
                 </div>
                 <h3 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">All-in-One Suite</h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
                   Replace multiple apps with one unified platform.
                 </p>
               </CardContent>
@@ -929,7 +915,7 @@ export default function SMBPage() {
                   ✨
                 </div>
                 <h3 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">Human + Jo</h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
                   AI speed with human precision for critical tasks.
                 </p>
               </CardContent>
@@ -941,7 +927,7 @@ export default function SMBPage() {
                   💰
                 </div>
                 <h3 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">SMB-Friendly Pricing</h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
                   Transparent pricing with no long-term contracts.
                 </p>
               </CardContent>
@@ -953,7 +939,7 @@ export default function SMBPage() {
                   🌙
                 </div>
                 <h3 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">Always On</h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
                   Jo works 24/7. Wake up to completed tasks.
                 </p>
               </CardContent>
@@ -980,9 +966,7 @@ export default function SMBPage() {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto">
             <Button
               asChild
-              className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full"
-              variant="gradient"
-              size="hero"
+              className="bg-red-500 hover:bg-red-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full"
             >
               <Link href="/solutions/smb/purchase">Get Jo</Link>
             </Button>
