@@ -147,7 +147,7 @@ export default function HomePage() {
 
       {/* Man + Machine Section */}
       <section className="bg-gradient-to-r from-blue-600 to-purple-600 py-8 sm:py-10 md:py-14">
-        <div className="w-full max-w-[1600px] mx-auto px-2 sm:px-4 md:px-8">
+        <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-6 md:px-10">
           <div className="text-left">
             <p
               className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight text-justify -tracking-tight"
@@ -201,7 +201,7 @@ export default function HomePage() {
           <p className="text-sm sm:text-base md:text-xl text-slate-600 text-center max-w-3xl mx-auto mb-8 sm:mb-10 md:mb-12 text-balance px-4">
             Fast Insight, Practical Plans, Real Operational Change.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-9">
             {/* Discovery Phase */}
             <Card className="border-2 hover:border-blue-200 transition-all bg-white">
               <CardContent className="p-6 sm:p-7 md:p-8 text-center">
@@ -261,7 +261,7 @@ export default function HomePage() {
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
               cut costs
             </span>
-            , and finally have enough hands to{" "}
+            , and finally have have hands to{" "}
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
               get the work done
             </span>
