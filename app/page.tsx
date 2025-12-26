@@ -149,7 +149,10 @@ export default function HomePage() {
       <section className="bg-gradient-to-r from-blue-600 to-purple-600 py-8 sm:py-10 md:py-14">
         <div className="w-full max-w-[1600px] mx-auto px-2 sm:px-4 md:px-8">
           <div className="text-left">
-            <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight text-justify">
+            <p
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight text-justify -tracking-tight"
+              style={{ wordSpacing: "-0.1em" }}
+            >
               We help businesses strike the right balance between{" "}
               <span className="bg-gradient-to-r from-cyan-300 to-pink-300 bg-clip-text text-transparent whitespace-nowrap">
                 Human + Machine
@@ -238,7 +241,10 @@ export default function HomePage() {
       {/* NEW SECTION: Bottlenecks (BG Black, Left Aligned) */}
       <section className={`py-16 sm:py-20 md:py-24 bg-black ${marginClass}`}>
         <div className="max-w-6xl mx-auto text-left">
-          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white leading-tight">
+          <p
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white leading-tight -tracking-tight"
+            style={{ wordSpacing: "-0.1em" }}
+          >
             Jo fixes{" "}
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
               labor bottlenecks
