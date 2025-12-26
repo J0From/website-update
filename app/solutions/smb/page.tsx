@@ -955,7 +955,7 @@ export default function SMBPage() {
               className="border-white text-white hover:bg-white hover:text-blue-700 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-full bg-transparent"
             >
               <Link href="/solutions/smb/purchase" className="flex items-center justify-center">
-                View Pricing
+                Lets Go
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </Button>
