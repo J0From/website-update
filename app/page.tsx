@@ -237,8 +237,8 @@ export default function HomePage() {
       </section>
 
       {/* NEW SECTION: Bottlenecks (BG Black, Left Aligned) */}
-      <section className={`py-16 sm:py-20 md:py-24 bg-black ${marginClass}`}>
-        <div className="text-left px-14">
+      <section className={`py-16 sm:py-20 md:py-24 bg-black pl-16 pr-80`}>
+        <div className="text-right">
           <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white leading-tight space-y-1">
             <div>
               Jo fixes{" "}
@@ -247,12 +247,12 @@ export default function HomePage() {
               </span>{" "}
               in{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-                highly regulated industries
+                highly regulated operations
               </span>
-              ,
+              —
             </div>
             <div>
-              helping companies{" "}
+              so you{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
                 stay compliant
               </span>
@@ -260,10 +260,10 @@ export default function HomePage() {
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
                 cut costs
               </span>
-              , and
+              , and finally have
             </div>
             <div>
-              finally have enough hands to{" "}
+              enough hands to{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
                 get the work done
               </span>
