@@ -238,30 +238,38 @@ export default function HomePage() {
 
       {/* NEW SECTION: Bottlenecks (BG Black, Left Aligned) */}
       <section className={`py-16 sm:py-20 md:py-24 bg-black ${marginClass}`}>
-        <div className="max-w-6xl mx-auto text-left">
-          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white leading-tight">
-            Jo fixes{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-              labor bottlenecks
-            </span>{" "}
-            in{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-              highly regulated
-            </span>{" "}
-            industries, helping companies{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-              stay compliant
-            </span>
-            ,{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-              cut costs
-            </span>
-            , and finally have enough hands to{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-              get the work done
-            </span>
-            .
-          </p>
+        <div className="text-left px-14">
+          <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white leading-tight space-y-1">
+            <div>
+              Jo fixes{" "}
+              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
+                labor bottlenecks
+              </span>{" "}
+              in{" "}
+              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
+                highly regulated industries
+              </span>
+              ,
+            </div>
+            <div>
+              helping companies{" "}
+              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
+                stay compliant
+              </span>
+              ,{" "}
+              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
+                cut costs
+              </span>
+              , and
+            </div>
+            <div>
+              finally have enough hands to{" "}
+              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
+                get the work done
+              </span>
+              .
+            </div>
+          </div>
         </div>
       </section>
 
