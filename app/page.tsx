@@ -107,6 +107,7 @@ export default function HomePage() {
               <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Herro%20Video-4KoLgBEgSZSrzfzocWhpAxa4boP0as.mov" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+            <div className="absolute inset-0 bg-purple-300/40 pointer-events-none"></div>
             {/* Overlaid Try Jo Button - Made Smaller */}
             <div className="absolute inset-0 flex items-center justify-center">
               <Link href="https://demo.jofrom.io/" target="_blank" rel="noopener noreferrer">
