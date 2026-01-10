@@ -18,6 +18,7 @@ import {
   Zap,
   Search,
   Rocket,
+  Sparkles,
 } from "lucide-react"
 import Link from "next/link"
 import { Footer } from "@/components/footer"
@@ -553,109 +554,160 @@ export function MethodologyPageClient() {
             Why traditional approaches to intelligent systems fail in regulated environments
           </p>
 
-          {/* The Paradox */}
-          <Card className="border-2 border-red-200 bg-red-50 mb-8">
-            <CardContent className="p-8">
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">The Paradox</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-                  <div className="bg-white rounded-lg p-6 border-2 border-red-200">
-                    <h4 className="font-bold text-red-600 mb-2">More Autonomy = More Risk</h4>
-                    <p className="text-gray-700">Give Jo freedom to adapt and it can make unpredictable mistakes</p>
-                  </div>
-                  <div className="bg-white rounded-lg p-6 border-2 border-red-200">
-                    <h4 className="font-bold text-red-600 mb-2">More Control = Less Flexibility</h4>
-                    <p className="text-gray-700">
-                      Lock down every decision and you lose the benefits of intelligent automation
-                    </p>
-                  </div>
+          {/* The Paradox - Two cards side by side */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
+              <CardContent className="p-8 relative z-10">
+                <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
+                  <Zap className="h-6 w-6 text-blue-600" />
                 </div>
-                <p className="mt-6 text-lg text-gray-700 font-semibold">
-                  In regulated industries: Mistakes = Fines, Safety Issues, Lawsuits
+                <h3 className="text-xl font-bold text-gray-900 mb-3">More Autonomy = More Risk</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Give Jo freedom to adapt and it can make unpredictable mistakes in environments where mistakes mean
+                  fines, safety issues, and lawsuits.
                 </p>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+
+            <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
+              <CardContent className="p-8 relative z-10">
+                <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
+                  <Lock className="h-6 w-6 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">More Control = Less Flexibility</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Lock down every decision and you lose the benefits of intelligent automation—defeating the entire
+                  purpose of deployment.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
 
           {/* The Governance Dilemma */}
-          <Card className="border-2 mb-8">
-            <CardContent className="p-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">The Governance Dilemma</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="bg-gray-50 rounded-lg p-6 text-center">
-                  <Cog className="w-8 h-8 mx-auto mb-3 text-gray-600" />
-                  <h4 className="font-bold text-gray-900 mb-2">Tools</h4>
-                  <p className="text-sm text-gray-600">Predictable, you own them, no autonomy</p>
+          <h3 className="text-2xl font-bold text-center mb-8 text-gray-900">The Governance Dilemma</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
+              <CardContent className="p-8 relative z-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-2xl mb-6">
+                  1
                 </div>
-                <div className="bg-gray-50 rounded-lg p-6 text-center">
-                  <Users className="w-8 h-8 mx-auto mb-3 text-gray-600" />
-                  <h4 className="font-bold text-gray-900 mb-2">Employees</h4>
-                  <p className="text-sm text-gray-600">Autonomous, you supervise them, accountable</p>
+                <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
+                  <Cog className="h-6 w-6 text-blue-600" />
                 </div>
-                <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg p-6 text-center border-2 border-blue-600">
-                  <Zap className="w-8 h-8 mx-auto mb-3 text-blue-600" />
-                  <h4 className="font-bold text-gray-900 mb-2">Jo (Machine Staff)</h4>
-                  <p className="text-sm text-gray-700 font-semibold">Somewhere in between — THIS is the problem</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Tools</h3>
+                <p className="text-gray-600 leading-relaxed">Predictable, you own them, no autonomy</p>
+              </CardContent>
+            </Card>
 
-          {/* Labor Map's Solution */}
-          <Card className="border-2 border-blue-600 bg-gradient-to-br from-blue-50 to-purple-50">
-            <CardContent className="p-8">
+            <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
+              <CardContent className="p-8 relative z-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-2xl mb-6">
+                  2
+                </div>
+                <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
+                  <Users className="h-6 w-6 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Employees</h3>
+                <p className="text-gray-600 leading-relaxed">Autonomous, you supervise them, accountable</p>
+              </CardContent>
+            </Card>
+
+            <Card className="relative overflow-hidden border-2 border-blue-600 hover:shadow-xl transition-all">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
+              <CardContent className="p-8 relative z-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-2xl mb-6">
+                  ?
+                </div>
+                <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
+                  <Sparkles className="h-6 w-6 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Jo (Machine Staff)</h3>
+                <p className="text-gray-700 leading-relaxed font-medium">Somewhere in between — THIS is the problem</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* How Labor Map Solves This */}
+          <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-16 translate-x-16 opacity-50"></div>
+            <CardContent className="p-8 relative z-10">
               <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">How Labor Map Solves This</h3>
+              <p className="text-lg text-gray-600 text-center mb-8 max-w-2xl mx-auto">
+                Labor Map's Safety Architecture ensures ownership stays with humans while execution can be delegated
+              </p>
 
-              <div className="bg-white rounded-lg p-6 mb-6 border-2">
-                <h4 className="font-bold text-gray-900 mb-4 text-center">Labor Map's Safety Architecture</h4>
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between p-4 bg-red-50 rounded-lg border-2 border-red-200">
-                    <div>
-                      <span className="font-bold text-red-600">Layer 1: Organization</span>
-                      <span className="text-gray-600 ml-4">Hard constraints</span>
-                    </div>
-                    <span className="px-3 py-1 bg-red-600 text-white text-sm font-medium rounded-full">Logic</span>
+              <div className="space-y-4 max-w-2xl mx-auto mb-8">
+                <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                    1
                   </div>
-                  <div className="flex items-center justify-center">
-                    <ArrowRight className="w-5 h-5 text-gray-400 rotate-90" />
+                  <div className="flex-1">
+                    <span className="font-bold text-gray-900">Organization</span>
+                    <span className="text-gray-600 mx-2">—</span>
+                    <span className="text-gray-600">Hard constraints</span>
                   </div>
-                  <div className="flex items-center justify-between p-4 bg-orange-50 rounded-lg border-2 border-orange-200">
-                    <div>
-                      <span className="font-bold text-orange-600">Layer 2: Strata</span>
-                      <span className="text-gray-600 ml-4">Structure</span>
-                    </div>
-                    <span className="px-3 py-1 bg-orange-600 text-white text-sm font-medium rounded-full">Logic</span>
+                  <span className="px-3 py-1 bg-blue-600 text-white text-sm font-medium rounded-full">Logic</span>
+                </div>
+
+                <div className="flex justify-center">
+                  <ArrowRight className="w-5 h-5 text-gray-400 rotate-90" />
+                </div>
+
+                <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                    2
                   </div>
-                  <div className="flex items-center justify-center">
-                    <ArrowRight className="w-5 h-5 text-gray-400 rotate-90" />
+                  <div className="flex-1">
+                    <span className="font-bold text-gray-900">Strata</span>
+                    <span className="text-gray-600 mx-2">—</span>
+                    <span className="text-gray-600">Structure</span>
                   </div>
-                  <div className="flex items-center justify-between p-4 bg-yellow-50 rounded-lg border-2 border-yellow-300">
-                    <div>
-                      <span className="font-bold text-yellow-700">Layer 3: Role</span>
-                      <span className="text-gray-600 ml-4">Accountability</span>
-                    </div>
-                    <span className="px-3 py-1 bg-yellow-600 text-white text-sm font-medium rounded-full">
-                      STAYS HUMAN
-                    </span>
+                  <span className="px-3 py-1 bg-blue-600 text-white text-sm font-medium rounded-full">Logic</span>
+                </div>
+
+                <div className="flex justify-center">
+                  <ArrowRight className="w-5 h-5 text-gray-400 rotate-90" />
+                </div>
+
+                <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                    3
                   </div>
-                  <div className="flex items-center justify-center">
-                    <ArrowRight className="w-5 h-5 text-gray-400 rotate-90" />
+                  <div className="flex-1">
+                    <span className="font-bold text-gray-900">Role</span>
+                    <span className="text-gray-600 mx-2">—</span>
+                    <span className="text-gray-600">Accountability</span>
                   </div>
-                  <div className="flex items-center justify-between p-4 bg-green-50 rounded-lg border-2 border-green-300">
-                    <div>
-                      <span className="font-bold text-green-700">Layer 4: Task</span>
-                      <span className="text-gray-600 ml-4">Execution</span>
-                    </div>
-                    <span className="px-3 py-1 bg-green-600 text-white text-sm font-medium rounded-full">
-                      Jo can help HERE
-                    </span>
+                  <span className="px-3 py-1 bg-green-600 text-white text-sm font-medium rounded-full">
+                    STAYS HUMAN
+                  </span>
+                </div>
+
+                <div className="flex justify-center">
+                  <ArrowRight className="w-5 h-5 text-gray-400 rotate-90" />
+                </div>
+
+                <div className="flex items-center gap-4 p-4 bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg border-2 border-blue-600">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                    4
                   </div>
+                  <div className="flex-1">
+                    <span className="font-bold text-gray-900">Task</span>
+                    <span className="text-gray-600 mx-2">—</span>
+                    <span className="text-gray-600">Execution</span>
+                  </div>
+                  <span className="px-3 py-1 bg-purple-600 text-white text-sm font-medium rounded-full">
+                    Jo can help HERE
+                  </span>
                 </div>
               </div>
 
-              <div className="bg-blue-600 text-white rounded-lg p-6 text-center">
-                <p className="text-xl font-bold mb-2">The Key Principle</p>
-                <p className="text-2xl">"Execution can move; ownership does not."</p>
+              <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg border">
+                <p className="text-xl font-bold text-gray-900">"Execution can move; ownership does not."</p>
               </div>
             </CardContent>
           </Card>
@@ -679,135 +731,183 @@ export function MethodologyPageClient() {
             Match Jo's autonomy to risk level — calibrated freedom, not blanket access
           </p>
 
-          <div className="space-y-4">
-            <Card className="border-2 border-red-600">
-              <CardContent className="p-6">
-                <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-2">
-                      <span className="px-3 py-1 bg-red-600 text-white text-sm font-medium rounded-full">
-                        Critical Risk
-                      </span>
-                      <span className="text-2xl font-bold text-gray-900">Strict Logic</span>
-                    </div>
-                    <p className="text-gray-700 mb-2">Regulatory compliance, safety, legal liability</p>
-                    <p className="text-sm text-gray-600">
-                      <strong>Jo role:</strong> Observer only — LOG and ALERT humans
-                    </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            {/* Critical Risk */}
+            <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
+              <CardContent className="p-8 relative z-10">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Lock className="h-8 w-8 text-white" />
                   </div>
-                  <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Lock className="w-8 h-8 text-red-600" />
+                  <div>
+                    <span className="text-sm font-medium text-blue-600 uppercase tracking-wide">Critical Risk</span>
+                    <h3 className="text-2xl font-bold text-gray-900">Strict Logic</h3>
                   </div>
+                </div>
+                <p className="text-gray-600 mb-4">Regulatory compliance, safety, legal liability</p>
+                <div className="p-4 bg-gray-50 rounded-lg border">
+                  <p className="text-sm text-gray-700">
+                    <strong>Jo role:</strong> Observer only — LOG and ALERT humans
+                  </p>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-orange-500">
-              <CardContent className="p-6">
-                <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-2">
-                      <span className="px-3 py-1 bg-orange-500 text-white text-sm font-medium rounded-full">
-                        High Risk
-                      </span>
-                      <span className="text-2xl font-bold text-gray-900">10-20% Autonomous</span>
-                    </div>
-                    <p className="text-gray-700 mb-2">Quality control, approvals, financial decisions</p>
-                    <p className="text-sm text-gray-600">
-                      <strong>Jo role:</strong> Recommend — human reviews and approves
-                    </p>
+            {/* High Risk */}
+            <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
+              <CardContent className="p-8 relative z-10">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Shield className="h-8 w-8 text-white" />
                   </div>
-                  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Shield className="w-8 h-8 text-orange-600" />
+                  <div>
+                    <span className="text-sm font-medium text-blue-600 uppercase tracking-wide">High Risk</span>
+                    <h3 className="text-2xl font-bold text-gray-900">10-20% Autonomous</h3>
                   </div>
+                </div>
+                <p className="text-gray-600 mb-4">Quality control, approvals, financial decisions</p>
+                <div className="p-4 bg-gray-50 rounded-lg border">
+                  <p className="text-sm text-gray-700">
+                    <strong>Jo role:</strong> Recommend — human reviews and approves
+                  </p>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-yellow-500">
-              <CardContent className="p-6">
-                <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-2">
-                      <span className="px-3 py-1 bg-yellow-600 text-white text-sm font-medium rounded-full">
-                        Medium Risk
-                      </span>
-                      <span className="text-2xl font-bold text-gray-900">50-70% Autonomous</span>
-                    </div>
-                    <p className="text-gray-700 mb-2">Data processing, reporting, routine operations</p>
-                    <p className="text-sm text-gray-600">
-                      <strong>Jo role:</strong> Execute — human spot-checks and monitors
-                    </p>
+            {/* Medium Risk */}
+            <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
+              <CardContent className="p-8 relative z-10">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <BarChart3 className="h-8 w-8 text-white" />
                   </div>
-                  <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <BarChart3 className="w-8 h-8 text-yellow-600" />
+                  <div>
+                    <span className="text-sm font-medium text-blue-600 uppercase tracking-wide">Medium Risk</span>
+                    <h3 className="text-2xl font-bold text-gray-900">50-70% Autonomous</h3>
                   </div>
+                </div>
+                <p className="text-gray-600 mb-4">Data processing, reporting, routine operations</p>
+                <div className="p-4 bg-gray-50 rounded-lg border">
+                  <p className="text-sm text-gray-700">
+                    <strong>Jo role:</strong> Execute — human spot-checks and monitors
+                  </p>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-green-600">
-              <CardContent className="p-6">
-                <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-2">
-                      <span className="px-3 py-1 bg-green-600 text-white text-sm font-medium rounded-full">
-                        Low Risk
-                      </span>
-                      <span className="text-2xl font-bold text-gray-900">90% Autonomous</span>
-                    </div>
-                    <p className="text-gray-700 mb-2">Scheduling, notifications, data logging</p>
-                    <p className="text-sm text-gray-600">
-                      <strong>Jo role:</strong> Handle it — human reviews logs periodically
-                    </p>
+            {/* Low Risk */}
+            <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
+              <CardContent className="p-8 relative z-10">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Check className="h-8 w-8 text-white" />
                   </div>
-                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Check className="w-8 h-8 text-green-600" />
+                  <div>
+                    <span className="text-sm font-medium text-blue-600 uppercase tracking-wide">Low Risk</span>
+                    <h3 className="text-2xl font-bold text-gray-900">90% Autonomous</h3>
                   </div>
+                </div>
+                <p className="text-gray-600 mb-4">Scheduling, notifications, data logging</p>
+                <div className="p-4 bg-gray-50 rounded-lg border">
+                  <p className="text-sm text-gray-700">
+                    <strong>Jo role:</strong> Handle it — human reviews logs periodically
+                  </p>
                 </div>
               </CardContent>
             </Card>
           </div>
 
           {/* Real Example */}
-          <Card className="mt-12 border-2 border-blue-600 bg-gradient-to-br from-blue-50 to-purple-50">
-            <CardContent className="p-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Real Example: Food Processing Plant</h3>
-              <p className="text-center text-gray-700 mb-6">
+          <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-16 translate-x-16 opacity-50"></div>
+            <CardContent className="p-8 relative z-10">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2 text-center">Real Example: Food Processing Plant</h3>
+              <p className="text-gray-600 text-center mb-8">
                 Mission: "Ensure product safety and quality for Batch #1247"
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-white rounded-lg p-6 border-2 border-red-200">
-                  <h4 className="font-bold text-red-600 mb-3">Zero Autonomy</h4>
+                <div className="p-6 bg-gray-50 rounded-lg border">
+                  <h4 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
+                      <Lock className="w-4 h-4 text-white" />
+                    </div>
+                    Zero Autonomy
+                  </h4>
                   <ul className="space-y-2 text-sm text-gray-700">
-                    <li>• Final batch approval → Human (FDA)</li>
-                    <li>• Allergen declaration → Human (liability)</li>
-                    <li>• Safety override → Human (OSHA)</li>
+                    <li className="flex items-start gap-2">
+                      <ArrowRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <span>Final batch approval → Human (FDA)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <ArrowRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <span>Allergen declaration → Human (liability)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <ArrowRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <span>Safety override → Human (OSHA)</span>
+                    </li>
                   </ul>
                 </div>
 
-                <div className="bg-white rounded-lg p-6 border-2 border-orange-200">
-                  <h4 className="font-bold text-orange-600 mb-3">Low Autonomy</h4>
+                <div className="p-6 bg-gray-50 rounded-lg border">
+                  <h4 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
+                      <Shield className="w-4 h-4 text-white" />
+                    </div>
+                    Low Autonomy
+                  </h4>
                   <ul className="space-y-2 text-sm text-gray-700">
-                    <li>• Quality analysis → Jo analyzes, human approves</li>
-                    <li>• Deviation investigation → Jo gathers, human decides</li>
+                    <li className="flex items-start gap-2">
+                      <ArrowRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <span>Quality analysis → Jo analyzes, human approves</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <ArrowRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <span>Deviation investigation → Jo gathers, human decides</span>
+                    </li>
                   </ul>
                 </div>
 
-                <div className="bg-white rounded-lg p-6 border-2 border-yellow-300">
-                  <h4 className="font-bold text-yellow-700 mb-3">Medium Autonomy</h4>
+                <div className="p-6 bg-gray-50 rounded-lg border">
+                  <h4 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
+                      <BarChart3 className="w-4 h-4 text-white" />
+                    </div>
+                    Medium Autonomy
+                  </h4>
                   <ul className="space-y-2 text-sm text-gray-700">
-                    <li>• Temperature monitoring → Jo adjusts within range</li>
-                    <li>• Inventory reordering → Jo orders if below threshold</li>
+                    <li className="flex items-start gap-2">
+                      <ArrowRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <span>Temperature monitoring → Jo adjusts within range</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <ArrowRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <span>Inventory reordering → Jo orders if below threshold</span>
+                    </li>
                   </ul>
                 </div>
 
-                <div className="bg-white rounded-lg p-6 border-2 border-green-300">
-                  <h4 className="font-bold text-green-700 mb-3">High Autonomy</h4>
+                <div className="p-6 bg-gray-50 rounded-lg border">
+                  <h4 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
+                    <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
+                      <Check className="w-4 h-4 text-white" />
+                    </div>
+                    High Autonomy
+                  </h4>
                   <ul className="space-y-2 text-sm text-gray-700">
-                    <li>• Data logging → Jo handles completely</li>
-                    <li>• Report generation → Jo creates, human reviews periodically</li>
+                    <li className="flex items-start gap-2">
+                      <ArrowRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <span>Data logging → Jo handles completely</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <ArrowRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <span>Report generation → Jo creates, human reviews periodically</span>
+                    </li>
                   </ul>
                 </div>
               </div>
