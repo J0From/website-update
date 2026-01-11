@@ -120,7 +120,7 @@ export function MethodologyPageClient() {
       title: "Task",
       subtitle: "How work gets done",
       description:
-        "Contains execution units with 8-phase decomposition, enabling human/Jo allocation and hybrid workflows.",
+        "Contains execution units with role decomposition, enabling human/Jo allocation and hybrid workflows.",
       badge: "Jo can help HERE",
       badgeColor: "bg-green-600",
       borderColor: "border-green-600",
