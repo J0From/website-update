@@ -100,22 +100,20 @@ export function HomePageClient() {
       </nav>
 
       {/* Hero Video Section with Overlaid Button */}
-      <section className="w-full pt-8">
-        <div className="relative w-full">
-          <div className="relative w-full max-h-[600px] overflow-hidden border-y-4 border-slate-300 shadow-lg">
-            <video ref={videoRef} className="w-full h-full object-cover opacity-60" autoPlay loop muted playsInline>
-              <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Herro%20Video-4KoLgBEgSZSrzfzocWhpAxa4boP0as.mov" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <div className="absolute inset-0 bg-purple-300/10 pointer-events-none"></div>
-            {/* Overlaid Try Jo Button - Made Smaller */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Link href="https://demo.jofrom.io/">
-                <Button className="h-10 md:h-12 px-6 md:px-8 text-base md:text-lg bg-slate-900 hover:bg-slate-800 text-white shadow-2xl">
-                  Try Jo
-                </Button>
-              </Link>
-            </div>
+      <section className="relative min-h-[70vh] sm:min-h-[80vh] flex flex-col justify-center pt-8 sm:pt-0 pb-8">
+        <div className="relative w-full max-h-[600px] overflow-hidden border-y-4 border-slate-300 shadow-lg">
+          <video ref={videoRef} className="w-full h-full object-cover opacity-60" autoPlay loop muted playsInline>
+            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Herro%20Video-4KoLgBEgSZSrzfzocWhpAxa4boP0as.mov" type="video/quicktime" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="absolute inset-0 bg-purple-300/10 pointer-events-none"></div>
+          {/* Overlaid Try Jo Button - Made Smaller */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <Link href="https://demo.jofrom.io/">
+              <Button className="h-10 md:h-12 px-6 md:px-8 text-base md:text-lg bg-slate-900 hover:bg-slate-800 text-white shadow-2xl">
+                Try Jo
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
