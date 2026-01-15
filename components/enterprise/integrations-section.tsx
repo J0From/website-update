@@ -5,23 +5,28 @@ import Image from "next/image"
 export function IntegrationsSection() {
   const integrations = [
     // Food & Beverage
-    { name: "Infor CloudSuite F&B", industry: "Food & Beverage", popular: true },
-    { name: "Aptean Food & Beverage", industry: "Food & Beverage" },
-    { name: "NetSuite (Food Edition)", industry: "Food & Beverage" },
-    { name: "BatchMaster", industry: "Food & Beverage" },
-    { name: "Cority / Enablon", industry: "Food & Beverage" },
+    {
+      name: "Infor CloudSuite F&B",
+      industry: "Food & Beverage",
+      popular: true,
+      logo: "infor-logo-enterprise-software",
+    },
+    { name: "Aptean Food & Beverage", industry: "Food & Beverage", logo: "aptean-logo-food-beverage-erp" },
+    { name: "NetSuite (Food Edition)", industry: "Food & Beverage", logo: "netsuite-oracle-logo" },
+    { name: "BatchMaster", industry: "Food & Beverage", logo: "batchmaster-erp-logo" },
+    { name: "Cority", industry: "Food & Beverage", logo: "cority-ehs-software-logo" },
     // Healthcare & Life Sciences
-    { name: "Epic / Cerner", industry: "Healthcare & Life Sciences", popular: true },
-    { name: "Infor Cloverleaf", industry: "Healthcare & Life Sciences" },
-    { name: "Veeva Systems", industry: "Healthcare & Life Sciences" },
-    { name: "Workday Healthcare", industry: "Healthcare & Life Sciences" },
-    { name: "ServiceNow Healthcare", industry: "Healthcare & Life Sciences" },
+    { name: "Epic", industry: "Healthcare & Life Sciences", popular: true, logo: "epic-systems-healthcare-logo" },
+    { name: "Cerner (Oracle Health)", industry: "Healthcare & Life Sciences", logo: "cerner-oracle-health-logo" },
+    { name: "Infor Cloverleaf", industry: "Healthcare & Life Sciences", logo: "infor-cloverleaf-integration-logo" },
+    { name: "Veeva Systems", industry: "Healthcare & Life Sciences", logo: "veeva-systems-life-sciences-logo" },
+    { name: "Workday Healthcare", industry: "Healthcare & Life Sciences", logo: "workday-logo-enterprise-software" },
     // Energy & Utilities
-    { name: "Oracle Utilities", industry: "Energy & Utilities", popular: true },
-    { name: "IFS Cloud", industry: "Energy & Utilities" },
-    { name: "SAP S/4HANA for Energy", industry: "Energy & Utilities" },
-    { name: "Enablon", industry: "Energy & Utilities" },
-    { name: "GE Vernova", industry: "Energy & Utilities" },
+    { name: "Oracle Utilities", industry: "Energy & Utilities", popular: true, logo: "oracle-utilities-energy-logo" },
+    { name: "IFS Cloud", industry: "Energy & Utilities", logo: "ifs-cloud-erp-logo" },
+    { name: "SAP S/4HANA for Energy", industry: "Energy & Utilities", logo: "sap-s4hana-energy-utilities-logo" },
+    { name: "Enablon", industry: "Energy & Utilities", logo: "enablon-ehs-sustainability-logo" },
+    { name: "GE Vernova", industry: "Energy & Utilities", logo: "ge-vernova-energy-logo" },
   ]
 
   return (
@@ -46,25 +51,24 @@ export function IntegrationsSection() {
                     MOST POPULAR
                   </Badge>
                 )}
-                <div className="w-16 h-16 mb-4 relative rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+                <div className="w-20 h-20 mb-4 relative rounded-lg overflow-hidden bg-white border border-gray-200 flex items-center justify-center p-2">
                   <Image
-                    src={`/.jpg?key=ohhmj&height=64&width=64&query=${encodeURIComponent(integration.name + " logo")}`}
+                    src={`/.jpg?height=80&width=80&query=${encodeURIComponent(integration.logo)}`}
                     alt={`${integration.name} logo`}
-                    width={64}
-                    height={64}
+                    width={80}
+                    height={80}
                     className="object-contain"
                   />
                 </div>
-                <h4 className="font-semibold text-gray-900 text-sm leading-tight group-hover:text-blue-600 transition-colors">
+                <h4 className="font-semibold text-gray-900 text-sm leading-tight group-hover:text-blue-600 transition-colors mb-1">
                   {integration.name}
                 </h4>
-                <p className="text-xs text-gray-500 mt-1">{integration.industry}</p>
+                <p className="text-xs text-gray-500">{integration.industry}</p>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        {/* CTA Footer */}
         <div className="mt-16 text-center">
           <p className="text-gray-600 mb-4">
             Don't see your system? We build custom integrations for enterprise customers.
