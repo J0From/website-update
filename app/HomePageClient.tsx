@@ -322,7 +322,7 @@ export function HomePageClient() {
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
                 highly regulated industries
               </span>
-              —
+              -
             </div>
             <div>
               so you{" "}
@@ -333,7 +333,7 @@ export function HomePageClient() {
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
                 cut costs
               </span>
-              , and finally have
+              - and finally have
             </div>
             <div>
               enough hands to{" "}
