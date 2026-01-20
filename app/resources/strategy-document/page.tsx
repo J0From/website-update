@@ -87,7 +87,7 @@ export default function StrategyDocumentPage() {
         <div className="relative z-10 h-full flex flex-col justify-center p-8 lg:p-12">
           <div className="max-w-lg">
             <span className="inline-block px-3 py-1 bg-blue-500/20 text-blue-300 text-sm font-medium rounded-full mb-6">
-              Free Strategy Resource
+              Strategy Resource
             </span>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
               GTM Strategy
@@ -96,7 +96,7 @@ export default function StrategyDocumentPage() {
               </span>
             </h1>
             <p className="text-slate-300 text-lg mb-8">
-              A comprehensive framework to align your go-to-market strategy with AI-powered workforce automation.
+              A comprehensive framework to align your go-to-market strategy with Human + Machine collaboration.
             </p>
 
             {/* Dashboard Preview */}
@@ -147,7 +147,7 @@ export default function StrategyDocumentPage() {
           <Card className="shadow-xl border-0">
             <CardHeader className="pb-4">
               <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
-                {isSubmitted ? "Your Document is Ready!" : "Get Your Free Copy"}
+                {isSubmitted ? "Your Document is Ready!" : "Get Your Copy"}
               </h2>
               <p className="text-slate-600 mt-2">
                 {isSubmitted
@@ -294,7 +294,7 @@ export default function StrategyDocumentPage() {
                     ) : (
                       <>
                         <Download className="w-5 h-5 mr-2" />
-                        Get Free Download
+                        Get Download
                       </>
                     )}
                   </Button>
