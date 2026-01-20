@@ -5,11 +5,11 @@ import Image from "next/image"
 export function IntegrationsSection() {
   const integrations = [
     // Food & Beverage - popular in position 2 (3rd column)
-    { name: "Aptean Food & Beverage", industry: "Food & Beverage" },
-    { name: "NetSuite (Food Edition)", industry: "Food & Beverage" },
-    { name: "Infor CloudSuite F&B", industry: "Food & Beverage", popular: true },
-    { name: "BatchMaster", industry: "Food & Beverage" },
-    { name: "Cority / Enablon", industry: "Food & Beverage" },
+    { name: "Aptean", industry: "Food & Beverage", logo: "/logos/aptean.svg", url: "https://www.aptean.com/" },
+    { name: "NetSuite", industry: "Food & Beverage", logo: "/logos/netsuite.png", url: "https://www.netsuite.com/portal/home.shtml" },
+    { name: "Infor CloudSuite F&B", industry: "Food & Beverage", popular: true, logo: "/logos/infor.svg", url: "https://www.infor.com/industries/food-beverage" },
+    { name: "BatchMaster", industry: "Food & Beverage", logo: "/logos/batchmaster.svg", url: "https://www.batchmaster.com/" },
+    { name: "Wolters Kluwer", industry: "Food & Beverage", url: "https://www.wolterskluwer.com/" },
     // Healthcare & Life Sciences - popular in position 6 (2nd column)
     { name: "Epic / Cerner", industry: "Healthcare & Life Sciences", popular: true },
     { name: "Infor Cloverleaf", industry: "Healthcare & Life Sciences" },
@@ -20,7 +20,7 @@ export function IntegrationsSection() {
     { name: "IFS Cloud", industry: "Energy & Utilities" },
     { name: "SAP S/4HANA for Energy", industry: "Energy & Utilities" },
     { name: "Oracle Utilities", industry: "Energy & Utilities", popular: true },
-    { name: "Enablon", industry: "Energy & Utilities" },
+    { name: "Enablon", industry: "Energy & Utilities", logo: "/logos/enablon.png" },
     { name: "GE Vernova", industry: "Energy & Utilities" },
   ]
 
@@ -35,33 +35,39 @@ export function IntegrationsSection() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          {integrations.map((integration) => (
-            <Card
-              key={integration.name}
-              className="border-2 hover:shadow-lg transition-all hover:border-blue-200 relative group"
-            >
-              <CardContent className="p-6 flex flex-col items-center text-center">
-                {integration.popular && (
-                  <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0 text-xs px-3 py-1 whitespace-nowrap">
-                    MOST POPULAR
-                  </Badge>
-                )}
-                <div className="w-16 h-16 mb-4 relative rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
-                  <Image
-                    src={`/.jpg?key=ohhmj&height=64&width=64&query=${encodeURIComponent(integration.name + " logo")}`}
-                    alt={`${integration.name} logo`}
-                    width={64}
-                    height={64}
-                    className="object-contain"
-                  />
-                </div>
-                <h4 className="font-semibold text-gray-900 text-sm leading-tight group-hover:text-blue-600 transition-colors">
-                  {integration.name}
-                </h4>
-                <p className="text-xs text-gray-500 mt-1">{integration.industry}</p>
-              </CardContent>
-            </Card>
-          ))}
+          {integrations.map((integration) => {
+            const CardWrapper = integration.url ? 'a' : 'div'
+            const cardProps = integration.url ? { href: integration.url, target: "_blank", rel: "noopener noreferrer" } : {}
+            
+            return (
+              <CardWrapper key={integration.name} {...cardProps} className={integration.url ? "block" : ""}>
+                <Card
+                  className="border-2 hover:shadow-lg transition-all hover:border-blue-200 relative group h-full"
+                >
+                  <CardContent className="p-6 flex flex-col items-center text-center">
+                    {integration.popular && (
+                      <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0 text-xs px-3 py-1 whitespace-nowrap">
+                        MOST POPULAR
+                      </Badge>
+                    )}
+                    <div className="w-16 h-16 mb-4 relative rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+                      <Image
+                        src={integration.logo || `/.jpg?key=ohhmj&height=64&width=64&query=${encodeURIComponent(integration.name + " logo")}`}
+                        alt={`${integration.name} logo`}
+                        width={64}
+                        height={64}
+                        className="object-contain"
+                      />
+                    </div>
+                    <h4 className="font-semibold text-gray-900 text-sm leading-tight group-hover:text-blue-600 transition-colors">
+                      {integration.name}
+                    </h4>
+                    <p className="text-xs text-gray-500 mt-1">{integration.industry}</p>
+                  </CardContent>
+                </Card>
+              </CardWrapper>
+            )
+          })}
         </div>
 
         {/* CTA Footer */}
