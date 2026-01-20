@@ -12,7 +12,7 @@ export default function PurchasePage() {
   const searchParams = useSearchParams()
   const billingParam = searchParams.get("billing")
   const [billingCycle, setBillingCycle] = useState<"monthly" | "annual">(
-    billingParam === "annual" ? "annual" : "monthly",
+    billingParam === "monthly" ? "monthly" : "annual",
   )
   const [selectedTier, setSelectedTier] = useState<string | null>(null)
   const orderSummaryRef = useRef<HTMLElement>(null)
