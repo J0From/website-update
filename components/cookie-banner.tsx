@@ -34,7 +34,7 @@ export function CookieBanner() {
         <div className="bg-white/80 backdrop-blur-lg border border-slate-200 rounded-lg shadow-lg p-4 sm:p-6">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div className="flex-1">
-              <h3 className="text-sm font-semibold text-slate-900 mb-2">Cookie Preferences</h3>
+              <h3 className="text-lg font-semibold text-slate-900 mb-2">Cookie Preferences</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic.
                 <br />
