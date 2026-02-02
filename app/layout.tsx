@@ -1,12 +1,9 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
 import Script from "next/script"
 import { CookieBanner } from "@/components/cookie-banner"
 import { StructuredData } from "@/components/structured-data"
 import "./globals.css"
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 
 export const metadata: Metadata = {
   title: "Human + Machine",
@@ -64,14 +61,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} antialiased`}>
+    <html lang="en" className="antialiased">
       <head>
         <link rel="icon" href="/favicon.png" sizes="any" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
         <StructuredData />
       </head>
-      <body className={inter.className}>
+      <body className="font-sans">
         {children}
         <CookieBanner />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-LXZ15J9WXC" strategy="afterInteractive" />
