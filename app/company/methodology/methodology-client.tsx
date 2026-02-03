@@ -135,7 +135,7 @@ export function MethodologyPageClient() {
           </h1>
           <p className="text-xl sm:text-2xl text-white/90 mb-4">Precision Labor Engineering for Regulated Operations</p>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">
-            A systematic framework for allocating work between humans and machines—without breaking compliance, control,
+            A systematic framework for allocating work between people and machines—without breaking compliance, control,
             or accountability.
           </p>
         </div>
@@ -326,7 +326,7 @@ export function MethodologyPageClient() {
                 </div>
                 <p className="text-purple-700 font-semibold mb-3">Design the fix</p>
                 <p className="text-gray-600 leading-relaxed">
-                  We figure out which tasks humans must do and which machines can handle, creating a detailed plan that
+                  We figure out which tasks people must do and which machines can handle, creating a detailed plan that
                   shows cost savings, reduces risk, and maintains compliance.
                 </p>
               </CardContent>

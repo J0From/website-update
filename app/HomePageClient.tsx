@@ -219,7 +219,7 @@ export function HomePageClient() {
             </span>
           </h2>
           <p className="text-sm sm:text-base md:text-xl text-slate-600 text-center max-w-3xl mx-auto mb-8 sm:mb-10 md:mb-12 text-balance px-4">
-            Fast Insight, Practical Plans, Real Operational Change.
+            Discover the opportunity. Design the solution. Deploy the fix.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {/* Discovery Phase */}
@@ -232,17 +232,17 @@ export function HomePageClient() {
                         <Search className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
                       </div>
                       <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2">Discovery</h3>
-                      <p className="text-xs sm:text-sm font-semibold text-blue-600">Discover the problem</p>
+                      <p className="text-xs sm:text-sm font-semibold text-blue-600">Discover the opportunity</p>
                     </CardContent>
                   </Card>
                 </div>
                 <div className="flip-card-back">
                   <Card className="border-2 border-blue-400 bg-white h-full">
                     <CardContent className="p-6 sm:p-7 md:p-8 h-full flex flex-col justify-center">
-                      <h3 className="text-lg sm:text-xl font-bold text-blue-600 mb-3">Discovery</h3>
+                      <h3 className="text-lg sm:text-xl font-bold text-blue-600 mb-3">Discover</h3>
                       <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                        We map your organization's structure, identify who owns each outcome, and pinpoint where work is
-                        breaking down or creating bottlenecks.
+                        We map how work moves through your operation. We find where tasks pile up, where compliance risks
+                        hide, and where your team spends time on work that doesn't match their skills.
                       </p>
                     </CardContent>
                   </Card>
@@ -260,7 +260,7 @@ export function HomePageClient() {
                         <Lightbulb className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
                       </div>
                       <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2">Design</h3>
-                      <p className="text-xs sm:text-sm font-semibold text-blue-600">Design the fix</p>
+                      <p className="text-xs sm:text-sm font-semibold text-blue-600">Design the solution</p>
                     </CardContent>
                   </Card>
                 </div>
@@ -269,8 +269,8 @@ export function HomePageClient() {
                     <CardContent className="p-6 sm:p-7 md:p-8 h-full flex flex-col justify-center">
                       <h3 className="text-lg sm:text-xl font-bold text-purple-600 mb-3">Design</h3>
                       <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                        We figure out which tasks humans must do and which machines can handle, creating a detailed plan
-                        that shows cost savings, reduces risk, and maintains compliance.
+                        We build your staffing plan. Every task is evaluated: Does it require a person's judgment? Can a
+                        machine handle it? We design the right balance—people lead, machines support.
                       </p>
                     </CardContent>
                   </Card>
@@ -288,7 +288,7 @@ export function HomePageClient() {
                         <Rocket className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
                       </div>
                       <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2">Deploy</h3>
-                      <p className="text-xs sm:text-sm font-semibold text-blue-600">Deploy the solution</p>
+                      <p className="text-xs sm:text-sm font-semibold text-blue-600">Deploy the fix</p>
                     </CardContent>
                   </Card>
                 </div>
@@ -297,8 +297,8 @@ export function HomePageClient() {
                     <CardContent className="p-6 sm:p-7 md:p-8 h-full flex flex-col justify-center">
                       <h3 className="text-lg sm:text-xl font-bold text-blue-600 mb-3">Deploy</h3>
                       <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                        We put the solution into action with clear controls, live monitoring, and audit trails that
-                        prove everything is working correctly.
+                        We place people and machines into your operation. We monitor performance, ensure compliance, and
+                        track results. Quality up. Cost down.
                       </p>
                     </CardContent>
                   </Card>
@@ -314,31 +314,34 @@ export function HomePageClient() {
         <div className="text-right px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
           <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold leading-tight space-y-1 text-balance">
             <div>
-              Jo fixes{" "}
+              We staff{" "}
+              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
+                people and machines
+              </span>{" "}
+              to fix{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
                 labor bottlenecks
-              </span>{" "}
-              in{" "}
-              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-                highly regulated industries
               </span>
-               ,
             </div>
             <div>
-              so you{" "}
+              in{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-                stay compliant
+                Healthcare
               </span>
               ,{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-                cut costs
+                Energy
               </span>
-              , and finally have
+              , and{" "}
+              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
+                Manufacturing
+              </span>
+              —
             </div>
             <div>
-              enough hands to{" "}
+              the blue-collar jobs that are the{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-                get the work done
+                foundation of our country
               </span>
               .
             </div>

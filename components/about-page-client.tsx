@@ -110,7 +110,7 @@ export function AboutPageClient() {
                   <h4 className="font-bold text-gray-900 mb-2 text-center">Augmentation Over Replacement</h4>
                   <p className="text-gray-700 leading-relaxed text-center">
                     We build tools that amplify human potential, not diminish it. Our digital specialists work alongside
-                    employees as trusted teammates, handling repetitive tasks so people can focus on what humans do
+                    employees as trusted teammates, handling repetitive tasks so people can focus on what people do
                     best.
                   </p>
                 </div>

@@ -779,7 +779,7 @@ export default function FractionalOperationsPage() {
 
           <div className="mt-12 text-center bg-blue-900/40 p-6 rounded-xl border border-blue-500/30 max-w-3xl mx-auto">
             <p className="text-blue-100 font-medium">
-              "Jo from doesn't replace humans—it augments them. Our expert operators use Jo from to eliminate grunt work
+              "Jo from doesn't replace people—it supports them. Our expert operators use Jo from to eliminate grunt work
               so they can focus on strategic operations."
             </p>
           </div>

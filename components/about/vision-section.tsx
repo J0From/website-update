@@ -45,7 +45,7 @@ export function VisionSection() {
               <h4 className="font-bold text-gray-900 mb-2 text-lg">1. Augmentation Over Replacement</h4>
               <p className="text-gray-700 leading-relaxed">
                 We build tools that amplify human potential, not diminish it. Our digital specialists work alongside
-                employees as trusted teammates, handling repetitive tasks so people can focus on what humans do best.
+                employees as trusted teammates, handling repetitive tasks so people can focus on what people do best.
               </p>
             </div>
             <div>

@@ -62,7 +62,7 @@ export default function AboutUsPage() {
       number: 1,
       title: "Augmentation Over Automation",
       description:
-        "We build tools that amplify human potential, not diminish it. Our digital specialists work alongside employees as trusted teammates, handling repetitive tasks so people can focus on what humans do best.",
+        "We build tools that amplify human potential, not diminish it. Our digital specialists work alongside employees as trusted teammates, handling repetitive tasks so people can focus on what people do best.",
       icon: Sparkles,
     },
     {

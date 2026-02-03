@@ -1,24 +1,23 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
 import Script from "next/script"
 import { CookieBanner } from "@/components/cookie-banner"
 import { StructuredData } from "@/components/structured-data"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
-
 export const metadata: Metadata = {
-  title: "Human + Machine",
+  title: "Human + Machine | Jo from",
   description:
-    "We help businesses strike the right balance between Human + Machine. Digital employees for healthcare, manufacturing, energy, and food processing. Stay compliant, cut costs, reduce labor bottlenecks.",
+    "Jo from is a Staffing Firm. We place people and machines to fix labor bottlenecks in Healthcare, Energy, and Manufacturing—the blue-collar jobs that are the foundation of our country.",
   keywords: [
     "human machine balance",
-    "digital employees",
+    "staffing firm",
+    "labor bottleneck",
+    "healthcare staffing",
+    "energy staffing",
+    "manufacturing staffing",
     "compliance solutions",
-    "labor shortage solutions",
     "regulated industries",
-    "workforce solutions",
   ],
   icons: {
     icon: "/favicon.png",
@@ -27,19 +26,19 @@ export const metadata: Metadata = {
   },
   generator: "v0.app",
   openGraph: {
-    title: "Human + Machine",
+    title: "Jo from | Human + Machine Staffing",
     description:
-      "We help businesses strike the right balance between Human + Machine. Fix labor bottlenecks in regulated industries.",
+      "We place people and machines to fix labor bottlenecks in Healthcare, Energy, and Manufacturing.",
     type: "website",
     url: "https://www.jofrom.io",
-    siteName: "Jo",
+    siteName: "Jo from",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Human + Machine",
+    title: "Jo from | Human + Machine Staffing",
     description:
-      "We help businesses strike the right balance between Human + Machine. Fix labor bottlenecks in regulated industries.",
+      "We place people and machines to fix labor bottlenecks in Healthcare, Energy, and Manufacturing.",
   },
   robots: {
     index: true,
@@ -64,14 +63,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} antialiased`}>
+    <html lang="en" className="antialiased">
       <head>
         <link rel="icon" href="/favicon.png" sizes="any" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
         <StructuredData />
       </head>
-      <body className={inter.className}>
+      <body className="font-sans">
         {children}
         <CookieBanner />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-LXZ15J9WXC" strategy="afterInteractive" />

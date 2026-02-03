@@ -103,7 +103,7 @@ export function DepartmentFeaturesSection() {
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Collaboration Across Departments</h2>
           <p className="text-lg text-gray-600">
             Jo enables seamless human + machine workflows across every department, where automation handles structured
-            tasks while humans focus on strategy, creativity, and relationships
+            tasks while people focus on strategy, creativity, and relationships
           </p>
         </div>
 

@@ -2,40 +2,39 @@ import type { Metadata } from "next"
 import { HomePageClient } from "./HomePageClient"
 
 export const metadata: Metadata = {
-  title: "Human + Machine",
+  title: "Human + Machine | Jo from",
   description:
-    "Fix labor bottlenecks in highly regulated industries with digital employees. Stay compliant, cut costs, and handle repetitive tasks in healthcare, manufacturing, energy, and food processing.",
+    "Jo from is a Staffing Firm. We place people and machines to fix labor bottlenecks in Healthcare, Energy, and Manufacturing—the blue-collar jobs that are the foundation of our country.",
   keywords: [
     "human machine balance",
-    "labor shortage solutions",
+    "staffing firm",
+    "labor bottleneck",
+    "healthcare staffing",
+    "energy staffing",
+    "manufacturing staffing",
     "compliance solutions",
     "regulated industries",
-    "digital employees",
-    "healthcare solutions",
-    "manufacturing solutions",
-    "compliance tools",
-    "workforce management",
-    "labor cost reduction",
+    "workforce solutions",
   ],
   openGraph: {
-    title: "Jo: Human + Machine for Regulated Industries",
-    description: "Fix labor bottlenecks with digital employees. Stay compliant, cut costs, and get the work done.",
+    title: "Jo from | Human + Machine Staffing",
+    description: "We place people and machines to fix labor bottlenecks in Healthcare, Energy, and Manufacturing.",
     type: "website",
     url: "https://www.jofrom.io",
-    siteName: "Jo",
+    siteName: "Jo from",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Jo - Human + Machine Balance",
+        alt: "Jo from - Human + Machine Staffing",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jo: Human + Machine for Regulated Industries",
-    description: "Fix labor bottlenecks with digital employees. Stay compliant, cut costs, and get the work done.",
+    title: "Jo from | Human + Machine Staffing",
+    description: "We place people and machines to fix labor bottlenecks in Healthcare, Energy, and Manufacturing.",
     images: ["/og-image.png"],
   },
   alternates: {
