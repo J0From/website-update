@@ -316,7 +316,7 @@ export function HomePageClient() {
             <div>
               We staff{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-                people and machines
+                Human + Machines
               </span>{" "}
               to fix{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
@@ -341,7 +341,7 @@ export function HomePageClient() {
             <div>
               the blue-collar jobs that are the{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-                foundation of our country
+                foundation of our society
               </span>
               .
             </div>
