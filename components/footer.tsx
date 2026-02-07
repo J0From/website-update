@@ -60,7 +60,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/company/jofrom" className="text-slate-400 hover:text-white transition-colors">
-                  Jo from
+                  The Tech
                 </Link>
               </li>
               <li>
