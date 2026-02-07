@@ -332,13 +332,6 @@ export function HomePageClient() {
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
                 Manufacturing
               </span>
-              —
-            </div>
-            <div>
-              the blue-collar jobs that are the{" "}
-              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-                foundation of our society
-              </span>
               .
             </div>
           </div>
