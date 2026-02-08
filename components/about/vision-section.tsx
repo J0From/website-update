@@ -16,7 +16,7 @@ export function VisionSection() {
     <section className="py-16 sm:py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">
-          Workforce Augmentation for Every Business
+          Human + Machine for Every Business
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
@@ -42,7 +42,7 @@ export function VisionSection() {
           <h3 className="text-3xl font-bold text-gray-900 mb-10 text-center">Core Values</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h4 className="font-bold text-gray-900 mb-2 text-lg">1. Augmentation Over Replacement</h4>
+              <h4 className="font-bold text-gray-900 mb-2 text-lg">1. Collaboration Over Replacement</h4>
               <p className="text-gray-700 leading-relaxed">
                 We build tools that amplify human potential, not diminish it. Our digital specialists work alongside
                 employees as trusted teammates, handling repetitive tasks so people can focus on what people do best.
@@ -59,7 +59,7 @@ export function VisionSection() {
             <div>
               <h4 className="font-bold text-gray-900 mb-2 text-lg">3. Process Before Technology</h4>
               <p className="text-gray-700 leading-relaxed">
-                We automate good processes, not broken ones. Through our Discover → Design → Deploy framework, we ensure
+                We streamline good processes, not broken ones. Through our Discover → Design → Deploy framework, we ensure
                 every implementation improves workflows first, then scales them with precision.
               </p>
             </div>

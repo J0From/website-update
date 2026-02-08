@@ -60,7 +60,7 @@ export default function AboutUsPage() {
   const coreValues = [
     {
       number: 1,
-      title: "Augmentation Over Automation",
+      title: "Collaboration Over Busy Work",
       description:
         "We build tools that amplify human potential, not diminish it. Our digital specialists work alongside employees as trusted teammates, handling repetitive tasks so people can focus on what people do best.",
       icon: Sparkles,
@@ -76,7 +76,7 @@ export default function AboutUsPage() {
       number: 3,
       title: "Process Before Technology",
       description:
-        "We automate good processes, not broken ones. Through our Discover → Design → Deploy framework, we ensure every implementation improves workflows first, then scales them with precision.",
+        "We streamline good processes, not broken ones. Through our Discover → Design → Deploy framework, we ensure every implementation improves workflows first, then scales them with precision.",
       icon: Workflow,
     },
     {
@@ -139,7 +139,7 @@ export default function AboutUsPage() {
       <section className="py-16 sm:py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-gray-900">
-            A Blueprint for Optimized Augmentation
+            A Blueprint for Optimized Collaboration
           </h2>
           <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
             Our proprietary framework ensures your organization achieves the perfect balance between human expertise and

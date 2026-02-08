@@ -428,7 +428,7 @@ export default function GrowthPage() {
               {
                 icon: <Search />,
                 title: "Target Research",
-                desc: "AI-powered prospect identification",
+                desc: "Data-driven prospect identification",
               },
               {
                 icon: <Calendar />,
@@ -852,7 +852,7 @@ export default function GrowthPage() {
               },
               {
                 q: "Should I start with 15 hours or 30 hours per week?",
-                a: "Start with 15 hours if you're testing outbound for the first time, have a strong referral base you want to supplement, or have limited capacity to handle new clients right now. Go with 30 hours if you're serious about replacing referral dependence, ready to scale aggressively, or have the capacity to handle 6-10+ new conversations per month. Most clients start at 15 hours and scale to 30 hours once they see results.",
+                a: "Start with 15 hours if you're testing outbound for the first time, have a strong referral base you want to supplement, or have limited capacity to handle new clients right now. Go with 30 hours if you're serious about moving beyond referral dependence, ready to scale aggressively, or have the capacity to handle 6-10+ new conversations per month. Most clients start at 15 hours and scale to 30 hours once they see results.",
               },
               {
                 q: "We tried cold calling years ago and it didn't work. Why would it work now?",

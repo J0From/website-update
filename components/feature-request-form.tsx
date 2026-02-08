@@ -91,9 +91,9 @@ export default function FeatureRequestForm() {
             <h3 className="text-2xl font-bold text-gray-900">Simple Pricing</h3>
           </div>
           <div className="text-4xl font-bold text-blue-600 mb-2">$5</div>
-          <p className="text-lg text-gray-700 mb-4">per Jo agent, per month</p>
+          <p className="text-lg text-gray-700 mb-4">per Jo from department, per month</p>
           <p className="text-gray-600 text-sm">
-            Each department agent works 24/7 for less than the cost of a coffee. Scale up or down as your business
+            Each Jo from department works 24/7 for less than the cost of a coffee. Scale up or down as your business
             grows.
           </p>
           <Button disabled className="mt-4 bg-gray-400 cursor-not-allowed opacity-60">

@@ -25,7 +25,7 @@ export default function BusinessTypePage() {
       perfectFor: ["Freelancers & consultants", "Content creators", "E-commerce owners"],
       topAgents: [
         "Finance: Invoice & expense tracking",
-        "Marketing: Social & email automation",
+        "Marketing: Social & email management",
         "Support: Customer inquiries",
       ],
       agentCount: "3-5 typically needed",
@@ -68,7 +68,7 @@ export default function BusinessTypePage() {
       topAgents: [
         "Finance: Reporting & burn rate",
         "Operations: Process standardization",
-        "HR: Rapid scaling automation",
+        "HR: Rapid scaling management",
         "Sales: Pipeline optimization",
       ],
       agentCount: "Portfolio-wide efficiency pricing",

@@ -10,7 +10,7 @@ export function DivisionOfLaborSection() {
             A Smarter Division of Labor
           </h2>
           <p className="text-lg text-gray-600 mb-8 text-pretty">
-            The future of work isn't about replacing people—it's about optimizing the collaboration between{" "}
+            The future of work isn't about removing people—it's about optimizing the collaboration between{" "}
             <strong>Human + Machine</strong> capabilities
           </p>
         </div>
@@ -74,7 +74,7 @@ export function DivisionOfLaborSection() {
         <div className="text-center">
           <p className="text-lg text-gray-600 max-w-3xl mx-auto text-pretty">
             Jo enables organizations to optimize <strong>Human + Machine</strong> collaboration with intelligent
-            automation that <strong>amplifies human capabilities</strong> rather than replacing them.
+            machine capabilities that <strong>amplify human expertise</strong> rather than removing it.
           </p>
         </div>
       </div>

@@ -132,8 +132,8 @@ const benefits = [
   },
   {
     icon: Cog,
-    title: "Augmented by Jo",
-    description: "Our AI platform handles scheduling, compliance tracking, and workforce optimization in real-time.",
+    title: "Enabled by Jo",
+    description: "Our platform handles scheduling, compliance tracking, and workforce optimization in real-time.",
   },
 ]
 
@@ -146,7 +146,7 @@ const processSteps = [
   {
     step: "02",
     title: "MATCH",
-    description: "Our AI-augmented system identifies and vets the ideal contract specialists.",
+    description: "Our intelligent system identifies and vets the ideal contract specialists.",
   },
   {
     step: "03",
@@ -310,7 +310,7 @@ export function HirePageClient() {
 
             <p className="text-lg md:text-xl text-[#7a8a9a] leading-relaxed max-w-2xl mb-10">
               We deploy skilled contract workers for engineering, healthcare, production, and
-              energy operations -- field-ready, compliance-verified, and augmented by our platform.
+              energy operations -- field-ready, compliance-verified, and enabled by our platform.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

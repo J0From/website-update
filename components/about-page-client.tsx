@@ -77,7 +77,7 @@ export function AboutPageClient() {
       <section className="py-16 sm:py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">
-            Workforce Augmentation for Every Business
+            Human + Machine for Every Business
           </h2>
 
           {/* Mission and Vision */}
@@ -107,7 +107,7 @@ export function AboutPageClient() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Core Values</h3>
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-2 text-center">Augmentation Over Replacement</h4>
+                  <h4 className="font-bold text-gray-900 mb-2 text-center">Collaboration Over Replacement</h4>
                   <p className="text-gray-700 leading-relaxed text-center">
                     We build tools that amplify human potential, not diminish it. Our digital specialists work alongside
                     employees as trusted teammates, handling repetitive tasks so people can focus on what people do
@@ -125,7 +125,7 @@ export function AboutPageClient() {
                 <div>
                   <h4 className="font-bold text-gray-900 mb-2 text-center">Process Before Technology</h4>
                   <p className="text-gray-700 leading-relaxed text-center">
-                    We automate good processes, not broken ones. Through our Discover → Design → Deploy framework, we
+                    We streamline good processes, not broken ones. Through our Discover → Design → Deploy framework, we
                     ensure every implementation improves workflows first, then scales them with precision.
                   </p>
                 </div>
@@ -170,7 +170,7 @@ export function AboutPageClient() {
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-gray-900">
-            A Blueprint for Optimized Augmentation
+            A Blueprint for Optimized Collaboration
           </h2>
           <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
             Our proprietary framework ensures your organization achieves the perfect balance between human expertise and
@@ -262,7 +262,7 @@ export function AboutPageClient() {
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700">Pre-configured department agents</span>
+                    <span className="text-gray-700">Pre-configured Jo from departments</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />

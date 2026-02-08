@@ -20,11 +20,11 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "Jo from — The Technology | How Our Platform Works",
   description:
-    "Dive deeper into Jo's technology stack. Learn how our AI-powered platform builds specialized digital coworkers that integrate seamlessly into regulated operations.",
+    "Dive deeper into Jo's technology stack. Learn how our Human + Machine platform builds specialized digital coworkers that integrate seamlessly into regulated operations.",
   openGraph: {
     title: "Jo from — The Technology Behind the Platform",
     description:
-      "Explore the architecture, AI models, and engineering principles powering Jo's digital coworkers for healthcare, energy, and manufacturing.",
+      "Explore the architecture, machine capabilities, and engineering principles powering Jo's digital coworkers for healthcare, energy, and manufacturing.",
     url: "https://jofrom.io/company/jofrom",
     type: "website",
   },
@@ -62,7 +62,7 @@ export default function JoFromPage() {
     {
       title: "Domain-Specific Models",
       description:
-        "Jo's AI isn't one model doing everything. We deploy specialized models fine-tuned for each role — nursing intake, equipment diagnostics, quality inspection — so accuracy stays high where it matters most.",
+        "Jo isn't one model doing everything. We deploy specialized models fine-tuned for each role — nursing intake, equipment diagnostics, quality inspection — so accuracy stays high where it matters most.",
       icon: Cpu,
     },
     {
@@ -133,7 +133,7 @@ export default function JoFromPage() {
             </span>
           </h1>
           <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Jo is not another AI assistant. It is a platform for building, deploying, and managing specialized digital
+            Jo is not another generic assistant. It is a platform for building, deploying, and managing specialized digital
             coworkers inside regulated operations.
           </p>
         </div>

@@ -47,7 +47,7 @@ export function MethodologyPageClient() {
   const phases = ["Initiate", "Acquire", "Configure", "Validate", "Process", "Observe", "Adjust", "Complete"]
 
   const outputs = [
-    { icon: BarChart3, text: "End-to-end labor execution map" }, { icon: Users, text: "Human + machine capacity plan" }, { icon: Shield, text: "Compliance-safe augmentation roadmap" }, { icon: FileCheck, text: "Audit-ready evidence trail" }, { icon: Zap, text: "Cost savings and risk mitigation analysis" }, { icon: Target, text: "Cross-functional impact analysis" },
+    { icon: BarChart3, text: "End-to-end labor execution map" }, { icon: Users, text: "Human + machine capacity plan" }, { icon: Shield, text: "Compliance-safe collaboration roadmap" }, { icon: FileCheck, text: "Audit-ready evidence trail" }, { icon: Zap, text: "Cost savings and risk mitigation analysis" }, { icon: Target, text: "Cross-functional impact analysis" },
   ]
 
   const layers = [

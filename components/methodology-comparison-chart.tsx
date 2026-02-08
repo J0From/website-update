@@ -37,14 +37,14 @@ export function MethodologyComparisonChart() {
         </>
       ),
       methodology:
-        "Decomposes jobs into Input → Throughput → Output stages to evaluate Human vs. Machine suitability for augmentation. Focuses on optimizing the division of labor.",
+        "Decomposes jobs into Input → Throughput → Output stages to evaluate Human vs. Machine suitability for collaboration. Focuses on optimizing the division of labor.",
       factors: [
         "Input: Knowledge/Skills, Compliance, Communication, Problem-Solving, Resources/Tools",
         "Throughput: Decision-Making, Info Processing, Creativity, Coordination, Adaptability",
         "Output: Deliverables, Service, Decisions, Performance, Knowledge Transfer",
       ],
       purpose:
-        "Not a sizing/grading methodology. It's a way to look at work objectively to identify where Automation, AI, RPA, or Robotics will add value. It assesses the expected friction during implementation and informs strategies to preempt it. Applicable to any job.",
+        "Not a sizing/grading methodology. It's a way to look at work objectively to identify where machine capabilities will add value. It assesses the expected friction during implementation and informs strategies to preempt it. Applicable to any job.",
     },
   ]
 
