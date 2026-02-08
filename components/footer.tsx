@@ -125,7 +125,7 @@ export function Footer() {
           {/* Brand Section */}
           <div className="sm:text-right">
             <Link href="/" className="text-xl font-bold text-white inline-flex items-center gap-0 mb-2">
-              <Logo width={22} height={22} className="text-white [&>span]:text-white" />
+              <Logo width={16} height={16} className="text-white [&>span]:text-white" />
               <span>from</span>
             </Link>
             <p className="text-sm text-slate-400">
