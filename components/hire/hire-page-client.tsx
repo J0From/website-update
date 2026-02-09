@@ -279,6 +279,48 @@ export function HirePageClient() {
         </div>
       </section>
 
+      {/* Sector Photo Strip */}
+      <section className="py-12 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {jobCategories.map((cat) => {
+              const Icon = cat.icon
+              return (
+                <button
+                  key={cat.id}
+                  onClick={() => {
+                    setActiveCategory(cat.id)
+                    document.getElementById("sectors")?.scrollIntoView({ behavior: "smooth" })
+                  }}
+                  className="group relative aspect-[3/2] rounded-xl overflow-hidden"
+                >
+                  <Image
+                    src={cat.image}
+                    alt={cat.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/30 to-transparent" />
+                  <div className="absolute bottom-3 left-3 right-3 flex items-end justify-between">
+                    <div>
+                      <div className="text-[10px] text-blue-300 uppercase tracking-wider mb-0.5">
+                        {cat.subtitle}
+                      </div>
+                      <div className="text-sm font-bold text-white">
+                        {cat.title}
+                      </div>
+                    </div>
+                    <div className="w-8 h-8 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                      <Icon size={14} className="text-white" />
+                    </div>
+                  </div>
+                </button>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Stats Bar */}
       <section className="bg-gradient-to-r from-blue-600 to-purple-600 py-10">
         <div className="max-w-6xl mx-auto px-6">
@@ -554,7 +596,7 @@ export function HirePageClient() {
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 text-balance">
             Deploy Your Workforce{" "}
-            <span className="bg-gradient-to-r from-cyan-300 to-pink-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-200 to-purple-200 bg-clip-text text-transparent">
               Today
             </span>
           </h2>
