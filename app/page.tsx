@@ -1,6 +1,8 @@
 import type { Metadata } from "next"
 import { HomePageClient } from "./HomePageClient"
 
+export const dynamic = "force-dynamic"
+
 export const metadata: Metadata = {
   title: "Human + Machine | Jo from",
   description:
