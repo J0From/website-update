@@ -21,7 +21,7 @@ import {
   Fuel,
   Server,
   CircuitBoard,
-  Activity,
+  Activity as ActivityIcon,
   Thermometer,
   Hammer,
   Gauge,
@@ -40,7 +40,7 @@ const jobCategories = [
     subtitle: "Sector 01",
     description:
       "Deploy skilled engineers and technical specialists for infrastructure, software systems, and advanced technology projects.",
-    image: "/images/hire-engineering.jpg",
+    image: "/images/enrgey-20.jpg",
     icon: Cpu,
     roles: [
       "Systems Engineers",
@@ -59,7 +59,7 @@ const jobCategories = [
     subtitle: "Sector 02",
     description:
       "Certified healthcare professionals for hospitals, clinics, and field medical operations across all specialties.",
-    image: "/images/hire-healthcare.jpg",
+    image: "/images/img-services-emergency-department-banner.avif",
     icon: Stethoscope,
     roles: [
       "Travel Nurses",
@@ -78,7 +78,7 @@ const jobCategories = [
     subtitle: "Sector 03",
     description:
       "Experienced production operators and manufacturing specialists for high-output, compliance-driven environments.",
-    image: "/images/hire-production.jpg",
+    image: "/images/food-processing.jpg",
     icon: Factory,
     roles: [
       "Production Supervisors",
@@ -97,7 +97,7 @@ const jobCategories = [
     subtitle: "Sector 04",
     description:
       "Certified field workers for energy infrastructure, utilities, and large-scale field deployment projects.",
-    image: "/images/hire-energy.jpg",
+    image: "/images/energy-20and-20infastructure.webp",
     icon: Zap,
     roles: [
       "Lineworkers",
@@ -170,7 +170,7 @@ const industries = [
   { icon: Wrench, label: "Maintenance" },
   { icon: HardHat, label: "Construction" },
   { icon: CircuitBoard, label: "Electronics" },
-  { icon: Activity, label: "Clinical" },
+  { icon: ActivityIcon, label: "Clinical" },
   { icon: Fuel, label: "Oil & Gas" },
   { icon: Server, label: "Data Centers" },
   { icon: Thermometer, label: "HVAC" },
@@ -223,8 +223,8 @@ export function HirePageClient() {
       <section className="relative min-h-[80vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/hire-hero.jpg"
-            alt="Workers in the field"
+            src="/images/energy-20and-20infastructure.webp"
+            alt="Industrial workers on site"
             fill
             className="object-cover"
             priority
