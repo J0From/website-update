@@ -74,7 +74,7 @@ export function DivisionOfLaborSection() {
         <div className="text-center">
           <p className="text-lg text-gray-600 max-w-3xl mx-auto text-pretty">
             Jo enables organizations to optimize <strong>Human + Machine</strong> collaboration with intelligent
-            automation that <strong>amplifies human capabilities</strong> rather than replacing them.
+            collaboration that <strong>amplifies human capabilities</strong> rather than replacing them.
           </p>
         </div>
       </div>

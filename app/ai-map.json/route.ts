@@ -64,7 +64,7 @@ export async function GET() {
     solutions: [
       {
         name: "SMB Solution",
-        description: "AI-powered workforce assistant for small and medium businesses",
+        description: "Human + Machine workforce assistant for small and medium businesses",
         url: "/solutions/smb",
         priceModel: "Subscription",
       },
@@ -76,7 +76,7 @@ export async function GET() {
       },
       {
         name: "Fractional Deployment",
-        description: "Flexible staffing augmentation with Jo-enabled temporary workers",
+        description: "Flexible staffing collaboration with Jo-enabled temporary workers",
         url: "/solutions/consulting/fractional",
         priceModel: "Per-deployment",
       },
@@ -84,8 +84,8 @@ export async function GET() {
     keyCapabilities: [
       "Computer vision for physical task verification",
       "Real-time sensor integration",
-      "Automated audit evidence generation",
-      "Regulatory compliance automation",
+      "Streamlined audit evidence generation",
+      "Regulatory compliance management",
       "Human-machine task allocation",
       "24/7 operational continuity",
     ],

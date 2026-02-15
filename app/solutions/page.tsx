@@ -9,11 +9,11 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "Solutions for Every Business | Jo: Human + Machine",
   description:
-    "Discover Jo's intelligent automation solutions for SMBs, enterprises, and consultants. Choose the right digital workforce for your business size and industry needs.",
+    "Discover Jo's Human + Machine solutions for SMBs, enterprises, and consultants. Choose the right workforce collaboration for your business size and industry needs.",
   openGraph: {
     title: "Solutions for Every Business | Jo: Human + Machine",
     description:
-      "Discover Jo's intelligent automation solutions for SMBs, enterprises, and consultants. Choose the right digital workforce for your business size and industry needs.",
+      "Discover Jo's Human + Machine solutions for SMBs, enterprises, and consultants. Choose the right workforce collaboration for your business size and industry needs.",
     url: "https://www.jofrom.io/solutions",
     siteName: "Jo: Human + Machine",
     type: "website",
@@ -33,7 +33,7 @@ export default function SolutionsPage() {
       href: "/enterprise",
       icon: Building,
       title: "Enterprise",
-      description: "Advanced automation for complex organizations",
+      description: "Advanced Human + Machine solutions for complex organizations",
       gradient: "from-indigo-500 to-blue-500",
     },
     {

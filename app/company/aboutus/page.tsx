@@ -22,11 +22,11 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "About Jo | Human + Machine Balance | Our Mission & Values",
   description:
-    "Learn about Jo's mission to redefine work by balancing human creativity with machine efficiency. Our Discover, Design, Deploy framework helps businesses optimize operations through specialized digital coworkers.",
+    "Learn about Jo's mission to redefine work by balancing human creativity with machine efficiency. Our Discover, Design, Deploy framework helps businesses optimize operations through Human + Machine collaboration.",
   openGraph: {
     title: "About Jo | Human + Machine Balance",
     description:
-      "Learn about Jo's mission to redefine the future of work through intelligent digital coworkers and our proprietary framework.",
+      "Learn about Jo's mission to redefine the future of work through Human + Machine collaboration and our proprietary framework.",
     url: "https://www.jofrom.io/company/aboutus",
     type: "website",
   },
@@ -45,7 +45,7 @@ export default function AboutUsPage() {
       number: 2,
       title: "Design",
       description:
-        "Next, we optimize your workflows and strategically distribute tasks between your team and Jo's digital specialists for maximum efficiency.",
+        "Next, we optimize your workflows and strategically distribute tasks between your team and Jo from for maximum efficiency.",
       icon: Users,
     },
     {
@@ -60,23 +60,23 @@ export default function AboutUsPage() {
   const coreValues = [
     {
       number: 1,
-      title: "Augmentation Over Automation",
+      title: "Collaboration Over Replacement",
       description:
-        "We build tools that amplify human potential, not diminish it. Our digital specialists work alongside employees as trusted teammates, handling repetitive tasks so people can focus on what people do best.",
+        "We build tools that amplify human potential, not diminish it. Jo from works alongside employees as a trusted teammate, handling repetitive tasks so people can focus on what people do best.",
       icon: Sparkles,
     },
     {
       number: 2,
       title: "Specialization Through Depth",
       description:
-        "We reject one-size-fits-all solutions. Every digital coworker we create possesses deep domain expertise for specific roles and industries, delivering an experience that feels custom-built without the custom price tag.",
+        "We reject one-size-fits-all solutions. Every Jo from department possesses deep domain expertise for specific roles and industries, delivering an experience that feels custom-built without the custom price tag.",
       icon: Layers,
     },
     {
       number: 3,
       title: "Process Before Technology",
       description:
-        "We automate good processes, not broken ones. Through our Discover → Design → Deploy framework, we ensure every implementation improves workflows first, then scales them with precision.",
+        "We streamline good processes, not broken ones. Through our Discover → Design → Deploy framework, we ensure every implementation improves workflows first, then scales them with precision.",
       icon: Workflow,
     },
     {
@@ -139,7 +139,7 @@ export default function AboutUsPage() {
       <section className="py-16 sm:py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-gray-900">
-            A Blueprint for Optimized Augmentation
+            A Blueprint for Human + Machine Balance
           </h2>
           <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
             Our proprietary framework ensures your organization achieves the perfect balance between human expertise and
@@ -179,7 +179,7 @@ export default function AboutUsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-900">Our Mission</h2>
           <p className="text-xl text-gray-700 leading-relaxed">
-            To empower businesses by building specialized digital coworkers that handle routine operational work,
+            To empower businesses through Human + Machine collaboration that handles routine operational work,
             freeing human employees to focus on creativity, judgment, and strategic thinking.
           </p>
         </div>

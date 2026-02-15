@@ -20,11 +20,11 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "Jo from — The Technology | How Our Platform Works",
   description:
-    "Dive deeper into Jo's technology stack. Learn how our AI-powered platform builds specialized digital coworkers that integrate seamlessly into regulated operations.",
+    "Dive deeper into Jo's technology stack. Learn how our platform builds specialized Human + Machine solutions that integrate seamlessly into regulated operations.",
   openGraph: {
     title: "Jo from — The Technology Behind the Platform",
     description:
-      "Explore the architecture, AI models, and engineering principles powering Jo's digital coworkers for healthcare, energy, and manufacturing.",
+      "Explore the architecture, models, and engineering principles powering Jo from for healthcare, energy, and manufacturing.",
     url: "https://www.jofrom.io/company/jofrom",
     type: "website",
   },
@@ -35,7 +35,7 @@ export default function JoFromPage() {
     {
       title: "Integration Layer",
       description:
-        "Jo connects to your existing systems — EHRs, ERPs, SCADA, CMMS, and more — without ripping anything out. Our adapters normalize data across platforms so digital coworkers see a unified picture of your operation.",
+        "Jo connects to your existing systems — EHRs, ERPs, SCADA, CMMS, and more — without ripping anything out. Our adapters normalize data across platforms so Jo from sees a unified picture of your operation.",
       icon: Network,
     },
     {
@@ -62,7 +62,7 @@ export default function JoFromPage() {
     {
       title: "Domain-Specific Models",
       description:
-        "Jo's AI isn't one model doing everything. We deploy specialized models fine-tuned for each role — nursing intake, equipment diagnostics, quality inspection — so accuracy stays high where it matters most.",
+        "Jo from isn't one model doing everything. We deploy specialized models fine-tuned for each role — nursing intake, equipment diagnostics, quality inspection — so accuracy stays high where it matters most.",
       icon: Cpu,
     },
     {
@@ -80,7 +80,7 @@ export default function JoFromPage() {
     {
       title: "Modular Architecture",
       description:
-        "Start with one digital coworker for one department. Add more as you scale. Each module is independent but shares context through our orchestration layer, so the whole system gets smarter together.",
+        "Start with one Jo from department. Add more as you scale. Each module is independent but shares context through our orchestration layer, so the whole system gets smarter together.",
       icon: Layers,
     },
   ]
@@ -133,8 +133,8 @@ export default function JoFromPage() {
             </span>
           </h1>
           <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Jo is not another AI assistant. It is a platform for building, deploying, and managing specialized digital
-            coworkers inside regulated operations.
+            Jo from is not another chatbot. It is a platform for building, deploying, and managing specialized
+            Human + Machine collaboration inside regulated operations.
           </p>
         </div>
       </section>
@@ -222,7 +222,7 @@ export default function JoFromPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-slate-900">How It Works in Practice</h2>
           <p className="text-lg text-slate-600 text-center mb-12 max-w-3xl mx-auto">
-            A digital coworker deployment follows a clear, repeatable process
+            A Jo from deployment follows a clear, repeatable process
           </p>
 
           <div className="space-y-8">
@@ -240,7 +240,7 @@ export default function JoFromPage() {
               {
                 step: "Deploy",
                 detail:
-                  "Digital coworkers go live alongside your team. They execute assigned tasks, log every action, and escalate anything outside their defined scope.",
+                  "Jo from goes live alongside your team. It executes assigned tasks, logs every action, and escalates anything outside its defined scope.",
               },
               {
                 step: "Measure",

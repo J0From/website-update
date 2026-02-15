@@ -11,7 +11,7 @@ export function RegulatedIndustriesSection() {
       icon: ClipboardCheck,
       features: [
         "Real-time quality monitoring dashboards",
-        "Automated compliance documentation",
+        "Streamlined compliance documentation",
         "Batch testing and validation tracking",
         "Quality event investigation workflows",
         "Supplier quality management",

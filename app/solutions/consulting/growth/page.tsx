@@ -428,7 +428,7 @@ export default function GrowthPage() {
               {
                 icon: <Search />,
                 title: "Target Research",
-                desc: "AI-powered prospect identification",
+                desc: "Smart prospect identification",
               },
               {
                 icon: <Calendar />,

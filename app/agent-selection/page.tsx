@@ -45,7 +45,7 @@ export default function AgentSelectionPage() {
       title: "HR",
       icon: "👥",
       features: [
-        "Inclusive AI job-description writer with salary bands",
+        "Inclusive job-description writer with salary bands",
         "Résumé short-listing and interview-question suggestions",
         "One-click onboarding checklist (accounts, docs, training)",
         "Pulse-survey bot with sentiment analytics & attrition flags",
@@ -72,7 +72,7 @@ export default function AgentSelectionPage() {
       title: "IT",
       icon: "💻",
       features: [
-        "AI triage of help-desk tickets (priority, routing, draft replies)",
+        "Smart triage of help-desk tickets (priority, routing, draft replies)",
         "Auto-provision / de-provision SaaS accounts via Okta or Google Workspace",
         "CVE feed monitoring with patch-schedule suggestions",
         "Auto-generated security policies (AUP, BYOD, incident response)",
@@ -101,7 +101,7 @@ export default function AgentSelectionPage() {
       icon: "📋",
       features: [
         "Meeting scheduler with automatic agenda creation and follow-ups",
-        "Travel booking and expense report automation",
+        "Travel booking and expense report management",
         "Office supply inventory tracking with auto-reorder triggers",
         "Visitor management system with badge printing and notifications",
         "Document template library with version control",
@@ -114,7 +114,7 @@ export default function AgentSelectionPage() {
       title: "Support",
       icon: "🎧",
       features: [
-        "Omni-channel inbox (email, chat, socials) with AI-draft replies",
+        "Omni-channel inbox (email, chat, socials) with smart draft replies",
         "Auto-build knowledge-base articles from solved tickets",
         "Sentiment radar that flags frustration and auto-escalates",
         "Voice-of-customer theme clustering and product-feedback tags",
@@ -162,7 +162,7 @@ export default function AgentSelectionPage() {
         "Deal-health signals predicting slip risk & next-best action",
         "Quote & proposal drafter with dynamic pricing blocks",
         "Pipeline hygiene bot nudging reps to update stages",
-        "AI-assisted forecast with explain-why deltas",
+        "Smart forecast with explain-why deltas",
       ],
     },
   ]

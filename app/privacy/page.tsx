@@ -97,7 +97,7 @@ export default function PrivacyPage() {
             <p className="text-slate-700 leading-relaxed">
               If you choose to connect third-party applications to your Jo account (such as Slack, Google Drive, OpenAI,
               Salesforce, QuickBooks, etc.), we may receive information from those services, including authentication
-              tokens, content, and data necessary to provide the requested automation. The information we receive from
+              tokens, content, and data necessary to provide the requested services. The information we receive from
               these third parties is subject to their respective privacy policies.
             </p>
           </section>

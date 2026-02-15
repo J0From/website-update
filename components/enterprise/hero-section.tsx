@@ -14,7 +14,7 @@ export function EnterpriseHeroSection() {
           </h1>
 
           <p className="text-lg sm:text-xl lg:text-2xl text-blue-100 mb-12 leading-relaxed max-w-3xl mx-auto font-light text-pretty">
-            Transform your business operations with intelligent automation that amplifies human capabilities across
+            Transform your business operations with Human + Machine collaboration that amplifies human capabilities across
             every department.
           </p>
 

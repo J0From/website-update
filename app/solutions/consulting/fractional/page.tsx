@@ -202,7 +202,7 @@ export default function FractionalOperationsPage() {
                 Stop Drowning in Operations. <span className="text-blue-600">Start Scaling.</span>
               </h1>
               <p className="text-lg lg:text-xl text-slate-600 mb-8 leading-relaxed">
-                Get dedicated operations support managing your backend—augmented by Jo—so you can focus on growth.
+                Get dedicated operations support managing your backend—enabled by Jo—so you can focus on growth.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
@@ -237,7 +237,7 @@ export default function FractionalOperationsPage() {
                   </div>
                 </div>
                 <div className="space-y-4">
-                  {["Expert operations team", "Jo powered augmentation", "Financial clarity"].map((item, i) => (
+                  {["Expert operations team", "Jo powered collaboration", "Financial clarity"].map((item, i) => (
                     <div key={i} className="flex items-center gap-3">
                       <div className="flex-shrink-0 w-6 h-6 bg-blue-50 rounded-full flex items-center justify-center">
                         <Check size={14} className="text-blue-600" />
@@ -302,7 +302,7 @@ export default function FractionalOperationsPage() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">Your Operations Team</h2>
             <p className="text-lg text-blue-50 leading-relaxed">
-              Expert operators managing your backend, augmented by Jo for maximum efficiency.
+              Expert operators managing your backend, enabled by Jo for maximum efficiency.
             </p>
           </div>
 
@@ -315,8 +315,8 @@ export default function FractionalOperationsPage() {
               },
               {
                 icon: <Cpu size={40} className="text-purple-200" />,
-                title: "Smart Augmentation",
-                desc: "Jo handles repetitive tasks automatically",
+                title: "Smart Collaboration",
+                desc: "Jo handles repetitive tasks seamlessly",
               },
               {
                 icon: <TrendingUp size={40} className="text-purple-200" />,
@@ -355,7 +355,7 @@ export default function FractionalOperationsPage() {
                   time: "Week 1",
                 },
                 {
-                  title: "System Setup & Augmentation",
+                  title: "System Setup & Integration",
                   desc: "Implement scalable processes, integrate Jo from, and clean up your backend.",
                   time: "Weeks 2-3",
                 },
@@ -366,7 +366,7 @@ export default function FractionalOperationsPage() {
                 },
                 {
                   title: "Continuous Optimization",
-                  desc: "Refine systems, add augmentation, and scale processes as you grow.",
+                  desc: "Refine systems, add workflows, and scale processes as you grow.",
                   time: "Ongoing",
                 },
               ].map((step, i) => (
@@ -411,8 +411,8 @@ export default function FractionalOperationsPage() {
               },
               {
                 icon: <LinkIcon />,
-                title: "System Augmentation",
-                desc: "Connect tools, automate workflows",
+                title: "System Integration",
+                desc: "Connect tools, streamline workflows",
               },
               {
                 icon: <Kanban />,
@@ -484,7 +484,7 @@ export default function FractionalOperationsPage() {
               <ul className="space-y-4">
                 {[
                   "Focus on client work",
-                  "Automated processes",
+                  "Streamlined processes",
                   "Clear financial picture",
                   "Team handling operations",
                   "Ready to scale",
@@ -633,7 +633,7 @@ export default function FractionalOperationsPage() {
                 <ul className="space-y-4 mb-8">
                   {[
                     "Monthly financial close & reporting",
-                    "Augmented bookkeeping & invoicing",
+                    "Smart bookkeeping & invoicing",
                     "1-2 process projects per month",
                     "Basic HR/payroll coordination",
                     "Quarterly financial analysis",
@@ -701,7 +701,7 @@ export default function FractionalOperationsPage() {
                     <strong className="text-slate-800">Docs (3h):</strong> SOPs, system setup
                   </li>
                   <li>
-                    <strong className="text-slate-800">Augmentation (2h):</strong> Jo from integration
+                    <strong className="text-slate-800">Integration (2h):</strong> Jo from setup
                   </li>
                   <li>
                     <strong className="text-slate-800">Planning/Team (2h):</strong> Planning, HR basics
@@ -724,7 +724,7 @@ export default function FractionalOperationsPage() {
                     <strong className="text-slate-800">Reporting (4h):</strong> Deep analysis
                   </li>
                   <li>
-                    <strong className="text-slate-800">Augmentation (4h):</strong> Advanced workflows
+                    <strong className="text-slate-800">Integration (4h):</strong> Advanced workflows
                   </li>
                   <li>
                     <strong className="text-slate-800">Projects (3h):</strong> Resource tracking
@@ -750,24 +750,24 @@ export default function FractionalOperationsPage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Meet Jo from: Your Operations Augmentation Partner</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Meet Jo from: Your Operations Collaboration Partner</h2>
             <p className="text-xl text-slate-300">Human expertise enhanced by intelligent technology</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                title: "Augmented Bookkeeping",
+                title: "Smart Bookkeeping",
                 desc: "Reduces manual data entry by 80% via bank connections and categorization.",
               },
-              { title: "Smart Invoicing", desc: "Technology-augmented generation, sending, and follow-up reminders." },
+              { title: "Smart Invoicing", desc: "Intelligent generation, sending, and follow-up reminders." },
               {
                 title: "Real-Time Dashboards",
-                desc: "Live P&L and cash flow metrics updated with technology augmentation.",
+                desc: "Live P&L and cash flow metrics updated with smart technology.",
               },
               {
-                title: "Process Augmentation",
-                desc: "Augments repetitive tasks: data entry, reporting, notifications.",
+                title: "Process Optimization",
+                desc: "Handles repetitive tasks: data entry, reporting, notifications.",
               },
             ].map((feature, i) => (
               <div key={i} className="bg-slate-800 p-6 rounded-xl border border-slate-700">
@@ -1164,7 +1164,7 @@ export default function FractionalOperationsPage() {
               </Link>
               <p className="text-sm leading-relaxed max-w-xs">
                 Helping service businesses eliminate operational chaos and scale systematically with real People &
-                Technology Augmentation.
+                Human + Machine collaboration.
               </p>
               {/* Social media links update */}
               <div className="flex gap-4 mt-6">

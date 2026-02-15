@@ -28,7 +28,7 @@ export function BenefitsSection() {
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">Reduction in Manual Tasks</h3>
               <p className="text-slate-600 leading-relaxed">
-                Automate routine workflows across departments, freeing up valuable employee time for strategic
+                Streamline routine workflows across departments, freeing up valuable employee time for strategic
                 initiatives.
               </p>
             </CardContent>
@@ -44,7 +44,7 @@ export function BenefitsSection() {
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">Faster Process Completion</h3>
               <p className="text-slate-600 leading-relaxed">
-                Accelerate workflows with 24/7 automation that eliminates bottlenecks and reduces wait times.
+                Accelerate workflows with 24/7 Human + Machine collaboration that eliminates bottlenecks and reduces wait times.
               </p>
             </CardContent>
           </Card>
@@ -74,7 +74,7 @@ export function BenefitsSection() {
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">Compliance Accuracy</h3>
               <p className="text-slate-600 leading-relaxed">
-                Ensure consistent adherence to policies and regulations with automated compliance checks.
+                Ensure consistent adherence to policies and regulations with continuous compliance checks.
               </p>
             </CardContent>
           </Card>

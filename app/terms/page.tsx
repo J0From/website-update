@@ -56,13 +56,13 @@ export default function TermsPage() {
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-slate-900 mb-4">2. Description of Services</h2>
             <p className="text-slate-700 leading-relaxed mb-4">
-              Jo provides a Human + Machine collaboration platform that helps businesses automate workflows, integrate
-              with third-party applications, and optimize operations through AI-powered agents. Our Services include:
+              Jo provides a Human + Machine collaboration platform that helps businesses streamline workflows, integrate
+              with third-party applications, and optimize operations. Our Services include:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-slate-700">
-              <li>AI-powered automation and workflow management</li>
+              <li>Human + Machine workflow management</li>
               <li>Integration with third-party business applications</li>
-              <li>Custom agent configuration and deployment</li>
+              <li>Custom department configuration and deployment</li>
               <li>Analytics and reporting tools</li>
               <li>Enterprise consulting and implementation services</li>
             </ul>

@@ -139,7 +139,7 @@ export default function IntegrationsPage() {
               className="text-blue-600 hover:text-blue-700 hover:bg-blue-50"
             >
               <ArrowLeft className="w-3 h-3 mr-1" />
-              Back to Agent Selection
+              Back to Department Selection
             </Button>
           </div>
         </div>

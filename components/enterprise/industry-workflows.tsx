@@ -20,7 +20,7 @@ export function IndustryWorkflowsSection() {
             </div>
             <h4 className="font-bold text-xl text-slate-900 mb-3 text-center">Compliance Documentation</h4>
             <p className="text-sm text-slate-600 text-center leading-relaxed">
-              Automated generation of regulatory filings, audit documentation, and compliance reports
+              Streamlined generation of regulatory filings, audit documentation, and compliance reports
             </p>
           </div>
 
@@ -30,7 +30,7 @@ export function IndustryWorkflowsSection() {
             </div>
             <h4 className="font-bold text-xl text-slate-900 mb-3 text-center">Data Governance</h4>
             <p className="text-sm text-slate-600 text-center leading-relaxed">
-              Automated data classification, retention policies, and privacy controls
+              Smart data classification, retention policies, and privacy controls
             </p>
           </div>
 
@@ -40,7 +40,7 @@ export function IndustryWorkflowsSection() {
             </div>
             <h4 className="font-bold text-xl text-slate-900 mb-3 text-center">Risk Management</h4>
             <p className="text-sm text-slate-600 text-center leading-relaxed">
-              Continuous monitoring, risk assessment, and automated incident response
+              Continuous monitoring, risk assessment, and intelligent incident response
             </p>
           </div>
 
@@ -50,7 +50,7 @@ export function IndustryWorkflowsSection() {
             </div>
             <h4 className="font-bold text-xl text-slate-900 mb-3 text-center">Regulatory Reporting</h4>
             <p className="text-sm text-slate-600 text-center leading-relaxed">
-              Automated preparation and submission of required regulatory reports
+              Streamlined preparation and submission of required regulatory reports
             </p>
           </div>
         </div>

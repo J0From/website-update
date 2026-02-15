@@ -110,7 +110,7 @@ export default function PurchasePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white">Choose Your Plan</h1>
           <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto">
-            Designed to help businesses automate and scale with the ease of one click
+            Designed to help businesses streamline and scale with the ease of one click
           </p>
         </div>
       </section>
@@ -170,7 +170,7 @@ export default function PurchasePage() {
                   <CardHeader className="text-center pb-4">
                     <h3 className="text-lg font-semibold text-slate-900 mb-2">{tier.name} Plan</h3>
                     <p className="text-sm text-slate-600">
-                      {tier.id === "enterprise" ? "Advanced automation" : "All-in-one back office"}
+                      {tier.id === "enterprise" ? "Advanced Human + Machine" : "All-in-one back office"}
                     </p>
                   </CardHeader>
                   <CardContent className="space-y-6 flex-1 flex flex-col">

@@ -10,10 +10,10 @@ export function DepartmentFeaturesSection() {
       name: "Finance",
       icon: "💰",
       features: [
-        "Automated invoice reconciliation with SAP/Oracle integration",
+        "Smart invoice reconciliation with SAP/Oracle integration",
         "Multi-entity financial consolidation and reporting",
         "Compliance-ready audit trail documentation",
-        "Automated expense policy enforcement",
+        "Smart expense policy enforcement",
         "Budget variance analysis with actionable insights",
       ],
     },
@@ -22,8 +22,8 @@ export function DepartmentFeaturesSection() {
       icon: "👥",
       features: [
         "Intelligent shift scheduling across multiple locations",
-        "Automated compliance documentation by jurisdiction",
-        "Employee onboarding workflow automation",
+        "Streamlined compliance documentation by jurisdiction",
+        "Employee onboarding workflow management",
         "Performance review data aggregation and analysis",
         "Policy management with regulatory updates",
       ],
@@ -33,8 +33,8 @@ export function DepartmentFeaturesSection() {
       icon: "💼",
       features: [
         "Multi-channel sales pipeline management",
-        "Territory optimization with AI-driven insights",
-        "Automated proposal generation with approval workflows",
+        "Territory optimization with data-driven insights",
+        "Smart proposal generation with approval workflows",
         "Contract lifecycle management with version control",
         "Sales performance analytics with coaching recommendations",
       ],
@@ -57,7 +57,7 @@ export function DepartmentFeaturesSection() {
         "Multi-channel campaign orchestration and tracking",
         "Content approval workflows with brand compliance",
         "Marketing asset management and version control",
-        "Automated performance reporting across channels",
+        "Streamlined performance reporting across channels",
         "Competitor intelligence gathering and analysis",
       ],
     },
@@ -69,7 +69,7 @@ export function DepartmentFeaturesSection() {
         "IT asset lifecycle management and tracking",
         "Security compliance documentation and reporting",
         "System access provisioning and deprovisioning",
-        "Change management workflow automation",
+        "Change management workflow orchestration",
       ],
     },
     {
@@ -102,7 +102,7 @@ export function DepartmentFeaturesSection() {
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Collaboration Across Departments</h2>
           <p className="text-lg text-gray-600">
-            Jo enables seamless human + machine workflows across every department, where automation handles structured
+            Jo enables seamless Human + Machine workflows across every department, where Jo from handles structured
             tasks while people focus on strategy, creativity, and relationships
           </p>
         </div>

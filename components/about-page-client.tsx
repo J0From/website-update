@@ -77,7 +77,7 @@ export function AboutPageClient() {
       <section className="py-16 sm:py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">
-            Workforce Augmentation for Every Business
+            Human + Machine for Every Business
           </h2>
 
           {/* Mission and Vision */}
@@ -85,7 +85,7 @@ export function AboutPageClient() {
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3 text-center">Mission Statement</h3>
               <p className="text-lg text-gray-700 leading-relaxed text-center">
-                To empower businesses by building specialized digital coworkers that handle routine operational work,
+                To empower businesses through Human + Machine collaboration that handles routine operational work,
                 freeing human employees to focus on creativity, judgment, and strategic thinking.
               </p>
             </div>
@@ -100,24 +100,24 @@ export function AboutPageClient() {
             </div>
           </div>
 
-          {/* Core Values and Department Agents */}
+          {/* Core Values and Jo from Departments */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Core Values */}
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Core Values</h3>
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-2 text-center">Augmentation Over Replacement</h4>
+                  <h4 className="font-bold text-gray-900 mb-2 text-center">Collaboration Over Replacement</h4>
                   <p className="text-gray-700 leading-relaxed text-center">
-                    We build tools that amplify human potential, not diminish it. Our digital specialists work alongside
-                    employees as trusted teammates, handling repetitive tasks so people can focus on what people do
+                    We build tools that amplify human potential, not diminish it. Jo from works alongside
+                    employees as a trusted teammate, handling repetitive tasks so people can focus on what people do
                     best.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-2 text-center">Specialization Through Depth</h4>
                   <p className="text-gray-700 leading-relaxed text-center">
-                    We reject one-size-fits-all solutions. Every digital coworker we create possesses deep domain
+                    We reject one-size-fits-all solutions. Every Jo from department possesses deep domain
                     expertise for specific roles and industries, delivering an experience that feels custom-built
                     without the custom price tag.
                   </p>
@@ -125,7 +125,7 @@ export function AboutPageClient() {
                 <div>
                   <h4 className="font-bold text-gray-900 mb-2 text-center">Process Before Technology</h4>
                   <p className="text-gray-700 leading-relaxed text-center">
-                    We automate good processes, not broken ones. Through our Discover → Design → Deploy framework, we
+                    We streamline good processes, not broken ones. Through our Discover → Design → Deploy framework, we
                     ensure every implementation improves workflows first, then scales them with precision.
                   </p>
                 </div>
@@ -147,9 +147,9 @@ export function AboutPageClient() {
               </div>
             </div>
 
-            {/* Department Agents Grid */}
+            {/* Jo from Departments Grid */}
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Our Digital Specialists</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Jo from Every Department</h3>
               <div className="grid grid-cols-2 gap-4">
                 {departmentAgents.map((agent) => (
                   <Card key={agent.name} className="hover:shadow-lg transition-shadow border-2 hover:border-blue-200">
@@ -170,7 +170,7 @@ export function AboutPageClient() {
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-gray-900">
-            A Blueprint for Optimized Augmentation
+            A Blueprint for Human + Machine Balance
           </h2>
           <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
             Our proprietary framework ensures your organization achieves the perfect balance between human expertise and

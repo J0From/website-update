@@ -14,7 +14,7 @@ export function ApproachSection() {
       number: 2,
       title: "Design",
       description:
-        "Next, we optimize your workflows and strategically distribute tasks between your team and Jo's digital specialists for maximum efficiency.",
+        "Next, we optimize your workflows and strategically distribute tasks between your team and Jo from for maximum efficiency.",
       icon: Users,
     },
     {
@@ -30,7 +30,7 @@ export function ApproachSection() {
     <section className="py-16 sm:py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-gray-900">
-          A Blueprint for Optimized Augmentation
+          A Blueprint for Human + Machine Balance
         </h2>
         <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
           Our proprietary framework ensures your organization achieves the perfect balance between human expertise and

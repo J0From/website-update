@@ -22,7 +22,7 @@ export default function SMBPageClient() {
         "Real-time cash-flow dashboard with runway countdown",
         "Budget-vs-actual alerts sent to Slack/Teams",
         "Auto-generated investor decks with KPIs",
-        "Automated expense tracking and categorization",
+        "Smart expense tracking and categorization",
         "Revenue forecasting and trend analysis",
         "Multi-currency support and conversion tracking",
       ],
@@ -34,7 +34,7 @@ export default function SMBPageClient() {
         "Job-description writer with salary bands",
         "One-click onboarding checklist",
         "Self-serve PTO bot for Slack/Teams",
-        "Employee performance review automation",
+        "Employee performance review management",
         "Benefits enrollment and management",
         "Compliance tracking and documentation",
       ],
@@ -46,7 +46,7 @@ export default function SMBPageClient() {
         "Auto-categorization of transactions (98% accuracy)",
         "Nightly bank reconciliation with alerts",
         "One-click month-end close pack",
-        "Automated invoice generation and tracking",
+        "Smart invoice generation and tracking",
         "Tax preparation and filing assistance",
         "Financial statement generation",
       ],
@@ -60,7 +60,7 @@ export default function SMBPageClient() {
         "Cloud-cost watchdog for spend spikes",
         "Security monitoring and threat detection",
         "Software license management",
-        "Automated backup and recovery systems",
+        "Smart backup and recovery systems",
       ],
     },
     {
@@ -71,7 +71,7 @@ export default function SMBPageClient() {
         "Auto-build knowledge-base from tickets",
         "Real-time translation in 30+ languages",
         "Customer satisfaction tracking and surveys",
-        "Automated ticket routing and prioritization",
+        "Smart ticket routing and prioritization",
         "SLA monitoring and compliance alerts",
       ],
     },
@@ -107,7 +107,7 @@ export default function SMBPageClient() {
         "Smart sequencer for email + LinkedIn",
         "Deal-health signals predicting slip risk",
         "Pipeline forecasting and analytics",
-        "Automated follow-up reminders",
+        "Smart follow-up reminders",
         "Proposal generation and tracking",
       ],
     },
@@ -547,7 +547,7 @@ export default function SMBPageClient() {
                         </div>
                         <div className="text-center">
                           <div className="text-sm font-semibold text-gray-900">Sales</div>
-                          <div className="text-sm text-gray-600">Lead management & follow-up automation</div>
+                          <div className="text-sm text-gray-600">Lead management & follow-up workflows</div>
                         </div>
                         <div className="text-center">
                           <div className="text-sm font-semibold text-gray-900">Operations</div>
@@ -672,7 +672,7 @@ export default function SMBPageClient() {
                       <div className="space-y-3">
                         <div className="text-center">
                           <div className="text-sm font-semibold text-gray-900">Finance</div>
-                          <div className="text-sm text-gray-600">Automated financial reporting & burn rate optimization</div>
+                          <div className="text-sm text-gray-600">Streamlined financial reporting & burn rate optimization</div>
                         </div>
                         <div className="text-center">
                           <div className="text-sm font-semibold text-gray-900">Operations</div>
@@ -680,7 +680,7 @@ export default function SMBPageClient() {
                         </div>
                         <div className="text-center">
                           <div className="text-sm font-semibold text-gray-900">HR</div>
-                          <div className="text-sm text-gray-600">Rapid scaling & talent acquisition automation</div>
+                          <div className="text-sm text-gray-600">Rapid scaling & talent acquisition workflows</div>
                         </div>
                         <div className="text-center">
                           <div className="text-sm font-semibold text-gray-900">Sales</div>
@@ -725,7 +725,7 @@ export default function SMBPageClient() {
                       <ul className="text-sm text-gray-700 space-y-1">
                         <li>Operational transformation at scale</li>
                         <li>Cost reduction & margin improvement</li>
-                        <li>Process automation across portfolio</li>
+                        <li>Process optimization across portfolio</li>
                         <li>Accelerating value creation initiatives</li>
                       </ul>
                     </div>
@@ -735,7 +735,7 @@ export default function SMBPageClient() {
                       <div className="space-y-3">
                         <div className="text-center">
                           <div className="text-sm font-semibold text-gray-900">Operations</div>
-                          <div className="text-sm text-gray-600">Process optimization & cost reduction automation</div>
+                          <div className="text-sm text-gray-600">Process optimization & cost reduction</div>
                         </div>
                         <div className="text-center">
                           <div className="text-sm font-semibold text-gray-900">Finance</div>
@@ -747,7 +747,7 @@ export default function SMBPageClient() {
                         </div>
                         <div className="text-center">
                           <div className="text-sm font-semibold text-gray-900">Accounting</div>
-                          <div className="text-sm text-gray-600">Financial consolidation & reporting automation</div>
+                          <div className="text-sm text-gray-600">Financial consolidation & reporting</div>
                         </div>
                         <div className="text-center">
                           <div className="text-sm font-semibold text-gray-900">IT</div>
@@ -872,7 +872,7 @@ export default function SMBPageClient() {
                 </div>
                 <h3 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">Human + Jo</h3>
                 <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                  AI speed with human precision for critical tasks.
+                  Machine speed with human precision for critical tasks.
                 </p>
               </CardContent>
             </Card>

@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "Mid-Market Solutions | Jo",
-  description: "Scale your operations with intelligent automation built for growing companies",
+  description: "Scale your operations with Human + Machine collaboration built for growing companies",
 }
 
 export default function MidMarketPage() {
@@ -16,7 +16,7 @@ export default function MidMarketPage() {
     {
       icon: Network,
       title: "Cross-Department Workflows",
-      description: "Connect Finance, HR, Operations, and Sales with automated handoffs and shared data flows",
+      description: "Connect Finance, HR, Operations, and Sales with smart handoffs and shared data flows",
     },
     {
       icon: BarChart3,
@@ -25,8 +25,8 @@ export default function MidMarketPage() {
     },
     {
       icon: Settings,
-      title: "Custom Agent Configuration",
-      description: "Tailor each agent's behavior to match your unique processes and compliance requirements",
+      title: "Custom Department Configuration",
+      description: "Tailor each Jo from department to match your unique processes and compliance requirements",
     },
     {
       icon: Headphones,
@@ -79,7 +79,7 @@ export default function MidMarketPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Scale Operations, Not Headcount</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-            Automate cross-departmental workflows and eliminate bottlenecks as you grow from 50 to 500 employees
+            Streamline cross-departmental workflows and eliminate bottlenecks as you grow from 50 to 500 employees
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="https://calendly.com/myj0/30min" target="_blank" rel="noopener noreferrer">

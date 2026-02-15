@@ -9,7 +9,7 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "Partners | Jo - Build Together",
   description:
-    "Partner with Jo to deliver cutting-edge AI automation solutions. Explore technology partnerships, reseller opportunities, and integration partnerships.",
+    "Partner with Jo to deliver cutting-edge Human + Machine solutions. Explore technology partnerships, reseller opportunities, and integration partnerships.",
 }
 
 export default function PartnersPage() {
@@ -23,7 +23,7 @@ export default function PartnersPage() {
     {
       icon: Handshake,
       title: "Reseller Partners",
-      description: "Expand your portfolio by offering Jo's AI automation solutions to your clients.",
+      description: "Expand your portfolio by offering Jo's Human + Machine solutions to your clients.",
       benefits: ["Competitive margins", "Sales enablement resources", "Dedicated partner success team"],
     },
     {
@@ -35,13 +35,13 @@ export default function PartnersPage() {
     {
       icon: Users,
       title: "Referral Partners",
-      description: "Earn commissions by referring businesses that could benefit from Jo's automation platform.",
+      description: "Earn commissions by referring businesses that could benefit from Jo's collaboration platform.",
       benefits: ["Simple referral process", "Attractive commission structure", "No technical requirements"],
     },
   ]
 
   const partnerBenefits = [
-    "Access to cutting-edge AI automation technology",
+    "Access to cutting-edge Human + Machine technology",
     "Dedicated partner success manager",
     "Co-marketing and co-selling opportunities",
     "Training and certification programs",
@@ -143,7 +143,7 @@ export default function PartnersPage() {
             {/* Right Column - Value Proposition */}
             <div className="space-y-6">
               <p className="text-lg text-gray-700 leading-relaxed">
-                As a Jo partner, you&#39;ll be at the forefront of the labor augmentation revolution. We designed this
+                As a Jo partner, you&#39;ll be at the forefront of the Human + Machine collaboration movement. We designed this
                 offering to help you grow your business while delivering exceptional value to your customers. Whether
                 you&#39;re integrating with our platform, reselling our solutions, or helping businesses implement Jo,
                 we provide the support and resources you need to succeed.

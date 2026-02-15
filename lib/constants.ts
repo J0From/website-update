@@ -262,14 +262,14 @@ export const BUSINESS_TYPES: BusinessType[] = [
     description: "Scaling your operations",
     features: [
       "Finance: Budget tracking & forecasting",
-      "HR: Rapid scaling automation",
+      "HR: Rapid scaling workflows",
       "Operations: Workflow optimization",
     ],
   },
   {
     id: "mid-market",
     title: "Mid-Market",
-    description: "Enterprise-grade automation",
+    description: "Enterprise-grade Human + Machine",
     features: [
       "Finance: Multi-entity accounting",
       "HR: Workforce optimization",

@@ -57,7 +57,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "enterprise-monthly",
     name: "Enterprise Plan",
-    description: "Advanced automation",
+    description: "Advanced Human + Machine",
     priceInCents: 15000, // $150
     features: ["Everything in Professional Plan", "8 Jos", "Account manager", "Custom training", "SLA guarantee"],
     agents: 8,
@@ -98,7 +98,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "enterprise-annual",
     name: "Enterprise Plan",
-    description: "Advanced automation",
+    description: "Advanced Human + Machine",
     priceInCents: 11200, // $112/month (billed $1344 annually)
     features: ["Everything in Professional Plan", "8 Jos", "Account manager", "Custom training", "SLA guarantee"],
     agents: 8,

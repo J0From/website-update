@@ -84,8 +84,8 @@ export default function ConsultingGetMeetingsPage() {
               </h1>
               <p className="text-xl text-gray-600 mb-8">
                 {activeTab === "growth"
-                  ? "Helping businesses scale with real People & Tech Augmentation"
-                  : "Streamline your backend operations with Human & Tech Augmentation"}
+                  ? "Helping businesses scale with real People & Human + Machine collaboration"
+                  : "Streamline your backend operations with Human + Machine collaboration"}
               </p>
             </div>
 
@@ -132,7 +132,7 @@ export default function ConsultingGetMeetingsPage() {
               <div className="mb-16">
                 <h2 className="text-4xl font-bold text-slate-900 mb-4 text-center">Grow Your Business Faster</h2>
                 <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto mb-12">
-                  Our fractional Growth team manages your business development, augmented by Jo's tech, so you can lead
+                  Our fractional Growth team manages your business development, enabled by Jo's platform, so you can lead
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -142,7 +142,7 @@ export default function ConsultingGetMeetingsPage() {
                         <TrendingUp className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="text-lg font-bold text-slate-900 mb-2">Research</h3>
-                      <p className="text-sm text-gray-600">Automated research and qualification of potential leads</p>
+                      <p className="text-sm text-gray-600">Streamlined research and qualification of potential leads</p>
                     </CardContent>
                   </Card>
 
@@ -162,7 +162,7 @@ export default function ConsultingGetMeetingsPage() {
                         <Calendar className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="text-lg font-bold text-slate-900 mb-2">Proposals</h3>
-                      <p className="text-sm text-gray-600">AI-assisted preparation and proposal drafting</p>
+                      <p className="text-sm text-gray-600">Smart preparation and proposal drafting</p>
                     </CardContent>
                   </Card>
 
@@ -172,7 +172,7 @@ export default function ConsultingGetMeetingsPage() {
                         <PieChart className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="text-lg font-bold text-slate-900 mb-2">Pipeline Management</h3>
-                      <p className="text-sm text-gray-600">Automated reporting and pipeline tracking</p>
+                      <p className="text-sm text-gray-600">Streamlined reporting and pipeline tracking</p>
                     </CardContent>
                   </Card>
                 </div>
@@ -196,7 +196,7 @@ export default function ConsultingGetMeetingsPage() {
                   <span className="text-5xl text-orange-500">Scale</span> Your Business Faster
                 </h2>
                 <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto mb-12">
-                  Our fractional Operations team manages your backend, augmented by Jo's tech, so you can lead
+                  Our fractional Operations team manages your backend, enabled by Jo's platform, so you can lead
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -216,7 +216,7 @@ export default function ConsultingGetMeetingsPage() {
                         <Scale className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="font-bold text-slate-900 mb-3 text-lg">Scalable Systems</h3>
-                      <p className="text-gray-600 text-sm">We design and implement operations augmentation.</p>
+                      <p className="text-gray-600 text-sm">We design and implement operations optimization.</p>
                     </CardContent>
                   </Card>
 
@@ -237,7 +237,7 @@ export default function ConsultingGetMeetingsPage() {
                       </div>
                       <h3 className="font-bold text-slate-900 mb-3 text-lg">Finance & Accounting</h3>
                       <p className="text-gray-600 text-sm">
-                        Automated bookkeeping, reporting, and financial management
+                        Streamlined bookkeeping, reporting, and financial management
                       </p>
                     </CardContent>
                   </Card>

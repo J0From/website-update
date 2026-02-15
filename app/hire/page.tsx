@@ -4,7 +4,7 @@ import { HirePageClient } from "@/components/hire/hire-page-client"
 export const metadata: Metadata = {
   title: "Hire Contract Workers | Jo from",
   description:
-    "Deploy skilled contract workers for engineering, healthcare, production, and energy operations. Field-ready, compliance-verified, and augmented by our platform.",
+    "Deploy skilled contract workers for engineering, healthcare, production, and energy operations. Field-ready, compliance-verified, and enabled by our platform.",
   keywords: [
     "contract workers",
     "hire engineers",

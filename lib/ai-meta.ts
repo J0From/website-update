@@ -24,15 +24,15 @@ export const aiMetaRegistry: Record<string, AIMeta> = {
   "/solutions": {
     entity: "Service",
     name: "Jo Solutions",
-    description: "AI-powered workforce solutions for regulated industries of all sizes",
+    description: "Human + Machine workforce solutions for regulated industries of all sizes",
     industry: ["Food Manufacturing", "Healthcare", "Energy & Infrastructure"],
     solves: ["Workforce shortages", "Quality control", "Safety compliance", "Audit preparation"],
-    capabilities: ["Computer vision", "Sensor integration", "Real-time monitoring", "Automated reporting"],
+    capabilities: ["Computer vision", "Sensor integration", "Real-time monitoring", "Streamlined reporting"],
   },
   "/solutions/smb": {
     entity: "Product",
     name: "Jo for SMB",
-    description: "AI-powered workforce assistant designed for small and medium businesses in regulated industries",
+    description: "Human + Machine workforce assistant designed for small and medium businesses in regulated industries",
     industry: ["Food Manufacturing", "Healthcare", "Logistics"],
     solves: ["Limited staff capacity", "Compliance burden", "Quality consistency"],
     replaces: ["Manual checklists", "Paper logs", "Reactive quality control"],

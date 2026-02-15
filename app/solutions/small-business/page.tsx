@@ -34,7 +34,7 @@ export default function SmallBusinessPage() {
       icon: Calculator,
       title: "Finance",
       capabilities: [
-        "Automated bookkeeping",
+        "Smart bookkeeping",
         "Invoice generation & tracking",
         "Expense management",
         "Financial forecasting",
@@ -69,7 +69,7 @@ export default function SmallBusinessPage() {
       capabilities: [
         "Lead tracking & scoring",
         "Pipeline management",
-        "Proposal automation",
+        "Proposal management",
         "Follow-up reminders",
         "Revenue forecasting",
       ],
@@ -89,7 +89,7 @@ export default function SmallBusinessPage() {
       icon: Settings,
       title: "Operations",
       capabilities: [
-        "Process automation",
+        "Process optimization",
         "Workflow optimization",
         "Inventory tracking",
         "Vendor management",
@@ -103,7 +103,7 @@ export default function SmallBusinessPage() {
         "System monitoring",
         "Security management",
         "Access control",
-        "Backup automation",
+        "Backup management",
         "Tech support triage",
       ],
     },
@@ -112,7 +112,7 @@ export default function SmallBusinessPage() {
       title: "Support",
       capabilities: [
         "Customer ticket routing",
-        "Response automation",
+        "Response management",
         "Knowledge base updates",
         "Satisfaction tracking",
         "Issue escalation",
@@ -132,7 +132,7 @@ export default function SmallBusinessPage() {
     {
       title: "Small Team",
       description: "Growing with 5-20 employees",
-      features: ["Up to 5 Jo's", "Advanced automation", "Priority support", "Custom workflows"],
+      features: ["Up to 5 Jo's", "Advanced features", "Priority support", "Custom workflows"],
       price: "$125/mo",
       highlighted: true,
       badge: "Most Popular",
@@ -157,7 +157,7 @@ export default function SmallBusinessPage() {
     {
       number: "02",
       title: "Activate",
-      description: "Choose which Jo agents you need and set your preferences",
+      description: "Choose which Jo departments you need and set your preferences",
       icon: CheckCircle2,
     },
     {
@@ -243,7 +243,7 @@ export default function SmallBusinessPage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Your Complete Back Office</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Every Jo agent is an expert in their domain, working together seamlessly
+              Every Jo department is an expert in their domain, working together seamlessly
             </p>
           </div>
 
