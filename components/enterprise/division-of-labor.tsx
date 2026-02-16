@@ -10,8 +10,8 @@ export function DivisionOfLaborSection() {
             A Smarter Division of Labor
           </h2>
           <p className="text-lg text-gray-600 mb-8 text-pretty">
-            The future of work isn't about replacing people—it's about optimizing the collaboration between{" "}
-            <strong>Human + Machine</strong> capabilities
+            The future of work isn&apos;t about replacing people—it&apos;s about optimizing the collaboration between{" "}
+            <span className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Human + Machine</span>
           </p>
         </div>
 

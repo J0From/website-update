@@ -16,12 +16,72 @@ import { IndustryWorkflowsSection } from "@/components/enterprise/industry-workf
 import { Logo } from "@/components/logo"
 import { EnergyCards } from "@/components/enterprise/energy-cards"
 import { FoodCards } from "@/components/enterprise/food-cards"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
+
+const allLogos = [
+  { src: "/logos/microsoft.svg", alt: "Microsoft" },
+  { src: "/logos/aws.svg", alt: "AWS" },
+  { src: "/logos/google-cloud.svg", alt: "Google Cloud" },
+  { src: "/logos/salesforce.svg", alt: "Salesforce" },
+  { src: "/logos/stripe.svg", alt: "Stripe" },
+  { src: "/logos/snowflake.svg", alt: "Snowflake" },
+  { src: "/logos/databricks.svg", alt: "Databricks" },
+  { src: "/logos/sap.svg", alt: "SAP" },
+  { src: "/logos/epic-systems.svg", alt: "Epic Systems" },
+  { src: "/logos/atlassian.svg", alt: "Atlassian" },
+  { src: "/logos/hubspot.svg", alt: "HubSpot" },
+  { src: "/logos/slack.svg", alt: "Slack" },
+  { src: "/logos/siemens.svg", alt: "Siemens" },
+  { src: "/logos/ge-healthcare.svg", alt: "GE HealthCare" },
+  { src: "/logos/schneider-electric.svg", alt: "Schneider Electric" },
+]
 
 export default function EnterpriseClientPage() {
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [prevIndex, setPrevIndex] = useState(0)
+  const [isTransitioning, setIsTransitioning] = useState(false)
+  const VISIBLE_COUNT = 5
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPrevIndex(currentIndex)
+      setIsTransitioning(true)
+      const nextIndex = (currentIndex + VISIBLE_COUNT) % allLogos.length
+      setCurrentIndex(nextIndex)
+      const timer = setTimeout(() => setIsTransitioning(false), 800)
+      return () => clearTimeout(timer)
+    }, 3500)
+    return () => clearInterval(interval)
+  }, [currentIndex])
+
+  const getLogos = (startIndex: number) =>
+    Array.from({ length: VISIBLE_COUNT }, (_, i) => allLogos[(startIndex + i) % allLogos.length])
+
+  const currentLogos = getLogos(currentIndex)
+  const previousLogos = getLogos(prevIndex)
+
+  const renderLogoRow = (logos: typeof allLogos, opacity: number) => (
+    <div
+      className="flex justify-center items-center gap-10 md:gap-16 absolute inset-0"
+      style={{ opacity, transition: "opacity 0.8s ease-in-out" }}
+    >
+      {logos.map((logo) => (
+        <div key={logo.alt} className="flex items-center justify-center w-28 h-10">
+          <Image
+            src={logo.src}
+            alt={logo.alt}
+            width={140}
+            height={48}
+            className="h-8 w-auto max-w-full object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+          />
+        </div>
+      ))}
+    </div>
+  )
 
   return (
     <div className="min-h-screen bg-white">
@@ -53,15 +113,11 @@ export default function EnterpriseClientPage() {
       <section className="py-10 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-6">
           <p className="text-center text-sm text-slate-500 mb-8 font-medium tracking-wide uppercase">
-            Trusted by Industry Leaders
+            Connect with Industry Leaders
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-14">
-            <Image src="/logos/microsoft.svg" alt="Microsoft" width={140} height={48} className="h-8 w-auto opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
-            <Image src="/logos/aws.svg" alt="AWS" width={140} height={48} className="h-8 w-auto opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
-            <Image src="/logos/google-cloud.svg" alt="Google Cloud" width={140} height={48} className="h-8 w-auto opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
-            <Image src="/logos/salesforce.svg" alt="Salesforce" width={140} height={48} className="h-8 w-auto opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
-            <Image src="/logos/stripe.svg" alt="Stripe" width={140} height={48} className="h-8 w-auto opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
-            <Image src="/logos/snowflake.svg" alt="Snowflake" width={140} height={48} className="h-8 w-auto opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+          <div className="relative h-12">
+            {isTransitioning && renderLogoRow(previousLogos, 0)}
+            {renderLogoRow(currentLogos, 1)}
           </div>
         </div>
       </section>
