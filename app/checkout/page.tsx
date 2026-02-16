@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { ArrowLeft, Check, Shield, Zap, Clock } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
-import StripeCheckout from "@/components/stripe-checkout"
+import MockCheckout from "@/components/mock-checkout"
 import { PRODUCTS } from "@/lib/products"
 
 function CheckoutContent() {
@@ -166,7 +166,7 @@ function CheckoutContent() {
                 <p className="text-sm text-slate-600">Complete your subscription securely with Stripe</p>
               </CardHeader>
               <CardContent className="p-0">
-                <StripeCheckout productId={selectedProduct.id} />
+                <MockCheckout productId={selectedProduct.id} />
               </CardContent>
             </Card>
           </div>
