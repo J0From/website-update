@@ -37,7 +37,7 @@ export default function SolutionsPage() {
       gradient: "from-indigo-500 to-blue-500",
     },
     {
-      href: "/solutions/consulting",
+      href: "/staffing",
       icon: Users,
       title: "Consultants",
       description: "Deliver more value, do less admin",

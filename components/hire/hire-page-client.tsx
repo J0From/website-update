@@ -368,14 +368,14 @@ export function HirePageClient() {
                   key={cat.id}
                   onClick={() => setActiveCategory(cat.id)}
                   className={`group relative p-5 rounded-lg border-2 transition-all text-left ${isActive
-                      ? "bg-white border-blue-300 shadow-md"
-                      : "bg-white border-slate-200 hover:border-blue-200 hover:shadow-sm"
+                    ? "bg-white border-blue-300 shadow-md"
+                    : "bg-white border-slate-200 hover:border-blue-200 hover:shadow-sm"
                     }`}
                 >
                   <div
                     className={`w-10 h-10 rounded-lg flex items-center justify-center mb-3 ${isActive
-                        ? "bg-gradient-to-br from-blue-600 to-purple-600"
-                        : "bg-slate-100 group-hover:bg-blue-50"
+                      ? "bg-gradient-to-br from-blue-600 to-purple-600"
+                      : "bg-slate-100 group-hover:bg-blue-50"
                       }`}
                   >
                     <Icon
@@ -613,7 +613,7 @@ export function HirePageClient() {
                 <ArrowRight size={18} />
               </Button>
             </Link>
-            <Link href="/solutions/consulting">
+            <Link href="/staffing">
               <Button
                 variant="outline"
                 size="hero"

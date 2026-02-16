@@ -77,7 +77,7 @@ export async function GET() {
       {
         name: "Fractional Deployment",
         description: "Flexible staffing collaboration with Jo-enabled temporary workers",
-        url: "/solutions/consulting/fractional",
+        url: "/staffing/fractional",
         priceModel: "Per-deployment",
       },
     ],

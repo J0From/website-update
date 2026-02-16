@@ -6,6 +6,7 @@ import { ArrowRight, TrendingUp, DollarSign, Mail, Calendar, PieChart, UserCheck
 import Link from "next/link"
 import Image from "next/image"
 import { Footer } from "@/components/footer"
+import { Logo } from "@/components/logo"
 import { useState, useEffect } from "react"
 
 export default function ConsultingGetMeetingsPage() {
@@ -28,24 +29,7 @@ export default function ConsultingGetMeetingsPage() {
       {/* Navigation */}
       <nav className="flex justify-between items-center p-4 sm:p-6 max-w-6xl mx-auto w-full">
         <Link href="/jo" className="text-xl sm:text-2xl font-bold text-slate-900 flex items-center">
-          <span className="md:hidden">Jo from</span>
-          <span className="hidden md:inline">J</span>
-          <div className="relative mx-1">
-            <Image src="/qubit.png" alt="Qubit" width={20} height={20} className="brightness-0" />
-            <div
-              className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 mix-blend-normal opacity-100"
-              style={{
-                maskImage: `url('/qubit.png')`,
-                maskSize: "contain",
-                maskRepeat: "no-repeat",
-                maskPosition: "center",
-                WebkitMaskImage: `url('/qubit.png')`,
-                WebkitMaskSize: "contain",
-                WebkitMaskRepeat: "no-repeat",
-                WebkitMaskPosition: "center",
-              }}
-            ></div>
-          </div>
+          <Logo size="md" />
         </Link>
         <div className="flex items-center gap-2 sm:gap-4">
           <Link href="/solutions">
@@ -91,11 +75,11 @@ export default function ConsultingGetMeetingsPage() {
 
             <div className="flex justify-center">
               <Image
-                src="/images/design-mode/Screenshot%202025-10-20%20at%2011.58.12%E2%80%AFPM.png"
+                src="/images/staffing-hero.png"
                 alt="Business Growth and Analytics Illustration"
                 width={500}
                 height={500}
-                className="w-full max-w-md border-4 border-gray-200 rounded-lg shadow-lg"
+                className="w-full max-w-md rounded-lg"
               />
             </div>
           </div>
@@ -179,7 +163,7 @@ export default function ConsultingGetMeetingsPage() {
 
                 <div className="mt-12 text-center">
                   <Button variant="gradient" size="hero" asChild>
-                    <Link href="/solutions/consulting/growth">
+                    <Link href="/staffing/growth">
                       Learn More
                       <ArrowRight className="w-5 h-5 ml-2" />
                     </Link>
@@ -245,7 +229,7 @@ export default function ConsultingGetMeetingsPage() {
 
                 <div className="mt-12 text-center">
                   <Button variant="gradient" size="hero" asChild>
-                    <Link href="/solutions/consulting/fractional">
+                    <Link href="/staffing/fractional">
                       Learn More
                       <ArrowRight className="w-5 h-5 ml-2" />
                     </Link>
