@@ -8,9 +8,23 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '**.public.blob.vercel-storage.com',
+        hostname: 'storage.googleapis.com',
       },
     ],
+  },
+  async redirects() {
+    return [
+      {
+        source: '/solutions/consulting',
+        destination: '/staffing',
+        permanent: true,
+      },
+      {
+        source: '/solutions/fractional',
+        destination: '/staffing/fractional',
+        permanent: true,
+      },
+    ]
   },
 }
 

@@ -217,7 +217,100 @@ export default function JoFromPage() {
         </div>
       </div>
 
+      {/* See the Platform */}
+      <section className="py-16 sm:py-20 bg-black text-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <p className="text-sm font-semibold uppercase tracking-widest text-blue-400 mb-4 text-center">
+            Live Platform
+          </p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-white">
+            See the Platform in Action
+          </h2>
+          <p className="text-lg text-slate-400 text-center mb-12 max-w-3xl mx-auto">
+            A walkthrough of the Jo from workspace — from AI persona management to real-time analytics.
+          </p>
+
+          {/* Walkthrough Video */}
+          <div className="mb-12 rounded-2xl overflow-hidden border border-slate-800 shadow-2xl shadow-blue-900/20">
+            <video
+              controls
+              loop
+              muted
+              playsInline
+              className="w-full"
+              poster="/app-screenshots/machine-personas.png"
+            >
+              <source src="/app-screenshots/platform-walkthrough.webp" type="video/webp" />
+              Your browser does not support this video format.
+            </video>
+          </div>
+
+          {/* Screenshot Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {[
+              {
+                src: "/app-screenshots/machine-personas.png",
+                label: "Machine Personas",
+                caption: "Deploy and manage specialized AI personas across every department — Sales, Marketing, HR, Finance, and more.",
+              },
+              {
+                src: "/app-screenshots/workspace-dashboard.png",
+                label: "Command Center",
+                caption: "Your team's home base — see what's running, what needs attention, and how the machine is performing today.",
+              },
+              {
+                src: "/app-screenshots/machine-analytics.png",
+                label: "ROI Analytics",
+                caption: "Track cost savings, automation impact, and ROI in real time across every Jo from deployment.",
+              },
+              {
+                src: "/app-screenshots/machine-performance.png",
+                label: "Performance Leaderboard",
+                caption: "Monitor accuracy, speed, and efficiency across all active personas with live performance scoring.",
+              },
+            ].map((item) => (
+              <div
+                key={item.label}
+                className="group rounded-xl overflow-hidden border border-slate-800 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-900/30"
+              >
+                <div className="relative overflow-hidden bg-slate-950">
+                  <Image
+                    src={item.src}
+                    alt={item.label}
+                    width={1440}
+                    height={900}
+                    className="w-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <span className="absolute top-3 left-3 bg-blue-600/90 text-white text-xs font-semibold px-2.5 py-1 rounded-full">
+                    {item.label}
+                  </span>
+                </div>
+                <div className="p-4 bg-slate-900">
+                  <p className="text-slate-400 text-sm leading-relaxed">{item.caption}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <p className="text-slate-500 text-sm">
+              Want to explore it yourself?{" "}
+              <a
+                href="https://app.jofrom.io"
+                className="text-blue-400 hover:text-blue-300 font-medium underline underline-offset-2 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Request access at app.jofrom.io →
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* How It Works in Practice */}
+
       <section className="py-16 sm:py-20 bg-slate-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-slate-900">How It Works in Practice</h2>
@@ -281,7 +374,7 @@ export default function JoFromPage() {
             <Button
               variant="outline"
               size="hero"
-              className="border-white text-white hover:bg-white hover:text-blue-600"
+              className="bg-transparent border-white text-white hover:bg-white hover:text-blue-600"
               asChild
             >
               <Link href="/company/contact">

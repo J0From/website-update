@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
-      url: `${baseUrl}/home`,
+      url: `${baseUrl}/`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1.0,
@@ -29,15 +29,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/solutions/fractional`,
+      url: `${baseUrl}/staffing`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.85,
+      priority: 0.9,
     },
     {
-      url: `${baseUrl}/solutions/fractional/tempstaffing`,
+      url: `${baseUrl}/staffing/fractional`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: "monthly",
       priority: 0.85,
     },
     {
@@ -63,12 +63,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/solutions/smb/purchase`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.65,
     },
     {
       url: `${baseUrl}/privacy`,
